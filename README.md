@@ -51,11 +51,25 @@
 │   └── report_50_sample_20260611.md
 ├── retrieval/                  # 检索模块
 │   └── simple_retriever.py     # 基于关键词的 TF-IDF 检索
+├── scripts/                    # 运行脚本
+│   ├── init.sh                 # 环境验证脚本
+│   ├── run_all_50.sh           # 50 样本批量测试脚本（Bash）
+│   └── run_experiments.py      # 50 样本批量测试脚本（Python）
+├── tests/                      # 功能验证测试
+│   ├── verify_feat004.py
+│   ├── verify_feat005.py
+│   ├── verify_feat006.py
+│   ├── verify_feat007.py
+│   ├── verify_feat008.py
+│   ├── verify_feat009.py
+│   └── verify_feat010.py
+├── docs/                       # 项目文档
+│   ├── CLAUDE.md               # 开发规范与指令
+│   ├── progress.md             # 开发进度日志
+│   ├── session-handoff.md      # 多会话交接记录
+│   └── 选题说明.md
 ├── harness.py                  # 🚀 实验管理主入口
 ├── harness_report.py           # Harness 子系统覆盖矩阵报告
-├── run_experiments.py          # 50 样本批量测试脚本（Python）
-├── run_all_50.sh               # 50 样本批量测试脚本（Bash）
-├── init.sh                     # 环境验证脚本
 ├── requirements.txt
 └── feature_list.json           # 功能状态追踪
 ```
@@ -86,7 +100,7 @@ pip install -r requirements.txt
 ### 3. 环境验证
 
 ```bash
-bash init.sh
+bash scripts/init.sh
 ```
 
 验证内容包括：Python 环境、目录结构、核心文件完整性、模块导入、各策略干跑测试、功能状态列表。
@@ -133,16 +147,16 @@ python harness.py --strategy step_verifier --dataset aqua --n_paths 3
 
 ```bash
 # 方式一：Python 脚本（串行，推荐）
-python run_experiments.py
+python scripts/run_experiments.py
 
 # 只跑单个策略
-python run_experiments.py --strategy base_cot
+python scripts/run_experiments.py --strategy base_cot
 
 # 并行运行（可能触发 API 限流）
-python run_experiments.py --parallel --max_workers 3
+python scripts/run_experiments.py --parallel --max_workers 3
 
 # 方式二：Bash 脚本
-bash run_all_50.sh
+bash scripts/run_all_50.sh
 ```
 
 ### 自定义参数
@@ -258,14 +272,14 @@ python harness_report.py
 | 文件 | 说明 |
 |---|---|
 | `harness.py` | 实验主入口，注册全部策略，支持命令行参数，实时显示进度与准确率 |
-| `run_experiments.py` | 50 样本批量测试 Python 脚本，支持串行/并行/单策略模式 |
-| `run_all_50.sh` | 50 样本批量测试 Bash 脚本，顺序执行全部 5 种策略 |
+| `scripts/run_experiments.py` | 50 样本批量测试 Python 脚本，支持串行/并行/单策略模式 |
+| `scripts/run_all_50.sh` | 50 样本批量测试 Bash 脚本，顺序执行全部 5 种策略 |
 | `eval/metrics.py` | 评估指标：准确率、推理步数、Token 估算、多实验对比 |
 | `eval/analyze.py` | CLI 分析工具，对比多次实验并打印格式化表格 |
 | `harness_report.py` | 生成 Harness 子系统覆盖矩阵 |
-| `init.sh` | 环境验证脚本，检查依赖、模块导入、各策略干跑 |
+| `scripts/init.sh` | 环境验证脚本，检查依赖、模块导入、各策略干跑 |
 | `feature_list.json` | 10 项功能的状态追踪（全部已完成） |
-| `progress.md` | 开发进度日志 |
+| `docs/progress.md` | 开发进度日志 |
 
 ---
 

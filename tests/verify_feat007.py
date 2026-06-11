@@ -3,6 +3,10 @@ Dry-run verification for feat-007: RAG + COT.
 Tests retrieval-augmented reasoning with a dummy model.
 """
 import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 from models.base import BaseModel

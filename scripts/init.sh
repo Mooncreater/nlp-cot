@@ -71,37 +71,37 @@ echo "  harness.py OK"
 
 # 验证 feat-004 基础 COT 流程
 echo "[5/6] Verifying feat-004 (Base COT dry-run)..."
-python verify_feat004.py >/dev/null 2>&1 || { echo "Error: feat-004 verification failed"; exit 1; }
+python tests/verify_feat004.py >/dev/null 2>&1 || { echo "Error: feat-004 verification failed"; exit 1; }
 echo "  feat-004 OK"
 
 # 验证 feat-005 Self-Consistency 流程
 echo "[5.5/6] Verifying feat-005 (Self-Consistency dry-run)..."
-python verify_feat005.py >/dev/null 2>&1 || { echo "Error: feat-005 verification failed"; exit 1; }
+python tests/verify_feat005.py >/dev/null 2>&1 || { echo "Error: feat-005 verification failed"; exit 1; }
 echo "  feat-005 OK"
 
 # 验证 feat-006 Step-Aware Verifier 流程
 echo "[5.6/6] Verifying feat-006 (Step-Aware Verifier dry-run)..."
-python verify_feat006.py >/dev/null 2>&1 || { echo "Error: feat-006 verification failed"; exit 1; }
+python tests/verify_feat006.py >/dev/null 2>&1 || { echo "Error: feat-006 verification failed"; exit 1; }
 echo "  feat-006 OK"
 
 # 验证 feat-007 RAG+COT 流程
 echo "[5.7/6] Verifying feat-007 (RAG+COT dry-run)..."
-python verify_feat007.py >/dev/null 2>&1 || { echo "Error: feat-007 verification failed"; exit 1; }
+python tests/verify_feat007.py >/dev/null 2>&1 || { echo "Error: feat-007 verification failed"; exit 1; }
 echo "  feat-007 OK"
 
 # 验证 feat-008 Multi-Agent Debate 流程
 echo "[5.8/6] Verifying feat-008 (Multi-Agent Debate dry-run)..."
-python verify_feat008.py >/dev/null 2>&1 || { echo "Error: feat-008 verification failed"; exit 1; }
+python tests/verify_feat008.py >/dev/null 2>&1 || { echo "Error: feat-008 verification failed"; exit 1; }
 echo "  feat-008 OK"
 
 # 验证 feat-009 评估指标与实验记录
 echo "[5.9/6] Verifying feat-009 (Metrics & Recording)..."
-python verify_feat009.py >/dev/null 2>&1 || { echo "Error: feat-009 verification failed"; exit 1; }
+python tests/verify_feat009.py >/dev/null 2>&1 || { echo "Error: feat-009 verification failed"; exit 1; }
 echo "  feat-009 OK"
 
 # 验证 feat-010 Harness Engineering 思想融合
 echo "[5.10/6] Verifying feat-010 (Harness Engineering Integration)..."
-python verify_feat010.py >/dev/null 2>&1 || { echo "Error: feat-010 verification failed"; exit 1; }
+python tests/verify_feat010.py >/dev/null 2>&1 || { echo "Error: feat-010 verification failed"; exit 1; }
 echo "  feat-010 OK"
 
 # 显示当前功能状态

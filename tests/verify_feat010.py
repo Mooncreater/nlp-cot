@@ -7,6 +7,10 @@ Verifies:
 3. Subsystem evolution follows expected progression
 """
 import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 from models.base import BaseModel

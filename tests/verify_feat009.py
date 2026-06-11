@@ -3,6 +3,10 @@ Dry-run verification for feat-009: Evaluation metrics & experiment recording.
 Tests metrics computation, run record structure, and analyze tool.
 """
 import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 from eval.metrics import compute_metrics, compare_runs, count_reasoning_steps

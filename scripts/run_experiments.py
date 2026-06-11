@@ -3,9 +3,9 @@
 Run all 5 COT strategies on 50 AQuA samples.
 
 Usage:
-    python run_experiments.py          # 串行运行（推荐，避免API限流）
-    python run_experiments.py --parallel  # 并行运行（快但可能限流）
-    python run_experiments.py --strategy base_cot  # 只跑单个策略
+    python scripts/run_experiments.py          # 串行运行（推荐，避免API限流）
+    python scripts/run_experiments.py --parallel  # 并行运行（快但可能限流）
+    python scripts/run_experiments.py --strategy base_cot  # 只跑单个策略
 
 注意：
     - step_verifier 非常慢（约 5min/条），50 条约需 4~5 小时

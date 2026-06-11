@@ -46,3 +46,4 @@ Thumbs.db
 # Large dataset files that can be fetched separately
 # data/*.json
 # data/*.jsonl
+experiments/runs/verify_*.json

@@ -3,6 +3,10 @@ Dry-run verification for feat-006: Step-Aware Verifier.
 Uses a dummy model to test the verifier logic without real API calls.
 """
 import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+import sys
 sys.stdout.reconfigure(encoding='utf-8')
 
 from models.base import BaseModel
