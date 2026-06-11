@@ -1,0 +1,84 @@
+{
+  "features": [
+    {
+      "id": "feat-001",
+      "name": "项目基础架构与Harness搭建",
+      "description": "搭建Harness工程化框架：五子系统（Instructions/Tools/Environment/State/Feedback），实现统一的实验入口",
+      "dependencies": [],
+      "status": "completed",
+      "evidence": "harness.py, models/, tasks/, strategies/, eval/, prompts/, init.sh 验证通过"
+    },
+    {
+      "id": "feat-002",
+      "name": "AQuA数据集加载与预处理",
+      "description": "加载AQuA数据集，实现数据解析、格式化、划分train/val/test",
+      "dependencies": ["feat-001"],
+      "status": "completed",
+      "evidence": "tasks/aqua_task.py 实现数据加载、格式化、答案提取与评估"
+    },
+    {
+      "id": "feat-003",
+      "name": "LLM模型接口封装",
+      "description": "封装OpenAI API及本地LLM（Qwen/LLaMA等）调用接口，支持统一调用",
+      "dependencies": ["feat-001"],
+      "status": "completed",
+      "evidence": "models/base.py 抽象基类 + models/openai_api.py OpenAI API 封装"
+    },
+    {
+      "id": "feat-004",
+      "name": "基础COT策略实现",
+      "description": "实现基础Chain-of-Thought推理策略（Let's think step by step）",
+      "dependencies": ["feat-002", "feat-003"],
+      "status": "completed",
+      "evidence": "strategies/base_cot.py + prompts/base_cot.txt，verify_feat004.py 干跑验证通过"
+    },
+    {
+      "id": "feat-005",
+      "name": "Self-Consistency策略实现",
+      "description": "实现多条推理路径采样+投票聚合的Self-Consistency策略",
+      "dependencies": ["feat-004"],
+      "status": "completed",
+      "evidence": "strategies/self_consistency.py + verify_feat005.py 干跑验证通过"
+    },
+    {
+      "id": "feat-006",
+      "name": "Step-Aware Verifier实现",
+      "description": "针对不同推理路径构建步骤级验证器，筛选最优推理链",
+      "dependencies": ["feat-004"],
+      "status": "completed",
+      "evidence": "strategies/step_verifier.py + prompts/step_verifier.txt + verify_feat006.py 干跑验证通过"
+    },
+    {
+      "id": "feat-007",
+      "name": "检索增强COT（RAG+COT）",
+      "description": "结合外部知识库，利用检索增强技术赋能COT推理",
+      "dependencies": ["feat-004"],
+      "status": "completed",
+      "evidence": "strategies/rag_cot.py + retrieval/ + data/knowledge_base.json + prompts/rag_cot.txt + verify_feat007.py 干跑验证通过"
+    },
+    {
+      "id": "feat-008",
+      "name": "Multi-Agent Debate策略",
+      "description": "多个LLM Agent角色分工、协作推理、反思与讨论机制",
+      "dependencies": ["feat-004"],
+      "status": "completed",
+      "evidence": "strategies/multi_agent_debate.py + verify_feat008.py 干跑验证通过，3 agents × 2 rounds 辩论收敛"
+    },
+    {
+      "id": "feat-009",
+      "name": "评估指标与实验记录",
+      "description": "实现准确率、推理步数、token消耗等评估指标，实验结果自动记录到runs/",
+      "dependencies": ["feat-004"],
+      "status": "completed",
+      "evidence": "eval/metrics.py 新增推理步数/token估算/对比分析 + eval/analyze.py + harness.py 注册全部策略 + verify_feat009.py 验证通过"
+    },
+    {
+      "id": "feat-010",
+      "name": "BONUS: Harness Engineering 思想实现 CoT",
+      "description": "借鉴 Harness Engineering 五子系统设计思想（Instructions/Tools/Environment/State/Feedback），系统化实现与管理 CoT 策略，体现 Harness 设计哲学在推理框架中的深度融合",
+      "dependencies": ["feat-008", "feat-009"],
+      "status": "completed",
+      "evidence": "strategies/base.py 增加 harness_subsystems 声明；各策略声明五子系统覆盖；harness_report.py 生成覆盖矩阵；verify_feat010.py 验证通过"
+    }
+  ]
+}

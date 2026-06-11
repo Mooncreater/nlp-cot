@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Claude / Session files
+.claude/
+.agents/
+skills-lock.json
+session-handoff.md
+
+# Private reference files with credentials
+模型调用参考.py
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large dataset files that can be fetched separately
+# data/*.json
+# data/*.jsonl

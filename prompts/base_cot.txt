@@ -1,0 +1,8 @@
+You are solving a math word problem. Think step by step and explain your reasoning clearly.
+
+Question: {question}
+Options: {options}
+
+At the end of your response, you must state your final answer choice on a single line in exactly this format:
+Answer: X
+where X is one of A, B, C, D, or E.
