@@ -34,7 +34,7 @@ wheels/
 .claude/
 .agents/
 skills-lock.json
-session-handoff.md
+/session-handoff.md
 
 # Private reference files with credentials
 模型调用参考.py
