@@ -25,17 +25,17 @@ echo ""
 echo "Estimated time:"
 echo "  base_cot           ~ 30 min"
 echo "  rag_cot            ~ 10 min"
-echo "  self_consistency   ~ 60 min (3 paths)"
-echo "  prefix_consistency ~ 90 min (3 paths + 3 regens each)"
+echo "  self_consistency   ~ 25 min (7 paths with early stopping)"
+echo "  prefix_consistency ~ 55 min (3 paths + 3 regens each)"
 echo "  multi_agent_debate ~ 120 min (3 agents x 2 rounds)"
 echo "  step_verifier      ~ 240-300 min (3 paths + step verification)"
 echo ""
-echo "Total: ~8-10 hours if run sequentially"
+echo "Total: ~7-8 hours if run sequentially"
 echo "========================================"
 echo ""
 
 # Strategy 1: base_cot
-echo "[1/5] Running base_cot..."
+echo "[1/6] Running base_cot..."
 python harness.py \
   --strategy base_cot \
   --dataset aqua \
@@ -45,7 +45,7 @@ python harness.py \
   --model $MODEL
 
 # Strategy 2: rag_cot
-echo "[2/5] Running rag_cot..."
+echo "[2/6] Running rag_cot..."
 python harness.py \
   --strategy rag_cot \
   --dataset aqua \
@@ -64,7 +64,7 @@ python harness.py \
   --api_key $API_KEY \
   --base_url $BASE_URL \
   --model $MODEL \
-  --n_paths 3
+  --n_paths 7
 
 # Strategy 4: prefix_consistency
 echo "[4/6] Running prefix_consistency..."

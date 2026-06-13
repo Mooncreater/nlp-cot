@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Run all 5 COT strategies on 50 AQuA samples.
+Run all 6 COT strategies on 50 AQuA samples.
 
 Usage:
     python scripts/run_experiments.py          # 串行运行（推荐，避免API限流）
@@ -32,7 +32,7 @@ OUTPUT_DIR = "experiments/runs"
 EXPERIMENTS = [
     ("base_cot", []),
     ("rag_cot", ["--top_k", "3"]),
-    ("self_consistency", ["--n_paths", "3"]),
+    ("self_consistency", ["--n_paths", "7"]),
     ("prefix_consistency", ["--n_paths", "3", "--truncation_ratio", "0.5", "--regen_count", "3", "--weight_fn", "linear"]),
     ("multi_agent_debate", ["--n_agents", "3", "--n_rounds", "2"]),
     ("step_verifier", ["--n_paths", "3"]),

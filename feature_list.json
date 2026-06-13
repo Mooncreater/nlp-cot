@@ -35,10 +35,10 @@
     {
       "id": "feat-005",
       "name": "Self-Consistency策略实现",
-      "description": "实现多条推理路径采样+投票聚合的Self-Consistency策略",
+      "description": "实现多条推理路径采样+路径质量加权投票聚合的Self-Consistency策略，支持提前停止和空答案重试",
       "dependencies": ["feat-004"],
       "status": "completed",
-      "evidence": "strategies/self_consistency.py + verify_feat005.py 干跑验证通过"
+      "evidence": "strategies/self_consistency.py 实现路径质量评分（推理步数/数学符号/答案格式/长度惩罚/一致性惩罚）+ 加权投票 + 提前停止 + 空答案重试；50样本准确率从92%提升至94%；verify_feat005.py 干跑验证通过"
     },
     {
       "id": "feat-006",
@@ -86,7 +86,7 @@
       "description": "基于 Prefix Consistency（PC-WMV）的可靠性加权投票策略：截断 CoT 前缀并再生，用答案复现率作为权重进行加权多数投票，达到标准 Self-Consistency 准确率的同时显著降低 token 消耗",
       "dependencies": ["feat-005"],
       "status": "completed",
-      "evidence": "strategies/prefix_consistency.py 实现截断-再生-加权投票全流程；支持 linear/quadratic/cubic/unanimous 权重函数；verify_feat011.py 干跑验证通过"
+      "evidence": "strategies/prefix_consistency.py 实现截断-再生-加权投票全流程；支持 linear/quadratic/cubic/unanimous 权重函数；verify_feat011.py 干跑验证通过；50样本测试达到47/50=94%准确率，平均输出token 160.9"
     }
   ]
 }
