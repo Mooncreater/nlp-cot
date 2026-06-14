@@ -1,6 +1,6 @@
 #!/bin/bash
 # Run all 6 COT strategies on AQuA samples
-# Usage: bash scripts/run_all_50.sh [N_SAMPLES]
+# Usage: bash scripts/run_all.sh [N_SAMPLES]
 #   N_SAMPLES: number of samples to test (default: 100)
 # Note: step_verifier is very slow (~5min/sample, ~4-5h for 50, ~8-10h for 100)
 

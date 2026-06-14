@@ -58,8 +58,8 @@
 │   └── simple_retriever.py     # 基于关键词的 TF-IDF 检索
 ├── scripts/                    # 运行脚本
 │   ├── init.sh                 # 环境验证脚本
-│   ├── run_all_50.sh           # 50 样本批量测试脚本（Bash）
-│   └── run_experiments.py      # 50 样本批量测试脚本（Python）
+│   ├── run_all.sh              # 批量测试 Bash 脚本
+│   └── run_experiments.py      # 批量测试 Python 脚本
 ├── tests/                      # 功能验证测试
 │   ├── verify_feat004.py
 │   ├── verify_feat005.py
@@ -169,7 +169,7 @@ python scripts/run_experiments.py --strategy base_cot
 python scripts/run_experiments.py --parallel --max_workers 3
 
 # 方式二：Bash 脚本
-bash scripts/run_all_50.sh
+bash scripts/run_all.sh
 ```
 
 ### 自定义参数
@@ -306,8 +306,8 @@ python harness_report.py
 | 文件 | 说明 |
 |---|---|
 | `harness.py` | 实验主入口，注册全部策略，支持命令行参数，实时显示进度与准确率 |
-| `scripts/run_experiments.py` | 50 样本批量测试 Python 脚本，支持串行/并行/单策略模式 |
-| `scripts/run_all_50.sh` | 50 样本批量测试 Bash 脚本，顺序执行全部 6 种策略 |
+| `scripts/run_experiments.py` | 批量测试 Python 脚本，支持串行/并行/单策略模式 |
+| `scripts/run_all.sh` | 批量测试 Bash 脚本，顺序执行全部策略 |
 | `eval/metrics.py` | 评估指标：准确率、推理步数、Token 估算、多实验对比 |
 | `eval/analyze.py` | CLI 分析工具，对比多次实验并打印格式化表格 |
 | `harness_report.py` | 生成 Harness 子系统覆盖矩阵 |
