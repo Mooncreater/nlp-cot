@@ -2,9 +2,9 @@
 
 ## Current State
 
-**Last Updated:** 2026-06-09
-**Session ID:** setup-001
-**Active Feature:** all planned features completed (feat-001 ~ feat-010)
+**Last Updated:** 2026-06-16
+**Session ID:** 100-sample-exp
+**Active Feature:** 100-sample benchmark experiments (feat-004 ~ feat-008)
 
 ## Status
 
@@ -34,6 +34,12 @@
   - [x] verify_feat010.py 验证五子系统声明与覆盖演进
 - [x] 编写 dry-run 验证脚本：verify_feat004.py ~ verify_feat010.py
 - [x] `./init.sh` 验证通过（含 feat-004 ~ feat-010 干跑验证）
+- [x] 100 样本真实 API 实验（deepseek-chat，AQuA test 前 100 条）
+  - [x] base_cot：91/100 = 91.0%，avg_out_tokens=187.6
+  - [x] self_consistency：94/100 = 94.0%，avg_out_tokens=238.6
+  - [x] rag_cot：78/100 = 78.0%，avg_out_tokens=175.7
+  - [x] multi_agent_debate：91/100 = 91.0%，avg_out_tokens=370.8
+  - [x] step_verifier（deepseek-v4-flash）：94/100 = 94.0%，avg_out_tokens=563.7
 
 ### What's In Progress
 
@@ -41,12 +47,10 @@
 
 ### What's Next
 
-1. 使用真实 API 在 AQuA 上运行小样本实验并记录结果：
-   - `python harness.py --strategy base_cot --dataset aqua --n_samples 20`
-   - `python harness.py --strategy self_consistency --dataset aqua --n_samples 20 --n_paths 5`
-   - `python harness.py --strategy step_verifier --dataset aqua --n_samples 20 --n_paths 3`
-   - `python harness.py --strategy rag_cot --dataset aqua --n_samples 20 --top_k 3`
-   - `python harness.py --strategy multi_agent_debate --dataset aqua --n_samples 20 --n_agents 3 --n_rounds 2`
+1. 补全剩余策略的 100 样本基准测试：
+   - prefix_consistency：`python harness.py --strategy prefix_consistency --dataset aqua --n_samples 100 --n_paths 3`
+   - few_shot_cot：`python harness.py --strategy few_shot_cot --dataset aqua --n_samples 100 --n_shots 5`
+   - step_verifier（deepseek-chat）：`python harness.py --strategy step_verifier --dataset aqua --n_samples 100 --n_paths 3`
 2. 对实验结果运行对比分析：`python eval/analyze.py --runs_dir experiments/runs --latest 5`
 3. 根据实验结果撰写报告：比较各 CoT 策略准确率、推理步数、token消耗与 Harness 子系统覆盖关系
 

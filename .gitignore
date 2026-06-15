@@ -38,6 +38,7 @@ skills-lock.json
 
 # Private reference files with credentials
 模型调用参考.py
+env
 
 # OS
 .DS_Store

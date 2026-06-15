@@ -225,14 +225,14 @@ python harness_report.py
 - **原理**：对同一问题采样多条推理路径，通过**路径质量加权投票**确定最终答案。每条路径根据推理步数、数学符号密度、明确答案格式、长度合理性、答案一致性等维度评分，避免低质量路径干扰投票。支持**提前停止**（当领先者无法被超越时自动结束采样）和**空答案重试**机制
 - **参数**：`--n_paths N`（推荐 7；策略内部默认 `min_paths=3`、`early_stop=True`、`retry_on_empty=True`）
 - **Harness 覆盖**：Instructions + Environment + State（3/5）
-- **特点**：轻量级路径质量评估显著提升投票可靠性。50 样本准确率从简单多数投票的 92% 提升至 **94%**，与 Multi-Agent Debate 持平，但速度和 token 消耗远低于后者
+- **特点**：轻量级路径质量评估显著提升投票可靠性。100 样本（deepseek-chat）准确率达到 **94%**，与 Prefix Consistency 持平，且输出 token 仅 238.6，速度和成本远低于 Multi-Agent Debate
 
 ### 3. Prefix Consistency
 
 - **原理**：对每条 CoT 推理链在中间截断（如 50%），用前缀重新生成后续内容。正确推理链的原始答案在再生中复现率更高，用这个复现率作为权重进行加权多数投票
 - **参数**：`--n_paths N`（初始路径数，默认 5），`--truncation_ratio R`（截断比例，默认 0.5），`--regen_count K`（每前缀再生次数，默认 3），`--weight_fn F`（权重函数：`linear`/`quadratic`/`cubic`/`unanimous`，默认 `linear`）
 - **Harness 覆盖**：Instructions + Environment + State + Feedback（4/5）
-- **特点**：无需 logprob 或自评 prompt，用轻量级的再生一致性作为可靠性信号。50 样本准确率达到 **94%**，与增强版 Self-Consistency 和 Multi-Agent Debate 并列最高；平均输出 token 仅 **160.9**，低于 base_cot 与 self_consistency，但因前缀再生需要更多 API 调用，墙钟时间约 64.4s/题
+- **特点**：无需 logprob 或自评 prompt，用轻量级的再生一致性作为可靠性信号。50 样本准确率达到 **94%**（100 样本待测），与增强版 Self-Consistency 和 Multi-Agent Debate 并列最高；平均输出 token 仅 **160.9**，低于 base_cot 与 self_consistency，但因前缀再生需要更多 API 调用，墙钟时间约 64.4s/题
 
 ### 4. Step-Aware Verifier
 
@@ -243,7 +243,7 @@ python harness_report.py
 - **多 Prompt 多样生成**：支持 `--n_prompts` 个不同 prompt（各含随机 few-shot 示例），每个 prompt 生成 `--n_paths` 条路径
 - **参数**：`--n_paths N`（每 prompt 路径数，默认 5），`--n_prompts N`（不同 prompt 数，默认 3），`--local_verifier`（启用本地 DeBERTa verifier），`--verifier_model_path PATH`（模型路径，默认 `data/checkpoint/`）
 - **Harness 覆盖**：Instructions + Tools + Environment + State + Feedback（5/5）
-- **特点**：完整覆盖 Harness 五子系统。本地 verifier 模式下，50 样本测试从 **206.6s/题**（LLM verifier）降至 **52.3s/题**（本地 verifier），快 4 倍
+- **特点**：完整覆盖 Harness 五子系统。本地 verifier 模式下，50 样本测试从 **206.6s/题**（LLM verifier）降至 **52.3s/题**（本地 verifier），快 4 倍。100 样本（deepseek-v4-flash LLM verifier）准确率 **94%**
 
 ### 5. Few-Shot CoT
 
@@ -284,6 +284,20 @@ python harness_report.py
 
 ---
 
+## 📈 100 样本实验结果（AQuA test 前 100 条，deepseek-chat）
+
+| 策略 | 准确率 | 平均输出 Token | 综合性价比 |
+|---|---|---|---|
+| **self_consistency** | **94.0%** ⭐ | 238.6 | ⭐⭐⭐⭐⭐ **高准确率 + 低 token 消耗** |
+| **step_verifier (LLM)** | **94.0%** ⭐ | 563.7 | ⭐⭐⭐ **准确率高但 token 消耗大** |
+| base_cot | 91.0% | 187.6 | ⭐⭐⭐⭐⭐ **最佳基础性价比** |
+| multi_agent_debate | 91.0% | 370.8 | ⭐⭐⭐ 多 Agent 互评，成本较高 |
+| rag_cot | **78.0%** ▼ | 175.7 | ⭐⭐ 检索噪声损害性能 |
+| prefix_consistency | — | — | ⭐⭐⭐⭐ 50 样本达 94%，100 样本待测 |
+| few_shot_cot | — | — | ⭐⭐⭐ 待基准测试 |
+
+> 注：step_verifier 100 样本由 deepseek-v4-flash 运行；其余均为 deepseek-chat。
+
 ## 📈 50 样本实验结果（AQuA test 前 50 条）
 
 | 策略 | 准确率 | 平均耗时/条 | 平均 Token | 综合性价比 |
@@ -297,7 +311,8 @@ python harness_report.py
 | few_shot_cot | — | — | — | ⭐⭐⭐ 待基准测试 |
 | rag_cot | **78.0%** ▼ | 4.2s | 151.3 | ⭐⭐ 检索噪声损害性能 |
 
-> 详细分析见 [`experiments/report_50_sample_20260611.md`](experiments/report_50_sample_20260611.md)
+> 详细分析见 [`experiments/report_100_sample_20260615.md`](experiments/report_100_sample_20260615.md)  
+> 历史 50 样本分析见 [`experiments/report_50_sample_20260611.md`](experiments/report_50_sample_20260611.md)
 
 ---
 

@@ -1,0 +1,1357 @@
+{
+  "run_id": "20260615_121728",
+  "timestamp": "2026-06-15T12:34:58.152129",
+  "config": {
+    "strategy": "self_consistency",
+    "task": "aqua",
+    "model": "deepseek-chat",
+    "dataset_split": "test",
+    "n_samples": 100,
+    "temperature": 0.7,
+    "max_tokens": 1024
+  },
+  "strategy_info": {
+    "name": "self_consistency",
+    "config": {
+      "n_paths": 5,
+      "temperature": 0.7,
+      "min_paths": 3,
+      "early_stop": true,
+      "retry_on_empty": true
+    },
+    "harness_subsystems": {
+      "instructions": true,
+      "tools": false,
+      "environment": true,
+      "state": true,
+      "feedback": false
+    }
+  },
+  "task_info": {
+    "name": "aqua",
+    "config": {},
+    "dataset": "AQuA",
+    "data_dir": "data/AQuA"
+  },
+  "model_info": {
+    "model_name": "deepseek-chat",
+    "config": {},
+    "provider": "dmxapi_openai_compatible"
+  },
+  "metrics": {
+    "accuracy": 0.94,
+    "correct": 94,
+    "total": 100,
+    "avg_reasoning_steps": 8.04,
+    "avg_input_tokens": 129.96,
+    "avg_output_tokens": 238.56,
+    "total_input_tokens": 12996,
+    "total_output_tokens": 23856,
+    "detailed": [
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 11,
+        "input_tokens": 174,
+        "output_tokens": 280
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 156,
+        "output_tokens": 182
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 102,
+        "output_tokens": 269
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 140,
+        "output_tokens": 248
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 102,
+        "output_tokens": 152
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 166,
+        "output_tokens": 258
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 109,
+        "output_tokens": 260
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 133,
+        "output_tokens": 173
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 133,
+        "output_tokens": 257
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 117,
+        "output_tokens": 137
+      },
+      {
+        "prediction": "C",
+        "correct": "B",
+        "is_correct": false,
+        "reasoning_steps": 8,
+        "input_tokens": 158,
+        "output_tokens": 285
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 132,
+        "output_tokens": 166
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 120,
+        "output_tokens": 172
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 81,
+        "output_tokens": 122
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 4,
+        "input_tokens": 109,
+        "output_tokens": 130
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 100,
+        "output_tokens": 124
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 13,
+        "input_tokens": 148,
+        "output_tokens": 341
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 153,
+        "output_tokens": 153
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 189,
+        "output_tokens": 182
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 12,
+        "input_tokens": 96,
+        "output_tokens": 226
+      },
+      {
+        "prediction": "D",
+        "correct": "C",
+        "is_correct": false,
+        "reasoning_steps": 14,
+        "input_tokens": 122,
+        "output_tokens": 750
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 154,
+        "output_tokens": 232
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 15,
+        "input_tokens": 134,
+        "output_tokens": 282
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 10,
+        "input_tokens": 134,
+        "output_tokens": 253
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 138,
+        "output_tokens": 166
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 110,
+        "output_tokens": 172
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 108,
+        "output_tokens": 176
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 10,
+        "input_tokens": 136,
+        "output_tokens": 221
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 122,
+        "output_tokens": 217
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 4,
+        "input_tokens": 106,
+        "output_tokens": 120
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 132,
+        "output_tokens": 156
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 4,
+        "input_tokens": 140,
+        "output_tokens": 121
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 19,
+        "input_tokens": 132,
+        "output_tokens": 928
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 149,
+        "output_tokens": 166
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 124,
+        "output_tokens": 180
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 122,
+        "output_tokens": 189
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 125,
+        "output_tokens": 177
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 12,
+        "input_tokens": 121,
+        "output_tokens": 194
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 10,
+        "input_tokens": 126,
+        "output_tokens": 140
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 12,
+        "input_tokens": 114,
+        "output_tokens": 257
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 121,
+        "output_tokens": 318
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 160,
+        "output_tokens": 204
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 90,
+        "output_tokens": 133
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 121,
+        "output_tokens": 178
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 136,
+        "output_tokens": 189
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 117,
+        "output_tokens": 116
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 3,
+        "input_tokens": 138,
+        "output_tokens": 114
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 138,
+        "output_tokens": 169
+      },
+      {
+        "prediction": "C",
+        "correct": "D",
+        "is_correct": false,
+        "reasoning_steps": 8,
+        "input_tokens": 102,
+        "output_tokens": 301
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 104,
+        "output_tokens": 145
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 114,
+        "output_tokens": 181
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 109,
+        "output_tokens": 196
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 112,
+        "output_tokens": 164
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 104,
+        "output_tokens": 153
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 149,
+        "output_tokens": 296
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 122,
+        "output_tokens": 158
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 129,
+        "output_tokens": 282
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 126,
+        "output_tokens": 196
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 140,
+        "output_tokens": 154
+      },
+      {
+        "prediction": "B",
+        "correct": "C",
+        "is_correct": false,
+        "reasoning_steps": 16,
+        "input_tokens": 114,
+        "output_tokens": 852
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 14,
+        "input_tokens": 136,
+        "output_tokens": 244
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 130,
+        "output_tokens": 272
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 118,
+        "output_tokens": 148
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 124,
+        "output_tokens": 221
+      },
+      {
+        "prediction": "B",
+        "correct": "D",
+        "is_correct": false,
+        "reasoning_steps": 9,
+        "input_tokens": 182,
+        "output_tokens": 248
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 118,
+        "output_tokens": 220
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 161,
+        "output_tokens": 172
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 130,
+        "output_tokens": 253
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 133,
+        "output_tokens": 337
+      },
+      {
+        "prediction": "E",
+        "correct": "C",
+        "is_correct": false,
+        "reasoning_steps": 3,
+        "input_tokens": 126,
+        "output_tokens": 832
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 133,
+        "output_tokens": 190
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 152,
+        "output_tokens": 266
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 4,
+        "input_tokens": 98,
+        "output_tokens": 129
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 113,
+        "output_tokens": 144
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 10,
+        "input_tokens": 130,
+        "output_tokens": 246
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 118,
+        "output_tokens": 318
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 192,
+        "output_tokens": 196
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 10,
+        "input_tokens": 168,
+        "output_tokens": 346
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 138,
+        "output_tokens": 173
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 153,
+        "output_tokens": 249
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 148,
+        "output_tokens": 320
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 128,
+        "output_tokens": 137
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 25,
+        "input_tokens": 117,
+        "output_tokens": 752
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 146,
+        "output_tokens": 232
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 106,
+        "output_tokens": 178
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 16,
+        "input_tokens": 121,
+        "output_tokens": 448
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 10,
+        "input_tokens": 126,
+        "output_tokens": 313
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 4,
+        "input_tokens": 106,
+        "output_tokens": 178
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 134,
+        "output_tokens": 172
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 121,
+        "output_tokens": 165
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 126,
+        "output_tokens": 190
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 158,
+        "output_tokens": 257
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 165,
+        "output_tokens": 209
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 114,
+        "output_tokens": 216
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 145,
+        "output_tokens": 206
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 140,
+        "output_tokens": 272
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 114,
+        "output_tokens": 184
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 137,
+        "output_tokens": 213
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 10,
+        "input_tokens": 141,
+        "output_tokens": 148
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 137,
+        "output_tokens": 149
+      }
+    ],
+    "elapsed_time": 1048.7653601169586,
+    "throughput": 0.09535021254787436
+  },
+  "results": [
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.39}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=8 penalties=[]\nPath 2: pred=A weight=2.13 steps=8 penalties=[]\nPath 3: pred=A weight=2.13 steps=6 penalties=[]\n\n--- Selected Evidence Path ---\nLet the height of the tower be \\( h \\).  \nAt the first observation (angle 45°), the car is at distance \\( d_1 \\) from the base:  \n\\[\n\\tan 45° = 1 = \\frac{h}{d_1} \\implies d_1 = h\n\\]\n\nAt the second observation (angle 60°), the car is at distance \\( d_2 \\) from the base:  \n\\[\n\\tan 60° = \\sqrt{3} = \\frac{h}{d_2} \\implies d_2 = \\frac{h}{\\sqrt{3}}\n\\]\n\nDistance covered in 10 minutes:  \n\\[\nd_1 - d_2 = h - \\frac{h}{\\sqrt{3}} = h\\left(1 - \\frac{1}{\\sqrt{3}}\\right)\n\\]\n\nSpeed of car:  \n\\[\nv = \\frac{h\\left(1 - \\frac{1}{\\sqrt{3}}\\right)}{10}\n\\]\n\nRemaining distance to base after second observation:  \n\\[\nd_2 = \\frac{h}{\\sqrt{3}}\n\\]\n\nTime required:  \n\\[\nt = \\frac{d_2}{v} = \\frac{\\frac{h}{\\sqrt{3}}}{\\frac{h}{10}\\left(1 - \\frac{1}{\\sqrt{3}}\\right)} \n= \\frac{10}{\\sqrt{3}\\left(1 - \\frac{1}{\\sqrt{3}}\\right)}\n\\]\n\nSimplify:  \n\\[\n1 - \\frac{1}{\\sqrt{3}} = \\frac{\\sqrt{3} - 1}{\\sqrt{3}}\n\\]\nSo  \n\\[\nt = \\frac{10}{\\sqrt{3} \\cdot \\frac{\\sqrt{3} - 1}{\\sqrt{3}}} \n= \\frac{10}{\\sqrt{3} - 1}\n\\]\n\nRationalize:  \n\\[\nt = \\frac{10(\\sqrt{3} + 1)}{3 - 1} = 5(\\sqrt{3} + 1)\n\\]\n\nThis matches option A.\n\nAnswer: A"
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'E': 3}\nWeighted Votes: {'E': 6.39}\nFinal Answer: E\n\n--- Path Summaries ---\nPath 1: pred=E weight=2.13 steps=6 penalties=[]\nPath 2: pred=E weight=2.13 steps=6 penalties=[]\nPath 3: pred=E weight=2.13 steps=9 penalties=[]\n\n--- Selected Evidence Path ---\nLet the original price be \\( p \\).\n\nA 22% discount means the sale price is \\( 0.78p \\).  \nAfter using a $20-off coupon, the customer pays \\( 0.78p - 20 \\).\n\nThe problem says this amount is $1.90 more than half the original price:  \n\n\\[\n0.78p - 20 = \\frac{p}{2} + 1.90\n\\]\n\nNow solve:\n\n\\[\n0.78p - 20 = 0.5p + 1.90\n\\]  \n\\[\n0.78p - 0.5p = 1.90 + 20\n\\]  \n\\[\n0.28p = 21.90\n\\]  \n\\[\np = \\frac{21.90}{0.28} = 78.20\n\\]\n\nThus the original price is $78.20.\n\nAnswer: E"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.6899999999999995}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.23 steps=4 penalties=[]\nPath 2: pred=A weight=2.23 steps=5 penalties=[]\nPath 3: pred=A weight=2.23 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nWe are looking for a number that is a multiple of X, but first we need to identify X.  \nThe problem says: find which value is the multiple of X, if it is divisible by 9 and 12.  \n\nThat means the number we pick must be divisible by both 9 and 12.  \nLet’s check the options:\n\n- A) 36: Divisible by 9? Yes, 36 ÷ 9 = 4. Divisible by 12? Yes, 36 ÷ 12 = 3. ✅  \n- B) 15: Divisible by 9? No. ❌  \n- C) 17: Divisible by 9? No. ❌  \n- D) 5: Divisible by 9? No. ❌  \n- E) 7: Divisible by 9? No. ❌  \n\nOnly 36 works. So X must be a divisor of 36 such that 36 is a multiple of X, and in this context, the \"multiple of X\" refers to 36 itself. That means X = 36, but since 36 is an option, the correct choice is A.\n\nAnswer: A"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 5.99}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.23 steps=5 penalties=[]\nPath 2: pred=B weight=1.88 steps=6 penalties=['no_strict_answer_line']\nPath 3: pred=B weight=1.88 steps=7 penalties=['no_strict_answer_line']\n\n--- Selected Evidence Path ---\nWe are asked for the greatest possible probability that neither stock increases.  \nLet:  \n- \\( P(A) = 0.56 \\)  \n- \\( P(B) = 0.74 \\)  \n\nThe probability that neither occurs is \\( 1 - P(A \\cup B) \\).  \nTo maximize \\( 1 - P(A \\cup B) \\), we need to minimize \\( P(A \\cup B) \\).\n\nThe minimum possible \\( P(A \\cup B) \\) occurs when the overlap between A and B is as large as possible, because  \n\\( P(A \\cup B) = P(A) + P(B) - P(A \\cap B) \\).  \nThe maximum possible \\( P(A \\cap B) \\) is the smaller of \\( P(A) \\) and \\( P(B) \\), which is 0.56.  \n\nSo minimum \\( P(A \\cup B) = 0.56 + 0.74 - 0.56 = 0.74 \\).  \n\nThus maximum probability that neither occurs:  \n\\( 1 - 0.74 = 0.26 \\).  \n\nAnswer: B"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.029999999999999}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.01 steps=3 penalties=[]\nPath 2: pred=B weight=2.01 steps=3 penalties=[]\nPath 3: pred=B weight=2.01 steps=3 penalties=[]\n\n--- Selected Evidence Path ---\nThe selling price (SP) is Rs. 360, and the profit is 20% of the cost price (CP).  \nThis means SP = CP + 20% of CP = 120% of CP.  \n\nSo, 120% of CP = 360  \n=> (120/100) × CP = 360  \n=> CP = 360 × (100/120)  \n=> CP = 360 × (5/6)  \n=> CP = 60 × 5 = 300  \n\nThus, the cost price is Rs. 300.\n\nAnswer: B"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.39}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.13 steps=6 penalties=[]\nPath 2: pred=D weight=2.13 steps=6 penalties=[]\nPath 3: pred=D weight=2.13 steps=8 penalties=[]\n\n--- Selected Evidence Path ---\nLet’s break it down.\n\n**Step 1 – First action**  \nOriginally, the bag had only white marbles.  \n20 marbles were taken out, painted black, and put back.  \nSo now there are 20 black marbles, and the rest are white.  \nTotal marbles = Q (unknown).\n\n**Step 2 – Second action**  \nAnother 20 marbles were pulled out.  \nIn this sample, 1 was black and 19 were white.  \nThey were then returned.\n\n**Step 3 – Interpreting the percentage condition**  \nThe problem says: \"If the percentage of black marbles pulled out the second time represents their percentage in the bag.\"  \nThis means the fraction of black marbles in the sample (1 out of 20) equals the fraction of black marbles in the whole bag.\n\nSo:\n\n\\[\n\\frac{1}{20} = \\frac{20}{Q}\n\\]\n\n**Step 4 – Solve for Q**  \nCross multiply:\n\n\\[\n1 \\cdot Q = 20 \\cdot 20\n\\]\n\\[\nQ = 400\n\\]\n\n**Answer: D**\n\nAnswer: D"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.39}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.13 steps=6 penalties=[]\nPath 2: pred=D weight=2.13 steps=4 penalties=[]\nPath 3: pred=D weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nWe have to form bike numbers using 2 letters followed by 2 numbers.\n\nFirst, the problem says \"How many letters need to be distinct?\" — this likely means that the two letters must be distinct from each other.\n\nSo here’s the breakdown:\n\n- **Letters**: There are 26 letters in the English alphabet.  \n  Since the two letters must be distinct,  \n  Number of ways to choose the first letter = 26  \n  Number of ways to choose the second letter = 25 (cannot be same as first)  \n  So, total letter combinations = \\( 26 \\times 25 = 650 \\)\n\n- **Numbers**: There are 10 digits (0–9).  \n  They can be repeated because no restriction is mentioned.  \n  So, number of ways for two digits = \\( 10 \\times 10 = 100 \\)\n\nNow, total distinct bike numbers = \\( 650 \\times 100 = 65000 \\)\n\nThus, the answer is **65000**, which corresponds to option D.\n\nAnswer: D"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 6.39}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=2.13 steps=4 penalties=[]\nPath 2: pred=C weight=2.13 steps=7 penalties=[]\nPath 3: pred=C weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nFirst, find the total distance.  \nSpeed = 100 miles/hour, time = 10 hours.  \nDistance = 100 × 10 = 1000 miles.\n\nQuarter of the distance = 1000 ÷ 4 = 250 miles.  \nTime taken to cover first 250 miles at 100 mph = 250 ÷ 100 = 2.5 hours.\n\nRemaining distance = 1000 − 250 = 750 miles.  \nSpeed for remaining part = 75 mph.  \nTime for remaining = 750 ÷ 75 = 10 hours.\n\nTotal journey time = 2.5 + 10 = 12.5 hours.\n\nAnswer: C"
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'E': 3}\nWeighted Votes: {'E': 6.1899999999999995}\nFinal Answer: E\n\n--- Path Summaries ---\nPath 1: pred=E weight=2.13 steps=6 penalties=[]\nPath 2: pred=E weight=2.08 steps=13 penalties=['too_long']\nPath 3: pred=E weight=1.98 steps=10 penalties=['too_long']\n\n--- Selected Evidence Path ---\nWe are told there are 200 students.  \nAt least 45% attended prom → that’s at least 0.45 × 200 = 90 students.  \nAt least 35% took part in debating → at least 0.35 × 200 = 70 students.\n\nWe want the maximum number who did **neither** activity.\n\nTo maximize neither, we want to minimize the number of students who did at least one activity.  \nThe minimum number who did at least one occurs when we overlap the two groups as much as possible (i.e., the same students do both).\n\nIf we put the 90 prom attendees and 70 debating participants together with maximum overlap, the total unique students involved is just the larger group: 90 (since 70 can all be within the 90).  \n\nSo minimum who did at least one = 90.  \nThus maximum who did neither = 200 − 90 = 110.\n\nThat corresponds to option E.\n\nAnswer: E"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 5.96}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.01 steps=3 penalties=[]\nPath 2: pred=D weight=1.94 steps=2 penalties=[]\nPath 3: pred=D weight=2.01 steps=3 penalties=[]\n\n--- Selected Evidence Path ---\nFirst, the salesperson earns a 10% commission on each sale.  \nA sale of $250 means the commission per sale is:  \n10% of $250 = 0.10 × 250 = $25.  \n\nTo reach a total commission of at least $1000, the number of sales needed is:  \n$1000 ÷ $25 = 40 sales.  \n\nSo the minimum number of sales is 40.\n\nAnswer: D"
+    },
+    {
+      "prediction": "C",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 6.39}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=2.13 steps=6 penalties=[]\nPath 2: pred=C weight=2.13 steps=11 penalties=[]\nPath 3: pred=C weight=2.13 steps=10 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told the company produces 420 units per month.  \nYearly production = \\( 420 \\times 12 = 5040\\) units.  \nProduction cost per unit = $110, so total yearly cost = \\( 5040 \\times 110 = 554,400\\).\n\nWe want the yearly profit to be at least $626,400.  \nLet selling price per unit be \\( p \\).  \nYearly revenue = \\( 5040p \\).  \n\nProfit = Revenue - Cost = \\( 5040p - 554,400 \\).  \nWe require:  \n\\[\n5040p - 554,400 \\geq 626,400\n\\]  \nAdd 554,400 to both sides:  \n\\[\n5040p \\geq 1,180,800\n\\]  \nDivide by 5040:  \n\\[\np \\geq \\frac{1,180,800}{5040}\n\\]  \n\nSimplify:  \n\\( 1,180,800 \\div 5040 \\)  \nFirst, divide by 10: \\( 118,080 \\div 504 \\)  \nDivide by 2: \\( 59,040 \\div 252 \\)  \nDivide by 2 again: \\( 29,520 \\div 126 \\)  \nDivide by 2: \\( 14,760 \\div 63 \\)  \nNow \\( 63 \\times 234 = 14,742 \\), remainder 18, so \\( 234 + \\frac{18}{63} = 234.2857...\\)  \n\nThus \\( p \\geq 234.2857...\\)  \n\nThe smallest option above that is $240.\n\nAnswer: C"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.27}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.01 steps=3 penalties=[]\nPath 2: pred=A weight=2.13 steps=5 penalties=[]\nPath 3: pred=A weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nLet the total number of staplers produced on Monday be \\( T \\).  \n\n- 10% were defective, so 0.1T defective.  \n- Therefore, non-defective = \\( T - 0.1T = 0.9T \\).  \n\nOf the non-defective staplers, 2% were rejected by mistake.  \nNumber mistakenly rejected = \\( 0.02 \\times 0.9T = 0.018T \\).  \n\nWe are told this equals 72:  \n\\[\n0.018T = 72\n\\]  \n\\[\nT = \\frac{72}{0.018} = \\frac{72000}{18} = 4000\n\\]\n\nSo the total number of staplers produced is 4,000.\n\nAnswer: A"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 6.39}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=2.13 steps=4 penalties=[]\nPath 2: pred=C weight=2.13 steps=4 penalties=[]\nPath 3: pred=C weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nWe need to find the time when the total number of yo-yos from both machines equals 10.\n\nMachine A produces 1 yo-yo every 6 minutes → rate = \\( \\frac{1}{6} \\) yo-yo per minute.  \nMachine B produces 1 yo-yo every 9 minutes → rate = \\( \\frac{1}{9} \\) yo-yo per minute.\n\nCombined rate:  \n\\[\n\\frac{1}{6} + \\frac{1}{9} = \\frac{3}{18} + \\frac{2}{18} = \\frac{5}{18}\n\\]\nyo-yos per minute.\n\nTo produce 10 yo-yos:  \n\\[\n\\text{Time} = \\frac{10}{\\frac{5}{18}} = 10 \\times \\frac{18}{5} = 36 \\text{ minutes}.\n\\]\n\nAnswer: C"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 5.430000000000001}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=1.77 steps=1 penalties=[]\nPath 2: pred=D weight=1.89 steps=2 penalties=[]\nPath 3: pred=D weight=1.77 steps=1 penalties=[]\n\n--- Selected Evidence Path ---\nLet's think through it step by step.\n\nWe are adding +45 and -30.  \nThis is the same as 45 + (-30), which means starting at 45 on the number line and moving 30 units to the left.\n\n45 - 30 = 15.\n\nSo the result is +15.\n\nAnswer: D"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 5.16}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=1.71 steps=1 penalties=[]\nPath 2: pred=C weight=1.80 steps=2 penalties=[]\nPath 3: pred=C weight=1.65 steps=1 penalties=[]\n\n--- Selected Evidence Path ---\nThe word \"PROBLEC\" has 7 letters, and they are all distinct: P, R, O, B, L, E, C.  \nWe want to rearrange all 7 letters to form 7-letter words, with no repetition.  \nThe number of distinct arrangements of 7 distinct letters is simply 7! (7 factorial).\n\nThus, the correct answer is option C.\n\nAnswer: C"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 5.550000000000001}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=1.93 steps=3 penalties=[]\nPath 2: pred=A weight=1.81 steps=2 penalties=[]\nPath 3: pred=A weight=1.81 steps=2 penalties=[]\n\n--- Selected Evidence Path ---\nWe are given that events A and B are independent.  \nFor independent events, the probability of A given B is simply the probability of A, because the occurrence of B does not affect A.\n\nSo,  \nP(A | B) = P(A) = 0.2.\n\nThus, the correct option is A.\n\nAnswer: A"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.04}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=8 penalties=[]\nPath 2: pred=A weight=2.13 steps=7 penalties=[]\nPath 3: pred=A weight=1.78 steps=4 penalties=['no_strict_answer_line']\n\n--- Selected Evidence Path ---\nWe are on a descending staircase elevator.  \nLet:\n\n- \\( v \\) = speed of elevator in steps per minute (downward).\n- \\( N \\) = total number of steps in the staircase.\n- The person walks downward.\n\n---\n\n**First scenario:**  \nWalk 20 steps, then stop.  \nTime to reach bottom = 10 minutes.\n\nWhile walking, the person covers 20 steps relative to the elevator.  \nThe elevator also moves downward, so the net distance covered relative to the ground is:\n\nIn 10 minutes, the elevator moves \\( 10v \\) steps downward.  \nThe person walks 20 steps downward relative to the elevator.  \nSo total downward distance relative to ground = \\( 20 + 10v \\).  \nThis equals the total steps \\( N \\):\n\n\\[\nN = 20 + 10v\n\\]\n\n---\n\n**Second scenario:**  \nWalk 10 steps, then stop.  \nTime to reach bottom = 20 minutes.\n\nIn 20 minutes, the elevator moves \\( 20v \\) steps downward.  \nThe person walks 10 steps downward relative to the elevator.  \nSo:\n\n\\[\nN = 10 + 20v\n\\]\n\n---\n\n**Solve:**\n\nFrom the two equations:\n\n\\[\n20 + 10v = 10 + 20v\n\\]\n\\[\n20 - 10 = 20v - 10v\n\\]\n\\[\n10 = 10v\n\\]\n\\[\nv = 1 \\text{ step/minute}\n\\]\n\n---\n\n**Answer: A**  \n\nAnswer: A"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.27}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.13 steps=4 penalties=[]\nPath 2: pred=D weight=2.01 steps=3 penalties=[]\nPath 3: pred=D weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nLet's break it down:\n\n- Last year: 12 months, average 42 per month.  \n  Total sold last year = 12 × 42 = 504.\n\n- This year so far: 10 months, average 20 per month.  \n  Total sold in these 10 months = 10 × 20 = 200.\n\n- Total sold over the 22 months = 504 + 200 = 704.\n\n- Average over 22 months = 704 ÷ 22 = 32.\n\nAnswer: D"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.39}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.13 steps=4 penalties=[]\nPath 2: pred=D weight=2.13 steps=4 penalties=[]\nPath 3: pred=D weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told:\n\n- Average of highest and lowest scores = \\( x \\).  \n  So highest + lowest = \\( 2x \\).\n\n- Average of all \\( z \\) students = \\( y \\).  \n  So sum of all scores = \\( zy \\).\n\nWe want the average excluding highest and lowest.  \nThat sum = total sum – (highest + lowest) = \\( zy - 2x \\).  \nNumber of students left = \\( z - 2 \\).  \n\nTherefore, average excluding them =  \n\\[\n\\frac{zy - 2x}{z - 2}\n\\]\n\nThat matches option D.\n\nAnswer: D"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 6.39}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=2.13 steps=8 penalties=[]\nPath 2: pred=C weight=2.13 steps=7 penalties=[]\nPath 3: pred=C weight=2.13 steps=9 penalties=[]\n\n--- Selected Evidence Path ---\nWe are solving:\n\n\\[\n\\frac{5 + ? \\times 19 - 15 - 7}{13 \\times 13 - 156} = 6\n\\]\n\n**Step 1: Simplify the denominator**  \n\\(13 \\times 13 = 169\\)  \n\\(169 - 156 = 13\\)\n\nSo the equation becomes:\n\n\\[\n\\frac{5 + ? \\times 19 - 15 - 7}{13} = 6\n\\]\n\n**Step 2: Multiply both sides by 13**  \n\\(5 + ? \\times 19 - 15 - 7 = 78\\)\n\n**Step 3: Combine constants on the left**  \n\\(5 - 15 - 7 = -17\\)  \nSo:  \n\\(-17 + 19 \\times ? = 78\\)\n\n**Step 4: Add 17 to both sides**  \n\\(19 \\times ? = 95\\)\n\n**Step 5: Divide by 19**  \n\\(? = 95 / 19 = 5\\)\n\nThe answer is 5, which corresponds to option C.\n\nAnswer: C"
+    },
+    {
+      "prediction": "D",
+      "correct": "C",
+      "output": "=== Self-Consistency (5/5 paths) ===\nRaw Votes: {'D': 2, 'A': 1, 'E': 1}\nWeighted Votes: {'A': 1.98, 'D': 3.71, 'E': 2.08}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=1.68 steps=14 penalties=['no_strict_answer_line', 'too_long']\nPath 2: pred=D weight=2.03 steps=12 penalties=['too_long']\nPath 3: pred=? weight=0.00 steps=0 penalties=['missing_or_invalid_prediction']\nPath 4: pred=A weight=1.98 steps=14 penalties=['too_long']\nPath 5: pred=E weight=2.08 steps=15 penalties=['too_long']\n\n--- Selected Evidence Path ---\nFirst, the grocer makes a 25% profit on the selling price.  \nThat means for each bag sold at $100, the profit per bag is:  \n25% of $100 = 0.25 × $100 = $25.\n\nIf his total profit is $3,000, then the number of bags sold is:  \nTotal profit ÷ Profit per bag = $3,000 ÷ $25 = 120 bags.\n\nWait—120 is not among the options. This suggests I need to check the interpretation.  \n“25% profit on the selling price” means profit is 25% of the selling price, which I used. That gives $25 per bag, leading to 120 bags—but that’s not an option.  \n\nLet’s re-read: \"makes a 25% profit on the selling price\" – maybe they mean profit is 25% of *cost*, not selling price? But the wording says “on the selling price.”  \n\nAlternatively, if they meant 25% profit *based on cost*, then:  \nSelling price = Cost + 0.25 × Cost = 1.25 × Cost  \n$100 = 1.25 × Cost → Cost = $80  \nProfit per bag = $20  \nNumber of bags = $3,000 ÷ $20 = 150 — still not an option.  \n\nGiven the options are small, maybe the intended meaning is that the profit margin is 25% of the selling price, but the $3,000 is the *total* profit, so 3,000 ÷ 25 = 120—still not listed.  \n\nLet’s try seeing if they meant something else:  \nMaybe “makes a 25% profit” means the profit is 25% of the *cost* and the profit total is $3,000?  \nIf profit per bag = 0.25 × cost, and selling price = cost + profit = 1.25 × cost = $100 → cost = $80 → profit = $20.  \n$3,000 ÷ $20 = 150 — no.  \n\nPerhaps the profit per bag is 25% of selling price = $25, but total profit $3,000 might be *overall* and includes multiple products? No.  \n\nGiven the mismatch, I suspect they intended profit as 25% of cost price, but the numbers still don’t match options. Let’s try using the options backward:  \n\nIf he sold 40 bags (option E), profit per bag = $3,000 ÷ 40 = $75 profit per bag. But selling price is $100, so cost would be $25, and profit percentage on selling price = 75/100 = 75% — not 25%.  \nIf 30 bags → profit per bag = $100 → cost = $0 — impossible.  \nIf 24 bags → profit per bag = $125 — more than selling price, impossible.  \nIf 16 bags → profit per bag = $187.50 — impossible.  \nIf 12 bags → profit per bag = $250 — impossible.  \n\nSo none work with $3,000 total profit. This suggests the $3,000 might be *revenue*?  \nIf revenue = $3,000 and each bag $100 → 30 bags → option D.  \n\nGiven typical exam problems, it’s likely they meant total *profit* = $3,000, but then 120 is not an option, so perhaps it’s actually total *sales* = $3,000?  \nIf total sales = $3,000 and each bag = $100 → 30 bags. That matches option D.\n\nAnswer: D"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 5.6899999999999995}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=1.78 steps=8 penalties=['no_strict_answer_line']\nPath 2: pred=A weight=1.78 steps=6 penalties=['no_strict_answer_line']\nPath 3: pred=A weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nLet’s define:\n\n- Alex’s rate: 1 toy per 7 hours → \\( \\frac{1}{7} \\) toys per hour  \n- Jacob’s rate: 1 toy per 9 hours → \\( \\frac{1}{9} \\) toys per hour  \n\nLet the number of hours each worked be \\( h \\) (since they worked almost the same number of hours).  \n\nTotal toys made:  \n\\[\n\\frac{h}{7} + \\frac{h}{9} = 35\n\\]  \nFind common denominator (63):  \n\\[\n\\frac{9h}{63} + \\frac{7h}{63} = \\frac{16h}{63} = 35\n\\]  \n\\[\n16h = 35 \\times 63\n\\]  \n\\[\n16h = 2205\n\\]  \n\\[\nh = \\frac{2205}{16} = 137.8125\n\\]  \n\nJacob’s toys:  \n\\[\n\\frac{h}{9} = \\frac{137.8125}{9} \\approx 15.3125\n\\]  \n\nSince they worked *almost* the same hours but not exactly, the integer closest to 15.3 for Jacob’s toys, given the total must be 35, is 15.  \n\nAnswer: A"
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'E': 3}\nWeighted Votes: {'E': 6.04}\nFinal Answer: E\n\n--- Path Summaries ---\nPath 1: pred=E weight=1.78 steps=8 penalties=['no_strict_answer_line']\nPath 2: pred=E weight=2.13 steps=12 penalties=[]\nPath 3: pred=E weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nWe start with a 50% strong milk tea. That means 50% tea, 50% milk.\n\n**Step 1: First replacement**  \nHe replaces 15% of it with milk.  \nIf he removes 15% of the solution, the remaining is 85% of the original.  \nThe tea concentration in that 85% is still 50%, so the amount of tea left is:\n\n\\[\n0.85 \\times 0.50 = 0.425\n\\]\n\nThen he adds pure milk (0% tea), so the tea amount stays 0.425 of the total volume.  \nThus, new concentration after first step:\n\n\\[\n0.425 = 42.5\\%\n\\]\n\n**Step 2: Second replacement**  \nAgain, he replaces 15% with milk.  \nWe keep 85% of the current solution. Tea amount becomes:\n\n\\[\n0.85 \\times 0.425 = 0.36125\n\\]\n\nAdd pure milk back, so concentration is:\n\n\\[\n36.125\\%\n\\]\n\n**Step 3: Third replacement**  \nNow he replaces 10% with milk. So we keep 90% of current solution. Tea amount becomes:\n\n\\[\n0.90 \\times 0.36125 = 0.325125\n\\]\n\nAdd pure milk, so final concentration:\n\n\\[\n32.5125\\% \\approx 32.51\\%\n\\]\n\n**Final answer:**  \nAnswer: E"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.39}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=7 penalties=[]\nPath 2: pred=A weight=2.13 steps=7 penalties=[]\nPath 3: pred=A weight=2.13 steps=9 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told:\n\n- \\(\\frac{1}{16}\\) of the students study math  \n- \\(\\frac{1}{10}\\) study bio  \n- \\(\\frac{1}{8}\\) study english  \n- Total students is a 4-digit number.  \n\nFor these fractions to represent whole numbers of students, the total number of students must be a multiple of LCM(16, 10, 8).  \n\nFirst, find LCM:  \n- 16 = \\(2^4\\)  \n- 10 = \\(2 \\times 5\\)  \n- 8 = \\(2^3\\)  \nLCM = \\(2^4 \\times 5 = 16 \\times 5 = 80\\).\n\nSo total students must be a multiple of 80.\n\nNow, the smallest 4-digit number is 1000. The smallest multiple of 80 ≥ 1000:  \n1000 ÷ 80 = 12.5, so next multiple is 80 × 13 = 1040.\n\nThe largest 4-digit number is 9999. The largest multiple of 80 ≤ 9999:  \n9999 ÷ 80 = 124.9875, so 80 × 124 = 9920.\n\nDifference = 9920 − 1040 = 8880.\n\nAnswer: A\n\nAnswer: A"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.39}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.13 steps=4 penalties=[]\nPath 2: pred=D weight=2.13 steps=4 penalties=[]\nPath 3: pred=D weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nFirst, Bill's normal speed is 15 mph.  \nOn a windy day, his speed is reduced by 4 mph, so his windy-day speed is:  \n15 - 4 = 11 mph.\n\nNext, we need the distance traveled in 21 minutes. Since speed is in miles per hour, convert 21 minutes to hours:  \n21 minutes = 21/60 hours = 0.35 hours.\n\nDistance = speed × time = 11 mph × 0.35 hours = 3.85 miles.\n\nRounding to the nearest hundredth gives 3.85 miles.\n\nAnswer: D"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.27}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.13 steps=4 penalties=[]\nPath 2: pred=D weight=2.13 steps=5 penalties=[]\nPath 3: pred=D weight=2.01 steps=3 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told the appliance was sold for 40% above cost, and that the gross profit was $20.00.  \n\nLet the cost be \\( C \\).  \nThe selling price is \\( C + 0.40C = 1.40C \\).  \nGross profit = Selling price − Cost = \\( 1.40C - C = 0.40C \\).  \n\nWe know:  \n\\( 0.40C = 20 \\)  \nSo:  \n\\( C = 20 / 0.40 = 50 \\)  \n\nThus, selling price = \\( 1.40 \\times 50 = 70 \\).  \n\nSo the answer is $70.00.  \n\nAnswer: D"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 5.96}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=1.89 steps=2 penalties=[]\nPath 2: pred=C weight=1.89 steps=2 penalties=[]\nPath 3: pred=C weight=2.18 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nWe are given:\n\n- Principal (P) = Rs. 500  \n- Rate (R) = 6% per annum  \n- Time (T) = 4 years  \n- Interest type: Simple Interest  \n\n**Step 1: Calculate Simple Interest**  \nSimple Interest (SI) = (P × R × T) / 100  \nSI = (500 × 6 × 4) / 100  \nSI = (12000) / 100 = Rs. 120  \n\n**Step 2: Total amount to be paid**  \nAmount = Principal + Interest  \nAmount = 500 + 120 = Rs. 620  \n\nSo, the correct option is C) 620.  \n\nAnswer: C"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.449999999999999}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.23 steps=7 penalties=[]\nPath 2: pred=A weight=2.11 steps=3 penalties=[]\nPath 3: pred=A weight=2.11 steps=3 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told that the first number \\( x \\) is chosen between 0 and 100 inclusive, and the second number \\( y \\) must be less than or equal to the square root of the first, i.e.,  \n\\[\ny \\leq \\sqrt{x}.\n\\]\n\nLet's check each option:\n\n- **A) (99,10)**:  \n  \\(\\sqrt{99} \\approx 9.949\\), and \\(10 \\leq 9.949\\) is false. So this does **not** satisfy.\n\n- **B) (85,9)**:  \n  \\(\\sqrt{85} \\approx 9.219\\), and \\(9 \\leq 9.219\\) is true.\n\n- **C) (50,7)**:  \n  \\(\\sqrt{50} \\approx 7.071\\), and \\(7 \\leq 7.071\\) is true.\n\n- **D) (1,1)**:  \n  \\(\\sqrt{1} = 1\\), and \\(1 \\leq 1\\) is true.\n\n- **E) (1,0)**:  \n  \\(\\sqrt{1} = 1\\), and \\(0 \\leq 1\\) is true.\n\nThe only one that does not satisfy is A.\n\nAnswer: A"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.4399999999999995}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=4 penalties=[]\nPath 2: pred=B weight=2.18 steps=5 penalties=[]\nPath 3: pred=B weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nLet the distance for one way be \\(d\\) km.  \nOn the forward journey, speed = \\(\\frac{d}{6}\\) km/h.  \nOn the return journey, speed = \\(\\frac{d}{4}\\) km/h.  \n\nThe return speed is 12 km/h more than the forward speed:  \n\\[\n\\frac{d}{4} = \\frac{d}{6} + 12\n\\]\n\nMultiply through by 12:  \n\\[\n3d = 2d + 144\n\\]  \n\\[\nd = 144\n\\]\n\nSo the one-way distance is 144 km, and the total distance traveled (forward + return) is \\(144 + 144 = 288\\) km. However, the question likely asks for the one-way distance since it says \"the distance travelled by the jeep\" could mean total, but from the options, 144 matches the one-way value.  \n\nThus, the answer is **B) 144 km**.\n\nAnswer: B"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 5.28}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=1.83 steps=2 penalties=[]\nPath 2: pred=A weight=1.71 steps=1 penalties=[]\nPath 3: pred=A weight=1.74 steps=1 penalties=[]\n\n--- Selected Evidence Path ---\nWhen I was 2 years old, my brother was half my age, so he was 1 year old.  \nThat means my brother is 1 year younger than me.\n\nNow I am 60 years old, so my brother is 60 − 1 = 59 years old.\n\nAnswer: A"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 5.91}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=4 penalties=[]\nPath 2: pred=B weight=2.01 steps=3 penalties=[]\nPath 3: pred=B weight=1.77 steps=1 penalties=[]\n\n--- Selected Evidence Path ---\nLet the wholesale cost be \\( W \\).  \n\nThe original retail price is 60% more than wholesale:  \n\\[\n\\text{Retail price} = W + 0.6W = 1.6W\n\\]  \n\nIt was sold for 20% less than that retail price:  \n\\[\n\\text{Sale price} = 1.6W \\times (1 - 0.20) = 1.6W \\times 0.8 = 1.28W\n\\]  \n\nSo the sale price is \\( 1.28W \\), which is 28% more than the wholesale cost \\( W \\).  \n\nAnswer: B"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 5.67}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=1.89 steps=2 penalties=[]\nPath 2: pred=A weight=1.89 steps=2 penalties=[]\nPath 3: pred=A weight=1.89 steps=2 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told that on the map, \\(\\frac{1}{4}\\) inch represents 10 miles.  \nThat means 1 inch represents \\(10 \\times 4 = 40\\) miles.  \n\nThe measured length on the map is 20 inches, so the actual distance is:  \n\\[\n20 \\times 40 = 800 \\text{ miles}\n\\]\n\nAnswer: A"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (5/5 paths) ===\nRaw Votes: {'B': 1, 'A': 1}\nWeighted Votes: {'A': 1.6300000000000001, 'B': 1.6800000000000002}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=1.68 steps=16 penalties=['no_strict_answer_line', 'too_long']\nPath 2: pred=? weight=0.00 steps=0 penalties=['missing_or_invalid_prediction']\nPath 3: pred=A weight=1.63 steps=17 penalties=['no_strict_answer_line', 'too_long']\nPath 4: pred=? weight=0.00 steps=0 penalties=['missing_or_invalid_prediction']\nPath 5: pred=? weight=0.00 steps=0 penalties=['missing_or_invalid_prediction']\n\n--- Selected Evidence Path ---\nLet the rectangle have length \\( L \\) and breadth \\( B \\).  \n\n---\n\n**First fold:** Folded along one set of sides (say along the length), we get two equal halves.  \nIf folded along the longer side, the shorter side is halved.  \nThe perimeter of each half:  \n\\[\n2\\left( L + \\frac{B}{2} \\right) = 48\n\\]  \n\\[\nL + \\frac{B}{2} = 24\n\\]  \nMultiply by 2:  \n\\[\n2L + B = 48 \\quad \\text{(Equation 1)}\n\\]\n\n---\n\n**Second fold:** Folded along the other set (along the breadth), the length is halved.  \nPerimeter of each half:  \n\\[\n2\\left( \\frac{L}{2} + B \\right) = 66\n\\]  \n\\[\n\\frac{L}{2} + B = 33\n\\]  \nMultiply by 2:  \n\\[\nL + 2B = 66 \\quad \\text{(Equation 2)}\n\\]\n\n---\n\nNow solve:  \nFrom Equation 1: \\( B = 48 - 2L \\)  \nSubstitute into Equation 2:  \n\\[\nL + 2(48 - 2L) = 66\n\\]  \n\\[\nL + 96 - 4L = 66\n\\]  \n\\[\n-3L = -30\n\\]  \n\\[\nL = 10\n\\]  \nThen \\( B = 48 - 2(10) = 28 \\).\n\n---\n\nArea = \\( L \\times B = 10 \\times 28 = 280 \\).  \n\nThat seems too small compared to options — meaning my assignment of which side is halved might be reversed. Let's try the other interpretation.\n\n---\n\n**Alternative:**  \nFirst fold halves the breadth:  \n\\[\n2\\left( \\frac{L}{2} + B \\right) = 48 \\quad \\Rightarrow \\quad \\frac{L}{2} + B = 24 \\quad \\Rightarrow \\quad L + 2B = 48\n\\]  \nSecond fold halves the length:  \n\\[\n2\\left( L + \\frac{B}{2} \\right) = 66 \\quad \\Rightarrow \\quad L + \\frac{B}{2} = 33 \\quad \\Rightarrow \\quad 2L + B = 66\n\\]\n\nNow solve:  \nFrom \\( L + 2B = 48 \\) → \\( L = 48 - 2B \\)  \nSub into \\( 2L + B = 66 \\):  \n\\[\n2(48 - 2B) + B = 66\n\\]  \n\\[\n96 - 4B + B = 66\n\\]  \n\\[\n96 - 3B = 66\n\\]  \n\\[\n-3B = -30\n\\]  \n\\[\nB = 10\n\\]  \nThen \\( L = 48 - 20 = 28 \\).  \n\nArea = \\( 28 \\times 10 = 280 \\) again.  \n\nThis 280 isn’t among the options, so perhaps “folded into two equal halves” means the fold line goes along the side, so the half piece is still a rectangle with original one dimension unchanged and the other halved — exactly what we did.  \n\nBut the numbers 48 and 66 might refer to the total perimeter of both halves together? Let’s check that.\n\n---\n\nIf each half perimeter is given, we already solved it.  \nIf “perimeter for each part” means sum of perimeters of both halves:  \nFirst fold: each half has perimeter \\( p \\), total = \\( 2p = 48 \\) → \\( p = 24 \\), same as before. So no change.\n\nThus maybe the 48 and 66 refer to the perimeters of **the folded shape** (i.e., the doubled-over rectangle).  \n\n---\n\n**Interpretation 3:** When folded in half, the shape is a double layer; its outer perimeter is given.  \nIf folded along length: shape dimensions: \\( L \\) and \\( B/2 \\) (but doubled thickness doesn't change perimeter).  \nSo it’s the same equations. So still 280.\n\nGiven 280 is not in options, I suspect the problem means the **perimeter of the folded piece** is 48 and 66, but the fold is along the **midline**, so each half's dimensions are different.  \n\nLet’s try:  \nCase 1: Fold along length → half dimensions: \\( L/2 \\) by \\( B \\), perimeter = \\( 2(L/2 + B) = L + 2B = 48 \\).  \nCase 2: Fold along breadth → half dimensions: \\( L \\) by \\( B/2 \\), perimeter = \\( 2(L + B/2) = 2L + B = 66 \\).  \n\nSolve:  \n\\( L + 2B ="
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.27}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.01 steps=3 penalties=[]\nPath 2: pred=B weight=2.13 steps=4 penalties=[]\nPath 3: pred=B weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nWe need to travel from M to Q, passing through N, O, and P in that order.  \nThe number of ways for each segment:\n\n- M to N: 3 buses  \n- N to O: 4 buses  \n- O to P: 1 bus  \n- P to Q: 3 buses  \n\nTo find the total number of ways, we multiply the number of choices for each segment:\n\n\\[\n3 \\times 4 \\times 1 \\times 3 = 36\n\\]\n\nSo there are 36 ways.\n\nAnswer: B"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.15}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=6 penalties=[]\nPath 2: pred=B weight=2.13 steps=5 penalties=[]\nPath 3: pred=B weight=1.89 steps=2 penalties=[]\n\n--- Selected Evidence Path ---\nThe vertices of the rectangular solid lie on the sphere, so the diameter of the sphere is the same as the space diagonal of the rectangular solid.\n\nFor a rectangular solid with dimensions 3, 4, and 15, the length of the space diagonal is:\n\n\\[\n\\sqrt{3^2 + 4^2 + 15^2}\n= \\sqrt{9 + 16 + 225}\n= \\sqrt{250}\n\\]\n\nSimplify:\n\n\\[\n\\sqrt{250} = \\sqrt{25 \\times 10} = 5\\sqrt{10}\n\\]\n\nNow compute numerically:\n\n\\[\n\\sqrt{10} \\approx 3.16227766\n\\]\n\\[\n5 \\times 3.16227766 \\approx 15.8113883\n\\]\n\nThus the diameter is approximately 15.8113.\n\nAnswer: B"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.39}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=5 penalties=[]\nPath 2: pred=A weight=2.13 steps=5 penalties=[]\nPath 3: pred=A weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nLet’s break down the movements step by step.\n\n1. **Start at home** (point O).  \n2. Travel **3 km south**. Now at point A.  \n3. Travel **5 km east**. Now at point B.  \n4. Travel **3 km north**. This brings the person back to the same latitude as home, but 5 km east from the starting vertical line.  \n5. Travel **2 km west**. This reduces the eastward displacement: 5 km east – 2 km west = **3 km east** from home.\n\nSo final position is **3 km east** of the starting point.  \nDistance from home = **3 km**.\n\nAnswer: A"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.6899999999999995}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.23 steps=5 penalties=[]\nPath 2: pred=D weight=2.23 steps=7 penalties=[]\nPath 3: pred=D weight=2.23 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nLet the marked price be \\( M \\) and the cost price be \\( C \\).\n\nWhen discount is 5%, selling price = \\( 0.95M \\).  \nProfit = \\( 0.95M - C \\).\n\nWhen discount is 7%, selling price = \\( 0.93M \\).  \nProfit = \\( 0.93M - C \\).\n\nThe difference in profit is Rs. 15 less:  \n\\[\n(0.95M - C) - (0.93M - C) = 15\n\\]  \n\\[\n0.02M = 15\n\\]  \n\\[\nM = \\frac{15}{0.02} = 750\n\\]\n\nSo the marked price is Rs. 750.\n\nAnswer: D"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.39}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=10 penalties=[]\nPath 2: pred=A weight=2.13 steps=11 penalties=[]\nPath 3: pred=A weight=2.13 steps=8 penalties=[]\n\n--- Selected Evidence Path ---\nLet the number be \\( x \\).\n\nThe correct value is \\( \\frac{7}{8}x \\).  \nThe student incorrectly found \\( \\frac{7}{18}x \\).  \n\nThe difference between them is given as 770:\n\n\\[\n\\frac{7}{8}x - \\frac{7}{18}x = 770\n\\]\n\nFind a common denominator (72):\n\n\\[\n\\frac{7 \\cdot 9}{72}x - \\frac{7 \\cdot 4}{72}x = 770\n\\]\n\\[\n\\frac{63x - 28x}{72} = 770\n\\]\n\\[\n\\frac{35x}{72} = 770\n\\]\n\nMultiply both sides by 72:\n\n\\[\n35x = 770 \\times 72\n\\]\n\\[\n35x = 55440\n\\]\n\nDivide by 35:\n\n\\[\nx = \\frac{55440}{35} = 1584\n\\]\n\nThus the number is 1584, which corresponds to option A.\n\nAnswer: A"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.27}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.13 steps=7 penalties=[]\nPath 2: pred=D weight=2.13 steps=9 penalties=[]\nPath 3: pred=D weight=2.01 steps=3 penalties=[]\n\n--- Selected Evidence Path ---\nWe know the monthly salary formula:\n\n\\[\nS = 500 + 0.05 \\times (\\text{sales})\n\\]\n\nWe want \\( S = 1500 \\):\n\n\\[\n1500 = 500 + 0.05 \\times (\\text{sales})\n\\]\n\nSubtract 500 from both sides:\n\n\\[\n1000 = 0.05 \\times (\\text{sales})\n\\]\n\nDivide by 0.05:\n\n\\[\n\\text{sales} = \\frac{1000}{0.05} = 20{,}000\n\\]\n\nSo the monthly sales should be $20,000.\n\nAnswer: D"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.04}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=1.78 steps=5 penalties=['no_strict_answer_line']\nPath 2: pred=A weight=2.13 steps=9 penalties=[]\nPath 3: pred=A weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nWe are given speeds for each side of a square: 200, 400, 600, and 800 km/h.  \nLet the side length be \\( s \\) km.  \n\nTime for each side:  \n- Side 1: \\( \\frac{s}{200} \\) hours  \n- Side 2: \\( \\frac{s}{400} \\) hours  \n- Side 3: \\( \\frac{s}{600} \\) hours  \n- Side 4: \\( \\frac{s}{800} \\) hours  \n\nTotal distance = \\( 4s \\) km.  \n\nTotal time = \\( s \\left( \\frac{1}{200} + \\frac{1}{400} + \\frac{1}{600} + \\frac{1}{800} \\right) \\).  \n\nFind common denominator for fractions: LCM of 200, 400, 600, 800 is 2400.  \n\n\\[\n\\frac{1}{200} = \\frac{12}{2400}, \\quad\n\\frac{1}{400} = \\frac{6}{2400}, \\quad\n\\frac{1}{600} = \\frac{4}{2400}, \\quad\n\\frac{1}{800} = \\frac{3}{2400}\n\\]  \n\nSum = \\( \\frac{12+6+4+3}{2400} = \\frac{25}{2400} = \\frac{1}{96} \\).  \n\nSo total time = \\( s \\times \\frac{1}{96} \\) hours.  \n\nAverage speed = \\(\\frac{\\text{Total distance}}{\\text{Total time}} = \\frac{4s}{s/96} = 4 \\times 96 = 384\\) km/h.  \n\nThus, the answer is A.  \n\nAnswer: A"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.1499999999999995}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=1.89 steps=2 penalties=[]\nPath 2: pred=A weight=2.13 steps=4 penalties=[]\nPath 3: pred=A weight=2.13 steps=8 penalties=[]\n\n--- Selected Evidence Path ---\nLet the number of brown sharpeners be \\( b \\) and white sharpeners be \\( w \\).  \nWe have:  \n\\[\nw + b = 18\n\\]  \nLet the price of a brown sharpener be \\( x \\) rupees.  \nThen the price of a white sharpener is \\( x + 1 \\) rupees.  \n\nTotal cost:  \n\\[\nb \\cdot x + w \\cdot (x + 1) = 100\n\\]  \nSubstitute \\( w = 18 - b \\):  \n\\[\nb x + (18 - b)(x + 1) = 100\n\\]  \nExpand:  \n\\[\nb x + 18x + 18 - b x - b = 100\n\\]  \nSimplify:  \n\\[\n18x + 18 - b = 100\n\\]  \n\\[\n18x - b = 82\n\\]  \nSo:  \n\\[\nb = 18x - 82\n\\]  \nSince \\( b \\) must be a positive integer between 0 and 18, we test integer \\( x \\):  \n\n- If \\( x = 5 \\), \\( b = 90 - 82 = 8 \\), then \\( w = 10 \\).  \nCheck cost: \\( 8 \\times 5 + 10 \\times 6 = 40 + 60 = 100 \\). Works.  \n\nThus: white = 10, brown = 8.  \n\nAnswer: A"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.39}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=5 penalties=[]\nPath 2: pred=A weight=2.13 steps=12 penalties=[]\nPath 3: pred=A weight=2.13 steps=12 penalties=[]\n\n--- Selected Evidence Path ---\nLet hose A’s rate be \\( \\frac{1}{8} \\) of the pool per hour, since it fills the pool in 8 hours.  \n\nIn the first 2 hours, hose A fills:  \n\\[\n2 \\times \\frac{1}{8} = \\frac{2}{8} = \\frac{1}{4}\n\\]  \nSo \\(\\frac{3}{4}\\) of the pool remains.\n\nTogether, A and B fill the remaining \\(\\frac{3}{4}\\) in 3 hours, so their combined rate is:  \n\\[\n\\frac{3/4}{3} = \\frac{3}{4} \\times \\frac{1}{3} = \\frac{1}{4} \\text{ of the pool per hour}\n\\]  \n\nWe know A’s rate is \\(\\frac{1}{8}\\), so B’s rate is:  \n\\[\n\\frac{1}{4} - \\frac{1}{8} = \\frac{2}{8} - \\frac{1}{8} = \\frac{1}{8}\n\\]  \n\nThus B alone would also take 8 hours to fill the pool.  \n\nAnswer: A"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 6.199999999999999}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=2.01 steps=3 penalties=[]\nPath 2: pred=C weight=2.18 steps=4 penalties=[]\nPath 3: pred=C weight=2.01 steps=3 penalties=[]\n\n--- Selected Evidence Path ---\nWe start with 120 and reduce it to 96.  \nThe amount of reduction is:\n\n120 − 96 = 24.\n\nThe reduction percent is found by comparing the reduction (24) to the original amount (120):\n\nReduction percent = (24 / 120) × 100 = 0.2 × 100 = 20%.\n\nSo the correct answer is C) 20%.\n\nAnswer: C"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.27}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=4 penalties=[]\nPath 2: pred=A weight=2.01 steps=3 penalties=[]\nPath 3: pred=A weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nLet the 5-digit number be \\( x \\).\n\nIf we put a 1 after it, the new number is \\( 10x + 1 \\).  \nIf we put a 1 before it, the new number is \\( 100000 + x \\).\n\nThe problem says:\n\n\\[\n10x + 1 = 3(100000 + x)\n\\]\n\nNow solve:\n\n\\[\n10x + 1 = 300000 + 3x\n\\]\n\\[\n10x - 3x = 300000 - 1\n\\]\n\\[\n7x = 299999\n\\]\n\\[\nx = \\frac{299999}{7} = 42857\n\\]\n\nSo the number is 42857.\n\nAnswer: A"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.39}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=4 penalties=[]\nPath 2: pred=B weight=2.13 steps=4 penalties=[]\nPath 3: pred=B weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nLet’s define:\n\n- \\( S \\) = total students  \n- \\( C \\) = chess club members  \n- \\( T \\) = swim team members  \n\nWe know:  \n- 24% of all students are in both chess and swim: \\( |C \\cap T| = 0.24S \\).  \n- 20% of swim team members are **not** in chess club.  \n  That means 80% of swim team members **are** in chess club.\n\nSo:  \n\\[\n0.80 \\times |T| = |C \\cap T| = 0.24S\n\\]  \nThus:  \n\\[\n|T| = \\frac{0.24S}{0.80} = 0.30S\n\\]  \n\nSo 30% of all students are on the swim team.\n\nAnswer: B"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.39}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=5 penalties=[]\nPath 2: pred=B weight=2.13 steps=4 penalties=[]\nPath 3: pred=B weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nWe start with the current population: 78,000.\n\nA 5% increase means the population multiplies by 1.05 each year.\n\nAfter 1 year:\n78,000 × 1.05 = 81,900\n\nAfter 2 years:\n81,900 × 1.05 = 85,995\n\nSo the population after 2 years is 85,995.\n\nAnswer: B"
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'E': 3}\nWeighted Votes: {'E': 5.3100000000000005}\nFinal Answer: E\n\n--- Path Summaries ---\nPath 1: pred=E weight=1.77 steps=1 penalties=[]\nPath 2: pred=E weight=1.77 steps=1 penalties=[]\nPath 3: pred=E weight=1.77 steps=1 penalties=[]\n\n--- Selected Evidence Path ---\nThey are moving toward each other, so their speeds add up.  \nTotal speed = 12 + 13 = 25 mph.  \nDistance between them = 50 miles.  \nTime to meet = Distance / Combined speed = 50 / 25 = 2 hours.  \n\nAnswer: E"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.27}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=6 penalties=[]\nPath 2: pred=A weight=2.01 steps=3 penalties=[]\nPath 3: pred=A weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nThe servant has a fixed monthly salary of 1500 rupees.  \nHe wants a total monthly income of 6000 rupees.  \nSo the amount he needs to earn from commission is:\n\n6000 - 1500 = 4500 rupees.\n\nThe commission is 15% of the monthly sale.  \nLet the monthly sale be \\( S \\) rupees.  \nThen:\n\n\\[\n0.15 \\times S = 4500\n\\]\n\nSolving for \\( S \\):\n\n\\[\nS = \\frac{4500}{0.15} = 30000\n\\]\n\nSo the servant must make a sale of 30,000 rupees.\n\nAnswer: A"
+    },
+    {
+      "prediction": "C",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 6.09}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=2.18 steps=6 penalties=[]\nPath 2: pred=C weight=2.13 steps=7 penalties=[]\nPath 3: pred=C weight=1.78 steps=6 penalties=['no_strict_answer_line']\n\n--- Selected Evidence Path ---\nWe are told:  \nPrincipal borrowed = Rs. 360  \nPaid back in 12 monthly installments of Rs. 31.50 each.  \nTotal repayment = 12 × 31.50 = Rs. 378  \nSo total interest paid = 378 − 360 = Rs. 18.\n\nSince it’s repaid in monthly installments, the borrower doesn’t have the full Rs. 360 for the whole year—the amount outstanding decreases each month.  \nA common approximation for such installment loans is:\n\nTotal interest = Principal × Rate × (Average time in years)\n\nThe average time for monthly installments is about (n+1)/(2n) of a year, where n = number of months.  \nHere n = 12, so average time = (12+1)/(2×12) = 13/24 years.\n\nLet rate = r (as a decimal).  \nInterest = Principal × r × (13/24)  \n18 = 360 × r × (13/24)  \n18 = 360 × (13/24) × r  \n360 × (13/24) = (360/24) × 13 = 15 × 13 = 195  \nSo 18 = 195 × r  \nr = 18 / 195 = 0.092307... ≈ 0.0923  \nAs a percentage: 9.23% which is closest to 10%.\n\nThus the answer is C) 10%.\n\nAnswer: C"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.39}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=4 penalties=[]\nPath 2: pred=B weight=2.13 steps=4 penalties=[]\nPath 3: pred=B weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nLet the original price be 100 (for simplicity).  \nAfter a 30% reduction, the price becomes:  \n100 - 30 = 70.\n\nWe want to increase 70 back to 100.  \nThe increase needed is:  \n100 - 70 = 30.\n\nThe percentage increase from 70 to 100 is:  \n(30 / 70) × 100 = (3 / 7) × 100 ≈ 42.857%.\n\nSo the required percentage is 42.86%.\n\nAnswer: B"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 6.39}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=2.13 steps=4 penalties=[]\nPath 2: pred=C weight=2.13 steps=4 penalties=[]\nPath 3: pred=C weight=2.13 steps=6 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told there is a total of Rs. 700, and the number of 25 paise, 50 paise, and 1 rupee coins are equal.  \nLet the number of each type be \\( n \\).\n\nFirst, convert everything to rupees:  \n- 25 paise = 0.25 rupees  \n- 50 paise = 0.50 rupees  \n- 1 rupee = 1 rupee  \n\nTotal value equation:  \n\\[\n0.25n + 0.50n + 1n = 700\n\\]  \n\\[\n1.75n = 700\n\\]  \n\\[\nn = \\frac{700}{1.75}\n\\]  \n\\[\nn = 400\n\\]\n\nSo there are 400 of each coin.\n\nAnswer: C"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 6.39}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=2.13 steps=5 penalties=[]\nPath 2: pred=C weight=2.13 steps=4 penalties=[]\nPath 3: pred=C weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nLet’s break it down.  \n\nThe man saves \\( 12 \\frac{1}{2}\\% \\) of his income.  \nThat percentage is equal to \\( 12.5\\% \\) or \\( \\frac{1}{8} \\) of his income.\n\nIf he saves \\( \\frac{1}{8} \\) of his income, then he spends the remaining \\( \\frac{7}{8} \\) of his income.\n\nWe are told his spending is Rs. 3500 per month.  \nSo:  \n\\[\n\\frac{7}{8} \\times \\text{Income} = 3500\n\\]\n\nMultiply both sides by 8:  \n\\[\n7 \\times \\text{Income} = 3500 \\times 8\n\\]  \n\\[\n7 \\times \\text{Income} = 28000\n\\]  \n\\[\n\\text{Income} = \\frac{28000}{7} = 4000\n\\]\n\nSo his monthly income is Rs. 4000.\n\nAnswer: C"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 5.68}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.01 steps=3 penalties=[]\nPath 2: pred=B weight=2.01 steps=3 penalties=[]\nPath 3: pred=B weight=1.66 steps=3 penalties=['no_strict_answer_line']\n\n--- Selected Evidence Path ---\nFirst, find out how many toys are in one box.  \nFive dozen toys means 5 × 12 = 60 toys per box.\n\nNext, find out how many toys are in one tempo.  \n98 boxes per tempo × 60 toys per box = 5,880 toys per tempo.\n\nNow, we need to know how many tempos are needed to carry 29,400 toys.  \nDivide total toys by toys per tempo:  \n29,400 ÷ 5,880 = 5 tempos.\n\nSo, the answer is 5.\n\nAnswer: B"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.029999999999999}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.01 steps=3 penalties=[]\nPath 2: pred=A weight=2.13 steps=6 penalties=[]\nPath 3: pred=A weight=1.89 steps=2 penalties=[]\n\n--- Selected Evidence Path ---\nWe need to find the number of ways to choose 2 oranges from 10.  \nThis is a combination problem because the order in which the oranges are chosen does not matter.\n\nThe formula for combinations is:\n\n\\[\n\\binom{n}{r} = \\frac{n!}{r!(n-r)!}\n\\]\n\nHere, \\(n = 10\\), \\(r = 2\\):\n\n\\[\n\\binom{10}{2} = \\frac{10!}{2!(10-2)!} = \\frac{10 \\times 9}{2 \\times 1} = \\frac{90}{2} = 45\n\\]\n\nThus, the number of ways is 45.\n\nAnswer: A"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.39}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.13 steps=7 penalties=[]\nPath 2: pred=D weight=2.13 steps=7 penalties=[]\nPath 3: pred=D weight=2.13 steps=9 penalties=[]\n\n--- Selected Evidence Path ---\nFirst, find the work rates:\n\n- Mr. Brown: 1 house per 6 days → rate = 1/6 house/day  \n- Mr. Black: 1 house per 8 days → rate = 1/8 house/day  \n- Mr. Blue: 1 house per 12 days → rate = 1/12 house/day  \n\n**Step 1: Mr. Brown works for 8 days.**  \nWork done = 8 × (1/6) = 8/6 = 4/3 houses.  \n\nThat’s more than one house already, so it seems there are 3 houses total to paint. Let’s treat the total work as 3 houses.\n\n**Step 2: Work done by Mr. Brown in 8 days.**  \nHe paints 8/6 = 4/3 houses.  \nRemaining work = 3 - 4/3 = 9/3 - 4/3 = 5/3 houses.\n\n**Step 3: Mr. Black works for 6 days.**  \nWork done = 6 × (1/8) = 6/8 = 3/4 house.  \nRemaining work after Mr. Black = 5/3 - 3/4.  \nCommon denominator 12: (20/12 - 9/12) = 11/12 houses remain.\n\n**Step 4: Mr. Blue finishes the rest.**  \nHis rate = 1/12 house per day.  \nTime needed = (11/12) ÷ (1/12) = 11 days.\n\nAnswer: D"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.319999999999999}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=4 penalties=[]\nPath 2: pred=A weight=2.01 steps=3 penalties=[]\nPath 3: pred=A weight=2.18 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told both trains leave at the same time now.  \nTrain A repeats every 16 minutes.  \nTrain B repeats every 17 minutes.  \n\nThe next time they leave together will be at the least common multiple (LCM) of 16 and 17.\n\nSince 16 and 17 are consecutive numbers, they have no common factors other than 1.  \nSo the LCM is simply 16 × 17 = 272 minutes.\n\nThus, the answer is A) 272 minutes.\n\nAnswer: A"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.24}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=6 penalties=[]\nPath 2: pred=A weight=2.13 steps=7 penalties=[]\nPath 3: pred=A weight=1.98 steps=8 penalties=['too_long']\n\n--- Selected Evidence Path ---\nWe are given a hollow cube of external size 5 cm, thickness 1 cm.  \nThis means the outer cube is 5×5×5, and the inner hollow part is a cube of side 5 - 2×1 = 3 cm.\n\n**Step 1: Total number of 1 cm cubes in the hollow structure**  \nTotal cubes in a solid 5×5×5 = 125  \nTotal cubes in the hollow inner 3×3×3 = 27  \nSo number of cubes in the hollow shell = 125 - 27 = 98 small cubes.\n\n**Step 2: Total faces of all small cubes**  \nEach small cube has 6 faces.  \nTotal faces = 98 × 6 = 588.\n\n**Step 3: Painted faces**  \nOnly the outer surface of the 5×5×5 cube is painted.  \nArea of outer surface = 6 × (5×5) = 150 square cm.  \nSince each painted face is a face of a small cube, the number of painted faces = 150.\n\n**Step 4: Unpainted faces**  \nUnpainted = total faces − painted faces = 588 − 150 = 438.\n\n**Final Answer:**  \nAnswer: A"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.1499999999999995}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.01 steps=3 penalties=[]\nPath 2: pred=D weight=2.01 steps=3 penalties=[]\nPath 3: pred=D weight=2.13 steps=6 penalties=[]\n\n--- Selected Evidence Path ---\nLet’s break it down step by step.\n\nWe have a chocolate store.  \n- **10%** are cocoa flavored.  \n- That means **90%** are vanilla flavored (since all are either vanilla or cocoa).  \n\nNow, \"90% of the rest are squashed.\"  \nHere, \"the rest\" refers to the vanilla chocolates (since cocoa is excluded).  \nSo, 90% of the vanilla chocolates are squashed.  \n\nVanilla chocolates = 90% of total.  \nSquashed vanilla = 90% of 90% = 0.9 × 0.9 = 0.81 = 81% of total.  \n\nVanilla and not squashed = total vanilla minus squashed vanilla:  \n90% − 81% = 9% of total.\n\nThus, the answer is **9%**.\n\nAnswer: D"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 5.67}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=1.89 steps=2 penalties=[]\nPath 2: pred=D weight=1.89 steps=2 penalties=[]\nPath 3: pred=D weight=1.89 steps=2 penalties=[]\n\n--- Selected Evidence Path ---\nThe frog makes a net gain of 1 meter per day (3 m up, then 2 m down), but on the final day, it won't slip back after reaching the top.  \n\nAfter 27 days, the frog will have climbed a net of 27 meters. On the 28th day, it jumps 3 meters from 27 m to 30 m and is out, so it doesn't fall back.  \n\nThus, it takes 28 days.  \n\nAnswer: D"
+    },
+    {
+      "prediction": "B",
+      "correct": "C",
+      "output": "=== Self-Consistency (5/5 paths) ===\nRaw Votes: {'B': 1, 'C': 1, 'E': 1}\nWeighted Votes: {'B': 1.7300000000000002, 'C': 1.6300000000000001, 'E': 1.6800000000000002}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=1.73 steps=13 penalties=['no_strict_answer_line', 'too_long']\nPath 2: pred=? weight=0.00 steps=0 penalties=['missing_or_invalid_prediction']\nPath 3: pred=? weight=0.00 steps=0 penalties=['missing_or_invalid_prediction']\nPath 4: pred=C weight=1.63 steps=16 penalties=['no_strict_answer_line', 'too_long']\nPath 5: pred=E weight=1.68 steps=15 penalties=['no_strict_answer_line', 'too_long']\n\n--- Selected Evidence Path ---\nWe are looking for 5 consecutive two-digit odd numbers.  \nLet the smallest be \\( n \\) (odd), so the five numbers are:  \n\\( n, n+2, n+4, n+6, n+8 \\).\n\nTheir sum:  \n\\( S = n + (n+2) + (n+4) + (n+6) + (n+8) = 5n + 20 \\).\n\nWe are told: when this sum is divided by 10, it becomes a perfect square.  \nSo:  \n\\[\n\\frac{5n + 20}{10} = k^2\n\\]  \nfor some integer \\( k \\). Multiply both sides by 10:  \n\\[\n5n + 20 = 10k^2\n\\]  \nDivide by 5:  \n\\[\nn + 4 = 2k^2\n\\]  \nThus:  \n\\[\nn = 2k^2 - 4\n\\]  \n\nSince \\( n \\) is a two-digit odd number:  \n\\( 10 \\leq n \\leq 99 \\), and \\( n \\) odd.\n\nCheck possible \\( k \\) values:  \n- \\( k = 3 \\): \\( n = 2(9) - 4 = 18 - 4 = 14 \\) (even, not odd)  \n- \\( k = 4 \\): \\( n = 2(16) - 4 = 32 - 4 = 28 \\) (even)  \n- \\( k = 5 \\): \\( n = 2(25) - 4 = 50 - 4 = 46 \\) (even)  \n- \\( k = 6 \\): \\( n = 2(36) - 4 = 72 - 4 = 68 \\) (even)  \n- \\( k = 7 \\): \\( n = 2(49) - 4 = 98 - 4 = 94 \\) (even)  \n\nThat gives only even numbers. But the problem says \"two digit odd numbers\". Wait—maybe we misread: the numbers themselves are odd, so \\( n \\) must be odd.  \nFrom \\( n = 2k^2 - 4 \\), \\( 2k^2 \\) is even, minus 4 stays even. So \\( n \\) is always even. This is impossible for odd numbers.  \n\nThis suggests the \"consecutive two digit odd numbers\" might mean five numbers that are all odd and consecutive in the odd sequence, but maybe starting from an odd? That is exactly what we did; but the algebra shows the sum is always even, so dividing by 10 giving perfect square yields an even \\( n \\).  \n\nLet’s check the actual sum:  \nIf numbers are odd, the sum of 5 odd numbers is odd (odd+odd=even; even+odd=odd; odd+odd=even; even+odd=odd). So sum is odd. Dividing odd by 10 cannot give integer unless decimal, but the problem implies integer result.  \n\nThus, maybe \"two digit odd numbers\" means the numbers themselves are two-digit and odd, but the consecutive might be in the usual integer sense (so mix of odd/even).  \n\nIf they are just five consecutive two-digit numbers, they alternate odd/even.  \nThen \\( n \\) can be any integer.  \nWe already have \\( n = 2k^2 - 4 \\). For two-digit:  \nk=3: n=14 → numbers: 14,15,16,17,18 → sum=80 → 80/10=8 (not perfect square)  \nk=4: n=28 → 28,29,30,31,32 → sum=150 → /10=15 (no)  \nk=5: n=46 → 46,47,48,49,50 → sum=240 → /10=24 (no)  \nk=6: n=68 → 68,69,70,71,72 → sum=350 → /10=35 (no)  \nk=7: n=94 → 94,95,96,97,98 → sum=480 → /10=48 (no)  \n\nNone are perfect squares.  \n\nMaybe \"divided by 10 becomes a perfect square\" means the result is a perfect square integer.  \nCheck each option to see if it could be part of such set:  \n\nTry option A) 47. Then possible sets containing 47 as one of five consecutive two-digit odd numbers:  \nOdd consecutive: 39,41,43,45,47 → sum=215 → /10=21.5 no.  \n43,45,47,49,51 → sum=235 → /10=23.5 no.  \nSo not.\n\nOption B) 91:  \nOdd consecutive: 83,85,87,89,91 → sum=435 → /"
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'E': 3}\nWeighted Votes: {'E': 6.39}\nFinal Answer: E\n\n--- Path Summaries ---\nPath 1: pred=E weight=2.13 steps=8 penalties=[]\nPath 2: pred=E weight=2.13 steps=8 penalties=[]\nPath 3: pred=E weight=2.13 steps=7 penalties=[]\n\n--- Selected Evidence Path ---\nLet the total number of students be \\( x \\).\n\n- Students interested in Football: \\( 8\\% \\) of \\( x = 0.08x \\)  \n- Students interested in Cricket: \\( \\frac{4}{5} \\) of \\( x = 0.8x \\)  \n- Students interested in Basketball: \\( 10\\% \\) of \\( x = 0.1x \\)  \n- Remaining students (not interested in any game): \\( 20 \\)\n\nNow, the sum of all students must equal \\( x \\). So:\n\n\\[\n0.08x + 0.8x + 0.1x + 20 = x\n\\]\n\nAdd the percentages:\n\n\\[\n0.08 + 0.8 + 0.1 = 0.98\n\\]\n\nSo:\n\n\\[\n0.98x + 20 = x\n\\]\n\nSubtract \\( 0.98x \\) from both sides:\n\n\\[\n20 = 0.02x\n\\]\n\nSolve for \\( x \\):\n\n\\[\nx = \\frac{20}{0.02} = 1000\n\\]\n\nThus the total number of students is 1000.\n\nAnswer: E"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.04}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=1.78 steps=9 penalties=['no_strict_answer_line']\nPath 2: pred=D weight=2.13 steps=6 penalties=[]\nPath 3: pred=D weight=2.13 steps=8 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told:  \n\"Q is as much younger than R as he is older than T.\"  \n\nThis means the age gap between Q and R is the same as the gap between Q and T.  \nLet that gap be \\( d \\).  \n\nSo:  \n- R is older than Q by \\( d \\): \\( R = Q + d \\)  \n- T is younger than Q by \\( d \\): \\( T = Q - d \\)  \n\nGiven: sum of ages of R and T is 50:  \n\\[\nR + T = (Q + d) + (Q - d) = 2Q = 50\n\\]\nThus:  \n\\[\nQ = 25\n\\]\n\nNow, the difference between R and Q is \\( d \\), but we don’t know \\( d \\) from the information given (only that it's positive).  \nSo the difference between R and Q is not fixed; it could be any positive number.  \n\nHence, the answer is \"Cannot be determined.\"  \n\nAnswer: D"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.1499999999999995}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.01 steps=3 penalties=[]\nPath 2: pred=B weight=2.01 steps=3 penalties=[]\nPath 3: pred=B weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nFirst, subtract the initial charge for the first quarter-mile from the total money available:\n\n$8.50 - $3.50 = $5.00\n\nThis $5.00 is for additional quarter-miles at $0.10 each.\n\nNumber of additional quarter-miles = $5.00 / $0.10 = 50 quarter-miles.\n\nNow, the total distance in quarter-miles = 1 (first quarter-mile) + 50 = 51 quarter-miles.\n\nConvert to miles: 51 quarter-miles = 51 / 4 = 12.75 miles.\n\nAnswer: B"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 6.04}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=2.13 steps=4 penalties=[]\nPath 2: pred=C weight=2.13 steps=6 penalties=[]\nPath 3: pred=C weight=1.78 steps=7 penalties=['no_strict_answer_line']\n\n--- Selected Evidence Path ---\nLet the number of matches played before the final be \\( n \\).  \nHis total runs before the final = \\( 51n \\).  \nAfter scoring 78 in the final, his total runs = \\( 51n + 78 \\).  \nThe number of matches now = \\( n + 1 \\).  \nNew average = 54, so:\n\n\\[\n\\frac{51n + 78}{n + 1} = 54\n\\]\n\nMultiply both sides:\n\n\\[\n51n + 78 = 54(n + 1)\n\\]\n\\[\n51n + 78 = 54n + 54\n\\]\n\\[\n78 - 54 = 54n - 51n\n\\]\n\\[\n24 = 3n\n\\]\n\\[\nn = 8\n\\]\n\nSo the total number of matches played in the season = \\( n + 1 = 9 \\).\n\nAnswer: C"
+    },
+    {
+      "prediction": "B",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.39}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=7 penalties=[]\nPath 2: pred=B weight=2.13 steps=6 penalties=[]\nPath 3: pred=B weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nWe need to represent 10 different types of books using codes that are either:\n- A single letter, or  \n- A pair of two different letters (order does not matter).\n\nLet the number of available letters be \\( n \\).\n\n**Step 1: Count possible codes with \\( n \\) letters**  \n- Single-letter codes: \\( n \\)  \n- Two-letter codes (unordered, different letters): \\( \\binom{n}{2} = \\frac{n(n-1)}{2} \\)\n\n**Step 2: Total distinct codes**  \nTotal = \\( n + \\frac{n(n-1)}{2} = \\frac{2n + n(n-1)}{2} = \\frac{n^2 + n}{2} \\)\n\n**Step 3: Find smallest \\( n \\) such that total ≥ 10**  \nTry \\( n = 3 \\):  \n\\( \\frac{3^2 + 3}{2} = \\frac{9+3}{2} = 6 \\) → not enough.\n\n\\( n = 4 \\):  \n\\( \\frac{16 + 4}{2} = \\frac{20}{2} = 10 \\) → exactly enough.\n\nSo smallest number of letters is 4.\n\nAnswer: B"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 6.39}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=2.13 steps=5 penalties=[]\nPath 2: pred=C weight=2.13 steps=6 penalties=[]\nPath 3: pred=C weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told the area is 150 square meters. Let the breadth be \\( b \\) meters.  \nThen the length is \\( 4b + 1 \\) meters.  \n\nArea = length × breadth:  \n\\[\nb(4b + 1) = 150\n\\]  \n\\[\n4b^2 + b = 150\n\\]  \n\\[\n4b^2 + b - 150 = 0\n\\]  \n\nSolve the quadratic:  \n\\[\nb = \\frac{-1 \\pm \\sqrt{1 + 2400}}{8} = \\frac{-1 \\pm \\sqrt{2401}}{8}\n\\]  \n\\(\\sqrt{2401} = 49\\), so:  \n\\[\nb = \\frac{-1 + 49}{8} = \\frac{48}{8} = 6\n\\]  \n(We ignore the negative root.)  \n\nSo breadth = 6 m, length = \\( 4(6) + 1 = 25 \\) m.  \n\nPerimeter = \\( 2(25 + 6) = 2 \\times 31 = 62 \\) m.  \n\nAnswer: C"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 6.39}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=2.13 steps=4 penalties=[]\nPath 2: pred=C weight=2.13 steps=5 penalties=[]\nPath 3: pred=C weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nWe need enough grams to meet both the vitamin E and vitamin A minimum daily requirements.  \n\n- Each gram gives 9% of the vitamin E requirement.  \nTo get 100% of vitamin E, we need:  \n\\( \\frac{100}{9} \\approx 11.11 \\) grams.  \n\n- Each gram gives 8% of the vitamin A requirement.  \nTo get 100% of vitamin A, we need:  \n\\( \\frac{100}{8} = 12.5 \\) grams.  \n\nSince we need to satisfy *both* requirements, we must take the larger of the two amounts, which is 12.5 grams.  \n\nAnswer: C"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (4/5 paths) ===\nRaw Votes: {'B': 3, 'C': 1}\nWeighted Votes: {'B': 6.09, 'C': 1.98}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=7 penalties=[]\nPath 2: pred=B weight=1.98 steps=11 penalties=['too_long']\nPath 3: pred=C weight=1.98 steps=13 penalties=['too_long']\nPath 4: pred=B weight=1.98 steps=13 penalties=['too_long']\n\n--- Selected Evidence Path ---\nFirst, let's figure out the total work needed in terms of \"large cake equivalents\" or just by time.\n\nEach helper can make 2 large cakes per hour or 35 small cakes per hour.  \nWe need 20 large cakes and 700 small cakes.\n\n**Step 1 – Time needed for large cakes**  \n20 large cakes ÷ 2 cakes per hour per helper = 10 helper-hours.\n\n**Step 2 – Time needed for small cakes**  \n700 small cakes ÷ 35 cakes per hour per helper = 20 helper-hours.\n\n**Step 3 – Total helper-hours**  \n10 + 20 = 30 helper-hours total.\n\n**Step 4 – Kitchen available time**  \nThe kitchen is available for 3 hours.  \nSo number of helpers needed = 30 helper-hours ÷ 3 hours = 10 helpers.\n\n**Step 5 – Match to options**  \n10 helpers corresponds to option B.\n\nAnswer: B"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.39}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=5 penalties=[]\nPath 2: pred=A weight=2.13 steps=6 penalties=[]\nPath 3: pred=A weight=2.13 steps=6 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told R, S, T, and U are on a line.  \nU is the midpoint of ST.  \nGiven lengths: RS = 5, RT = 17, ST = 22.\n\nFirst, since S and T are endpoints of ST = 22, and U is midpoint, we have:  \nSU = UT = 11.\n\nNow, points are collinear, but we need to figure order. There are two main cases: R is between S and T, or R is outside segment ST.\n\nCase 1: R between S and T  \nThen RS + RT should equal ST.  \nRS = 5, RT = 17 → 5 + 17 = 22 = ST.  \nThis fits perfectly, so S, R, T are in that order with R between S and T.  \nThus order on line: S — R — T, with distances: SR = 5, RT = 17, and ST = 22.  \n\nNow U is midpoint of ST. Since ST = 22, midpoint U is 11 from S and 11 from T.  \nFrom S to R is 5, so from S to U is 11, so R is between S and U (since 5 < 11).  \nDistance RU = SU - SR = 11 - 5 = 6.\n\nThus RU = 6.\n\nFinal answer choice: A.\n\nAnswer: A"
+    },
+    {
+      "prediction": "E",
+      "correct": "C",
+      "output": "=== Self-Consistency (5/5 paths) ===\nRaw Votes: {'E': 2, 'B': 1, 'D': 1, 'C': 1}\nWeighted Votes: {'B': 1.61, 'C': 1.1400000000000001, 'D': 1.3900000000000001, 'E': 3.0}\nFinal Answer: E\n\n--- Path Summaries ---\nPath 1: pred=E weight=1.61 steps=3 penalties=['no_strict_answer_line', 'too_long']\nPath 2: pred=B weight=1.61 steps=3 penalties=['no_strict_answer_line', 'too_long']\nPath 3: pred=E weight=1.39 steps=2 penalties=['no_strict_answer_line', 'too_long']\nPath 4: pred=D weight=1.39 steps=2 penalties=['no_strict_answer_line', 'too_long']\nPath 5: pred=C weight=1.14 steps=2 penalties=['no_strict_answer_line', 'too_long', 'conflicting_answer_mentions']\n\n--- Selected Evidence Path ---\nLet's define variables for the amount of falafel in each type of bread:\n\n- Let \\( p \\) = amount of falafel in one pita bread  \n- Let \\( r \\) = amount of falafel in one roll  \n- Let \\( b \\) = amount of falafel in one baguette  \n\nFrom the problem:\n\n1. Six pita breads contain the same amount of falafel as two rolls:  \n\\[\n6p = 2r \\quad \\Rightarrow \\quad r = 3p\n\\]\n\n2. Three rolls contain the same amount of falafel as five baguettes:  \n\\[\n3r = 5b\n\\]  \nSubstitute \\( r = 3p \\):  \n\\[\n3(3p) = 5b \\quad \\Rightarrow \\quad 9p = 5b \\quad \\Rightarrow \\quad b = \\frac{9}{5}p\n\\]\n\n3. We need: Two baguettes contain the same amount of falafel as how many pita breads?  \n\\[\n2b = 2 \\cdot \\frac{9}{5}p = \\frac{18}{5}p\n\\]  \nSo two baguettes equal \\(\\frac{18}{5}\\) pita breads.  \nThat’s \\( \\frac{18}{5} = 3.6 \\), which matches none of the options directly as a fraction, but \\(\\frac{18}{5}\\) simplifies to? Wait, check options:  \nA) \\(12/25\\) B) \\(3/2\\) C) \\(3\\) D) \\(2\\) E) \\(25/3\\)  \n\n\\(\\frac{18}{5}\\) isn't listed. Perhaps I misinterpreted — maybe they're asking for a ratio in pita breads.\n\nWe want number of pita breads \\( x \\) such that:  \n\\[\nx p = 2b\n\\]  \nWe have \\( b = \\frac{9}{5}p \\), so  \n\\[\nx p = 2 \\cdot \\frac{9}{5}p \\quad \\Rightarrow \\quad x = \\frac{18}{5}\n\\]  \n\nBut \\(\\frac{18}{5}\\) isn’t an option. Let's re-check the equations carefully.\n\n---\n\n**Re-check:**  \nSix pitas = two rolls:  \n\\( 6p = 2r \\) → \\( r = 3p \\) (correct)\n\nThree rolls = five baguettes:  \n\\( 3r = 5b \\) → \\( 3(3p) = 5b \\) → \\( 9p = 5b \\) → \\( b = \\frac{9}{5}p \\) (correct)\n\nTwo baguettes = ? pitas:  \n\\( 2b = 2 \\cdot \\frac{9}{5}p = \\frac{18}{5}p \\) → \\( \\frac{18}{5} \\) pitas.  \n\nThis is \\( 3.6 \\), which is \\( \\frac{18}{5} \\). But maybe they want answer as ratio \\( \\frac{p}{b} \\) or something else? Let’s see: They ask \"how many pita breads\", so answer should be number. \\( \\frac{18}{5} = 3.6\\), none of the options.  \n\nCheck if misinterpretation: Could it be \"Two baguettes contain the same amount of falafel as how many pita breads?\" means solve for \\( x \\) in \\( 2b = xp \\). That’s what we did, giving \\( x = \\frac{18}{5} \\).  \n\nBut perhaps they want \\( x \\) as \\( \\frac{?}{?} \\) and \\(\\frac{18}{5}\\) isn't there. Let's see options:  \nA) \\(12/25\\) B) \\(3/2\\) C) \\(3\\) D) \\(2\\) E) \\(25/3\\)\n\nMaybe I swapped relationships? Let's test with numbers:  \nPick \\( p = 5 \\) units. Then \\( 6p = 30 \\) units → \\( 2r = 30 \\) → \\( r = 15 \\).  \nThree rolls = 45 units → five baguettes = 45 → \\( b = 9 \\).  \nTwo baguettes = 18 units → \\( 18/5 = 3.6 \\) pitas. Still not matching.\n\nSo maybe \"how many pita breads\" means the ratio \\( \\frac{p}{b} \\) or something reversed? If they ask: Two baguettes equal how many pitas? That’s \\( 2b / p = 2 \\cdot (9/5) = 18/5\\).  \n\nPerhaps the answer is \\(\\frac{18}{5}\\) but it's not listed — unless they expect \\( \\frac{18}{5} = 3.6\\) and closest is 3 or \\( \\frac{25}{3"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 6.029999999999999}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=2.13 steps=5 penalties=[]\nPath 2: pred=C weight=1.89 steps=2 penalties=[]\nPath 3: pred=C weight=2.01 steps=3 penalties=[]\n\n--- Selected Evidence Path ---\nLet’s break this down.\n\nFirst, assume the original price is \\( 100 \\) units (rupees, dollars, etc.).\n\nWith a 20% discount, the sale price becomes:\n\\[\n100 - 20\\% \\text{ of } 100 = 100 - 20 = 80\n\\]\n\nNow, the shopkeeper wants to sell at the original price of 100 again.  \nThe current price is 80, so the increase needed is:\n\\[\n100 - 80 = 20\n\\]\n\nThe percentage increase from the discounted price (80) to the original (100) is:\n\\[\n\\frac{20}{80} \\times 100\\% = 25\\%\n\\]\n\nTherefore, he must increase the price by 25%.\n\nAnswer: C"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.27}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.01 steps=3 penalties=[]\nPath 2: pred=A weight=2.13 steps=5 penalties=[]\nPath 3: pred=A weight=2.13 steps=7 penalties=[]\n\n--- Selected Evidence Path ---\nLet the train fare for one person be \\( t \\) rupees.  \nThen the bus fare for one person is \\( \\frac{4}{3}t \\).\n\nWe have 6 bus passengers and 8 train passengers, total fare Rs. 1512.\n\nSo:\n\\[\n6 \\times \\frac{4}{3}t + 8 \\times t = 1512\n\\]\n\\[\n\\frac{24}{3}t + 8t = 1512\n\\]\n\\[\n8t + 8t = 1512\n\\]\n\\[\n16t = 1512\n\\]\n\\[\nt = \\frac{1512}{16} = 94.5\n\\]\n\nThat's not an option, so I must check:  \nThe problem says \"bus fare for two persons is four-thirds the train fare for one person\".  \nLet bus fare for one person be \\( b \\). Then:\n\\[\n2b = \\frac{4}{3}t\n\\]\n\\[\nb = \\frac{2}{3}t\n\\]\n\nNow 6 bus and 8 train:\n\\[\n6 \\times \\frac{2}{3}t + 8t = 1512\n\\]\n\\[\n4t + 8t = 1512\n\\]\n\\[\n12t = 1512\n\\]\n\\[\nt = 126\n\\]\n\nThat matches option A.\n\nAnswer: A"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 5.67}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=1.89 steps=2 penalties=[]\nPath 2: pred=B weight=1.89 steps=2 penalties=[]\nPath 3: pred=B weight=1.89 steps=2 penalties=[]\n\n--- Selected Evidence Path ---\nThe perimeter of a rectangle is calculated by adding up all four sides.  \nThe formula is:  \nPerimeter = 2 × (length + width)  \n\nHere, length = 8 cm, width = 3 cm.  \nSo, length + width = 8 + 3 = 11 cm.  \nThen, perimeter = 2 × 11 = 22 cm.  \n\nAnswer: B"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.39}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=4 penalties=[]\nPath 2: pred=B weight=2.13 steps=4 penalties=[]\nPath 3: pred=B weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nWe have six distinct books: English, Hindi, Mathematics, History, Geography, and Science.  \nThe number of ways to arrange \\(n\\) distinct items is \\(n!\\) (n factorial).\n\nHere, \\(n = 6\\), so the number of arrangements is:\n\n\\[\n6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720\n\\]\n\nTherefore, the correct answer is 720, which corresponds to option B.\n\nAnswer: B"
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'E': 3}\nWeighted Votes: {'E': 6.39}\nFinal Answer: E\n\n--- Path Summaries ---\nPath 1: pred=E weight=2.13 steps=7 penalties=[]\nPath 2: pred=E weight=2.13 steps=6 penalties=[]\nPath 3: pred=E weight=2.13 steps=6 penalties=[]\n\n--- Selected Evidence Path ---\nWe have \\( x \\) pickets, each \\( \\frac{1}{2} \\) inch wide.\n\nThe total width of all pickets is:\n\\[\nx \\cdot \\frac{1}{2} = \\frac{x}{2} \\text{ inches}.\n\\]\n\nBetween each pair of pickets there is 6 inches of space.  \nIf there are \\( x \\) pickets, there are \\( x - 1 \\) spaces.\n\nTotal space width is:\n\\[\n6(x - 1) \\text{ inches}.\n\\]\n\nSo total length in inches is:\n\\[\n\\frac{x}{2} + 6(x - 1) = \\frac{x}{2} + 6x - 6 = \\frac{x}{2} + \\frac{12x}{2} - 6 = \\frac{13x}{2} - 6.\n\\]\n\nWe want the length in feet (1 foot = 12 inches), so divide by 12:\n\\[\n\\frac{\\frac{13x}{2} - 6}{12} = \\frac{13x/2}{12} - \\frac{6}{12} = \\frac{13x}{24} - \\frac{1}{2}.\n\\]\n\nWrite with common denominator 24:\n\\[\n\\frac{13x}{24} - \\frac{12}{24} = \\frac{13x - 12}{24}.\n\\]\n\nThat matches option E.\n\nAnswer: E"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 6.4399999999999995}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=2.18 steps=7 penalties=[]\nPath 2: pred=C weight=2.13 steps=4 penalties=[]\nPath 3: pred=C weight=2.13 steps=6 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told:  \n- The ship travels 180 miles first.  \n- Then a plane starts from the same starting point, with speed 10 times that of the ship.  \n- We need the distance from the starting point where the plane meets the ship.\n\nLet the ship's speed be \\( v \\) miles per hour.  \nThen the plane's speed is \\( 10v \\) mph.\n\nWhen the plane starts, the ship has already traveled 180 miles.  \nLet \\( t \\) be the time (in hours) after the plane starts until they meet.\n\nIn time \\( t \\):  \n- The plane travels distance \\( 10v \\cdot t \\).  \n- The ship travels additional distance \\( v \\cdot t \\), so its total distance from start is \\( 180 + vt \\).\n\nThey meet when these distances are equal:  \n\\[\n10v t = 180 + v t\n\\]  \n\\[\n10v t - v t = 180\n\\]  \n\\[\n9 v t = 180\n\\]  \n\\[\nv t = 20\n\\]\n\nSo the meeting distance from the starting point is:  \n\\[\n10 v t = 10 \\times 20 = 200 \\text{ miles}\n\\]\n\nThus the answer is **C) 200**.\n\nAnswer: C"
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'E': 3}\nWeighted Votes: {'E': 6.39}\nFinal Answer: E\n\n--- Path Summaries ---\nPath 1: pred=E weight=2.13 steps=6 penalties=[]\nPath 2: pred=E weight=2.13 steps=6 penalties=[]\nPath 3: pred=E weight=2.13 steps=7 penalties=[]\n\n--- Selected Evidence Path ---\nWe know that 300 deer were tagged in 2001.  \nIn 2002, 500 deer were caught, and 20 of them had tags.\n\nIf the sample is representative, then the proportion of tagged deer in the sample equals the proportion of tagged deer in the whole population.\n\nThat proportion is:  \n\\[\n\\frac{20}{500} = \\frac{1}{25}\n\\]\n\nThis means that in the entire forest, tagged deer (300) make up \\( \\frac{1}{25} \\) of the total population.\n\nLet the total population be \\( N \\). Then:  \n\\[\n\\frac{300}{N} = \\frac{1}{25}\n\\]  \n\\[\nN = 300 \\times 25 = 7500\n\\]\n\nSo the total deer population is 7500.\n\nAnswer: E"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.09}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=7 penalties=[]\nPath 2: pred=B weight=1.98 steps=10 penalties=['too_long']\nPath 3: pred=B weight=1.98 steps=10 penalties=['too_long']\n\n--- Selected Evidence Path ---\nWe have two train lines:\n\n- Main line: starts at 5:00 AM, runs every 10 minutes.\n- Harbor line: starts at 5:02 AM, runs every 10 minutes.\n\nThe man arrives at a random time between 5:00 AM and some later time (we consider a full cycle to find probability).  \nWe want the probability that the next train to arrive is from the main line.\n\n---\n\n**Step 1: Understand the schedule pattern**  \nMain line trains at: 5:00, 5:10, 5:20, …  \nHarbor line trains at: 5:02, 5:12, 5:22, …\n\nThe time difference between a main line train and the next harbor line train is 2 minutes.  \nThe time difference between a harbor line train and the next main line train is 8 minutes.\n\nSo in each 10-minute cycle, the pattern repeats:  \n- From 0 to 2 minutes after a main line train, the next train is harbor (2 minutes).  \n- From 2 to 10 minutes after a main line train, the next train is main (8 minutes).\n\n---\n\n**Step 2: Probability calculation**  \nIf the man arrives at a random time uniformly, the chance that the next train is main line =  \n(length of interval where main is next) / (total cycle length) = 8 / 10 = 0.8.\n\n---\n\n**Step 3: Conclusion**  \nThus the probability is 0.8.\n\nAnswer: B"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.39}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=4 penalties=[]\nPath 2: pred=A weight=2.13 steps=4 penalties=[]\nPath 3: pred=A weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nWe start with 10 vehicles having an average weight of 12.2 tons.  \nTotal weight of those 10 vehicles = \\( 10 \\times 12.2 = 122 \\) tons.\n\nAfter adding a new truck, the average increases by 2.6 tons, so the new average is  \n\\( 12.2 + 2.6 = 14.8 \\) tons.\n\nNow there are 11 vehicles. Their total weight = \\( 11 \\times 14.8 = 162.8 \\) tons.\n\nThe weight of the new truck is the difference:  \n\\( 162.8 - 122 = 40.8 \\) tons.\n\nAnswer: A"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.04}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.13 steps=5 penalties=[]\nPath 2: pred=D weight=1.78 steps=8 penalties=['no_strict_answer_line']\nPath 3: pred=D weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told that over the next two years, population grows by 10% each year.  \nLet the current population be \\( P \\).  \nIn one year: \\( P \\times 1.10 \\)  \nIn two years: \\( P \\times 1.10^2 = P \\times 1.21 \\)\n\nThis future population (two years from now) is exactly double the population of one year ago.  \nLet the population one year ago be \\( P_{-1} \\).  \nThen:  \n\\[\nP \\times 1.21 = 2 \\times P_{-1}\n\\]\n\nWe want the percent increase over the last year, i.e., from \\( P_{-1} \\) to \\( P \\).  \nThat increase is:  \n\\[\n\\frac{P - P_{-1}}{P_{-1}} \\times 100\\%\n\\]\n\nFrom the equation:  \n\\[\nP_{-1} = \\frac{P \\times 1.21}{2} = 0.605P\n\\]\n\nSo the increase over last year is:  \n\\[\n\\frac{P - 0.605P}{0.605P} = \\frac{0.395P}{0.605P} \\approx 0.6529\n\\]  \nThat is roughly 65.3%.\n\nClosest option: 65%.\n\nAnswer: D"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.04}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=6 penalties=[]\nPath 2: pred=B weight=1.78 steps=6 penalties=['no_strict_answer_line']\nPath 3: pred=B weight=2.13 steps=6 penalties=[]\n\n--- Selected Evidence Path ---\nLet Arjun have \\( A \\) rupees and Sajal have \\( S \\) rupees.\n\n**First condition:**  \nIf Arjun gives $30 to Sajal:  \nArjun has \\( A - 30 \\) left, Sajal has \\( S + 30 \\).  \nSajal has twice the money left with Arjun:  \n\\[\nS + 30 = 2(A - 30)\n\\]\n\\[\nS + 30 = 2A - 60\n\\]\n\\[\nS = 2A - 90 \\quad \\text{(Equation 1)}\n\\]\n\n**Second condition:**  \nIf Sajal gives $10 to Arjun:  \nSajal has \\( S - 10 \\), Arjun has \\( A + 10 \\).  \nArjun will have thrice as much as Sajal:  \n\\[\nA + 10 = 3(S - 10)\n\\]\n\\[\nA + 10 = 3S - 30\n\\]\n\\[\nA = 3S - 40 \\quad \\text{(Equation 2)}\n\\]\n\nSubstitute Equation 1 into Equation 2:  \n\\[\nA = 3(2A - 90) - 40\n\\]\n\\[\nA = 6A - 270 - 40\n\\]\n\\[\nA = 6A - 310\n\\]\n\\[\n-5A = -310\n\\]\n\\[\nA = 62\n\\]\n\nThen \\( S = 2(62) - 90 = 124 - 90 = 34 \\).\n\nSo Arjun has $62, Sajal has $34.\n\n**Answer: B**\n\nAnswer: B"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 5.790000000000001}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=1.77 steps=1 penalties=[]\nPath 2: pred=A weight=2.13 steps=4 penalties=[]\nPath 3: pred=A weight=1.89 steps=2 penalties=[]\n\n--- Selected Evidence Path ---\nWe know the yard is rectangular, so area = length × width.  \nOne side is 100 feet, and the area is 3,000 square feet.  \n\nLet the other side be \\( L \\).  \n\n\\[\n100 \\times L = 3000\n\\]  \n\nDivide both sides by 100:  \n\n\\[\nL = \\frac{3000}{100} = 30\n\\]  \n\nSo the other side is 30 feet.  \n\nAnswer: A"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 5.69}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=1.98 steps=18 penalties=['too_long']\nPath 2: pred=A weight=2.08 steps=22 penalties=['too_long']\nPath 3: pred=A weight=1.63 steps=12 penalties=['no_strict_answer_line', 'too_long']\n\n--- Selected Evidence Path ---\nWe are told:\n\n- GCF = 11  \n- LCM = 7700  \n- One integer = 350  \n\nLet the other integer be \\( y \\).\n\nWe know the relationship:  \n\\[\n\\text{GCF}(a, b) \\times \\text{LCM}(a, b) = a \\times b\n\\]  \n\nSo:  \n\\[\n11 \\times 7700 = 350 \\times y\n\\]  \n\nFirst, calculate \\(11 \\times 7700\\):  \n\\[\n11 \\times 7700 = 84700\n\\]  \n\nThus:  \n\\[\n350y = 84700\n\\]  \n\nDivide both sides by 350:  \n\\[\ny = \\frac{84700}{350}\n\\]  \n\nSimplify:  \n\\[\ny = \\frac{84700 \\div 50}{350 \\div 50} = \\frac{1694}{7} = 242\n\\]  \n\nSo the other integer is 242.\n\nCheck:  \n- \\(350 = 2 \\cdot 5^2 \\cdot 7\\)  \n- \\(242 = 2 \\cdot 11^2\\)  \n- GCF = common factors: only \\(11\\)? Wait — 350 has no factor 11, so something's off.  \n\nHold on — Let’s recompute properly.\n\nWe have GCF = 11, so both numbers must be multiples of 11.  \n350 ÷ 11 = 31.818…, not an integer. This means 350 cannot have GCF 11 with any number unless 350 itself is a multiple of 11, which it is not (350 = 2 × 5² × 7).  \n\nThus, there is an inconsistency — unless the problem meant something else. But let’s check the formula again:  \n\nGCF × LCM = product of numbers  \n11 × 7700 = 84700  \n350 × y = 84700 → y = 242.  \n\nNow check if GCF(350, 242) = 11:  \n350 = 2 × 5² × 7  \n242 = 2 × 11²  \nCommon factors: only 2, so GCF = 2, not 11.  \n\nSo something is wrong. This implies the given numbers don’t satisfy the condition.  \n\nMaybe the problem expects us to find which option yields GCF = 11 and LCM = 7700 with 350? Let's test each:\n\n- A) 242: factors = 2 × 11², 350 = 2 × 5² × 7 → GCF = 2, LCM = 2 × 5² × 7 × 11² = 2×25×7×121 = 42350, not 7700.  \n- B) 308 = 2² × 7 × 11, 350 = 2 × 5² × 7 → GCF = 2 × 7 = 14, not 11.  \n- C) 352 = 2⁵ × 11, 350 = 2 × 5² × 7 → GCF = 2, no.  \n- D) 412 = 2² × 103, no 11 factor.  \n- E) 456 = 2³ × 3 × 19, no 11.\n\nNone of these have GCF 11 with 350. But maybe the 350 is the one that has factor 11? It doesn't.  \n\nWait— Possibly the problem meant the *other* integer is 350, and we need the one that works? Let’s check: If one integer is 350, and GCF = 11, then 350 must be divisible by 11, but it's not. So there's an error in the problem statement as presented?  \n\nGiven the options, only 242 gives LCM 7700 with 350 in the product formula, but GCF condition fails. Since standard math contest problems rely on the formula, the intended answer is likely 242 despite the GCF mismatch (maybe they assume 350 is divisible by 11, which it is not, but the formula gives 242).\n\nThus final answer based on the formula:  \n\nAnswer: A"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.27}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=4 penalties=[]\nPath 2: pred=A weight=2.13 steps=7 penalties=[]\nPath 3: pred=A weight=2.01 steps=3 penalties=[]\n\n--- Selected Evidence Path ---\nLet the side length of the original square cloth be \\( s \\) feet.  \nWhen trimmed by 4 feet on one edge, the rectangle has dimensions:  \n- length = \\( s \\)  \n- width = \\( s - 4 \\)  \n\nThis rectangle is cut diagonally in half, giving two triangles, each with area:  \n\\[\n\\frac{1}{2} \\times s \\times (s - 4) = 70\n\\]  \nMultiply both sides by 2:  \n\\[\ns(s - 4) = 140\n\\]  \n\\[\ns^2 - 4s - 140 = 0\n\\]  \n\nSolve the quadratic:  \n\\[\ns = \\frac{4 \\pm \\sqrt{16 + 560}}{2}\n= \\frac{4 \\pm \\sqrt{576}}{2}\n= \\frac{4 \\pm 24}{2}\n\\]  \nPositive solution:  \n\\[\ns = \\frac{4 + 24}{2} = 14\n\\]  \n\nPerimeter of original square:  \n\\[\n4s = 4 \\times 14 = 56\n\\]  \n\nAnswer: A"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.029999999999999}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.01 steps=3 penalties=[]\nPath 2: pred=A weight=1.89 steps=2 penalties=[]\nPath 3: pred=A weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nThe original length is 30 cm, and it is reduced in the ratio 5 : 3.  \nThis means the original length corresponds to 5 parts, and the new length corresponds to 3 parts.\n\nWe can set up the proportion:  \nOriginal length : New length = 5 : 3  \nSo,  \n30 / New length = 5 / 3  \n\nCross multiply:  \n5 × New length = 30 × 3  \n5 × New length = 90  \nNew length = 90 / 5 = 18 cm  \n\nThus, the new length is 18 cm.\n\nAnswer: A"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 5.9399999999999995}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=1.98 steps=11 penalties=['too_long']\nPath 2: pred=A weight=1.98 steps=13 penalties=['too_long']\nPath 3: pred=A weight=1.98 steps=9 penalties=['too_long']\n\n--- Selected Evidence Path ---\nWe have M = abc, which is a three-digit number meaning a is hundreds digit, b is tens, c is units.  \nN = cba, which is the reverse.  \n\nGiven M > N, so a > c.  \n\nWe are told:  \nM - N + 396c = 990.\n\nExpress M and N in digits:  \nM = 100a + 10b + c  \nN = 100c + 10b + a  \n\nSo M - N = (100a + 10b + c) - (100c + 10b + a) = 99a - 99c = 99(a - c).  \n\nPlug into equation:  \n99(a - c) + 396c = 990  \nDivide by 99:  \n(a - c) + 4c = 10  \nSo a - c + 4c = a + 3c = 10.\n\nThus:  \na + 3c = 10.\n\nSince a and c are digits (0–9), a > c, and a is from 1 to 9 because it's the hundreds digit of a three-digit number.\n\nPossible (a, c):  \nIf c = 0 → a = 10 (invalid)  \nc = 1 → a = 7  \nc = 2 → a = 4  \nc = 3 → a = 1 (but a must be > c? 1 > 3 false, so discard)  \nc ≥ 4 → a would be ≤ -2, invalid.\n\nSo valid pairs: (a,c) = (7,1) and (4,2).  \n\nNow b can be any digit 0–9. That gives for each (a,c): 10 possibilities for b.\n\nSo total M values: 2 × 10 = 20.\n\nNow we need how many M are more than 300.  \nFor a = 7: all M from 710 to 719 are > 300 (all 10).  \nFor a = 4: all M from 420 to 429 are > 300 (all 10).  \nSo all 20 are > 300.\n\nThus answer: 20.\n\nAnswer: A"
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Self-Consistency (5/5 paths) ===\nRaw Votes: {'A': 2, 'E': 3}\nWeighted Votes: {'A': 4.41, 'E': 6.489999999999999}\nFinal Answer: E\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.23 steps=6 penalties=[]\nPath 2: pred=E weight=2.13 steps=10 penalties=[]\nPath 3: pred=E weight=2.23 steps=8 penalties=[]\nPath 4: pred=A weight=2.18 steps=7 penalties=[]\nPath 5: pred=E weight=2.13 steps=8 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told:  \n- More than 501 students.  \n- 20% exactly took physics.  \n- 28% exactly took math.  \n\nSince the percentages must correspond to whole numbers of students, the total number of students must be such that both 20% and 28% are integers.\n\nThat means the total must be divisible by 5 (since 20% = 1/5) and also divisible by 25 (because 28% = 28/100 = 7/25, so denominator 25).\n\nSo total must be a common multiple of 5 and 25 → multiple of 25.  \nAlso, 28% = 7/25 means total must be a multiple of 25 anyway.\n\nBut more specifically, 20% = 1/5 means total must be a multiple of 5, which is already covered.\n\nThus, total must be a multiple of 25.  \nNow find the smallest multiple of 25 that is more than 501.\n\nMultiples of 25: 500, 525, 550…  \nMore than 501 → smallest is 525.\n\nCheck options:  \nA) 550, B) 570, C) 600, D) 700, E) none of these.  \n525 is not listed, so answer is E) none of these.\n\nAnswer: E"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.1499999999999995}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=1.89 steps=2 penalties=[]\nPath 2: pred=B weight=2.13 steps=4 penalties=[]\nPath 3: pred=B weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nLet's break this down step by step.\n\n1. Raj is **17 years old now**.  \n2. Five years back, Raj was \\( 17 - 5 = 12 \\) years old.  \n3. At that time, Raj was **one-third** as old as Rahim.  \n   So, if Rahim's age 5 years ago was \\( R \\), then:  \n   \\[\n   12 = \\frac{1}{3} R\n   \\]  \n   \\[\n   R = 12 \\times 3 = 36\n   \\]  \n   So, Rahim was 36 years old 5 years ago.  \n4. Therefore, Rahim's current age is \\( 36 + 5 = 41 \\).\n\nAnswer: B"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.27}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=4 penalties=[]\nPath 2: pred=B weight=2.01 steps=3 penalties=[]\nPath 3: pred=B weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nFirst, we need to determine the area the cow can graze. The cow is tethered with a 14-foot rope, so it can graze in a circle of radius 14 feet.\n\nArea of the grazing circle = π × r²  \n= π × (14)²  \n= π × 196  \n≈ 3.1416 × 196  \n≈ 615.75 sq. ft.\n\nThe cow grazes 10 sq. ft. per day.  \nTime required = Total area / Grazing rate  \n= 615.75 / 10  \n≈ 61.575 days.\n\nThis is closest to 61 days.\n\nAnswer: B"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.39}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=4 penalties=[]\nPath 2: pred=B weight=2.13 steps=5 penalties=[]\nPath 3: pred=B weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nFirst, find the cost price (CP) of the book.  \nSelling price (SP) = Rs 27.50 with a 10% profit means:  \nSP = CP + 10% of CP = 1.10 × CP  \n\nSo:  \n1.10 × CP = 27.50  \nCP = 27.50 / 1.10 = 25.00  \n\nNow, if sold for Rs 25.75:  \nNew SP = 25.75  \nCP = 25.00  \nProfit = 25.75 - 25.00 = 0.75  \n\nProfit percentage = (0.75 / 25.00) × 100 = 3%  \n\nSo it’s a 3% profit.\n\nAnswer: B"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 5.68}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.01 steps=3 penalties=[]\nPath 2: pred=B weight=2.01 steps=3 penalties=[]\nPath 3: pred=B weight=1.66 steps=3 penalties=['no_strict_answer_line']\n\n--- Selected Evidence Path ---\nWe have three children: Susan, Tim, and Zen.  \nThe chairs are identical, but the children are distinct, so we are arranging distinct people in positions.\n\nWe want Susan to be on the left of Tim.  \nWe can first find the total number of arrangements of 3 children in a line.  \nTotal arrangements = 3! = 6.\n\nIn half of these arrangements, Susan will be to the left of Tim, and in half, she will be to the right.  \nSo the number where Susan is left of Tim = 6 / 2 = 3.\n\nThus, the answer is 3.\n\nAnswer: B"
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'B': 3}\nWeighted Votes: {'B': 6.39}\nFinal Answer: B\n\n--- Path Summaries ---\nPath 1: pred=B weight=2.13 steps=7 penalties=[]\nPath 2: pred=B weight=2.13 steps=7 penalties=[]\nPath 3: pred=B weight=2.13 steps=7 penalties=[]\n\n--- Selected Evidence Path ---\nWe are told the bill has two parts: a fixed charge and a variable charge that depends on the number of calls.  \nLet the fixed part be \\( F \\) and the variable part be \\( V \\) per call.\n\nFrom the first month:  \n\\( F + 540V = 1800 \\)  ...(1)\n\nFrom the second month:  \n\\( F + 620V = 2040 \\)  ...(2)\n\nSubtract (1) from (2):  \n\\( (F + 620V) - (F + 540V) = 2040 - 1800 \\)  \n\\( 80V = 240 \\)  \n\\( V = 3 \\)\n\nNow substitute back into (1):  \n\\( F + 540 \\times 3 = 1800 \\)  \n\\( F + 1620 = 1800 \\)  \n\\( F = 180 \\)\n\nFor the month with 500 calls:  \nBill = \\( F + 500V = 180 + 500 \\times 3 = 180 + 1500 = 1680 \\)\n\nThus, the bill is Rs. 1680.\n\nAnswer: B"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.04}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=6 penalties=[]\nPath 2: pred=A weight=1.78 steps=5 penalties=['no_strict_answer_line']\nPath 3: pred=A weight=2.13 steps=5 penalties=[]\n\n--- Selected Evidence Path ---\nFirst, let's find the rotation times per full rotation for each ball.\n\nBall A:  \n2 rotations in 26 minutes → 1 rotation in \\( \\frac{26}{2} = 13 \\) minutes.\n\nBall B:  \n5 rotations in 35 minutes → 1 rotation in \\( \\frac{35}{5} = 7 \\) minutes.\n\nThey start together at the starting point.  \nThe next time they both meet at the starting point will be the least common multiple (LCM) of their rotation times.\n\nWe need LCM of 13 and 7.  \nSince 13 and 7 are both prime and have no common factors, their LCM is \\( 13 \\times 7 = 91 \\) minutes.\n\n91 minutes = 1 hour and 31 minutes.\n\nAnswer: A"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.27}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.01 steps=3 penalties=[]\nPath 2: pred=D weight=2.13 steps=4 penalties=[]\nPath 3: pred=D weight=2.13 steps=4 penalties=[]\n\n--- Selected Evidence Path ---\nWe know there are 45 books total.  \n30 are hardcover, and 20 are fiction.\n\nWe want the maximum number of books that could be both hardcover and fiction.\n\nThe maximum possible number of books that are both is limited by the smaller of the two groups, because you can't have more books that are both than there are in either category.  \nThe smaller count is fiction: 20.\n\nSo the maximum possible is 20, if every fiction book is also hardcover.  \nThat would give 20 hardcover fiction books, 10 hardcover non-fiction, and 0 fiction non-hardcover, which totals 30 + 20 - 20 = 30 hardcover total and still works with 20 fiction total.\n\nThus the answer is 20.\n\nAnswer: D"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.39}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=5 penalties=[]\nPath 2: pred=A weight=2.13 steps=5 penalties=[]\nPath 3: pred=A weight=2.13 steps=6 penalties=[]\n\n--- Selected Evidence Path ---\nLet’s define:\n\n- Let \\( x \\) be the number of newspapers ordered each day from Monday to Saturday (6 days).\n- Then on Sunday, they order twice as many: \\( 2x \\).\n\nCost per paper:  \n- Sunday: $4  \n- Other days: $1  \n\nTotal weekly cost:  \n- Sunday cost: \\( 2x \\times 4 = 8x \\)  \n- Monday–Saturday cost: \\( 6 \\times (x \\times 1) = 6x \\)  \n\nSo total cost:  \n\\[\n8x + 6x = 14x\n\\]  \nWe know total cost is $210:  \n\\[\n14x = 210\n\\]  \n\\[\nx = 15\n\\]\n\nThe question asks for how many newspapers on Monday, which is \\( x = 15 \\).\n\nAnswer: A"
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'A': 3}\nWeighted Votes: {'A': 6.39}\nFinal Answer: A\n\n--- Path Summaries ---\nPath 1: pred=A weight=2.13 steps=7 penalties=[]\nPath 2: pred=A weight=2.13 steps=10 penalties=[]\nPath 3: pred=A weight=2.13 steps=6 penalties=[]\n\n--- Selected Evidence Path ---\nLet the original number of friends be \\( x \\).  \nPlanned contribution per person = \\( \\frac{96}{x} \\).  \n\nFour friends didn’t come, so the number attending = \\( x - 4 \\).  \nActual contribution per person = \\( \\frac{96}{x - 4} \\).  \n\nThe increase is Rs. 4 per person:  \n\\[\n\\frac{96}{x - 4} - \\frac{96}{x} = 4\n\\]\n\nFactor out 96:  \n\\[\n96 \\left( \\frac{1}{x-4} - \\frac{1}{x} \\right) = 4\n\\]  \n\\[\n\\frac{1}{x-4} - \\frac{1}{x} = \\frac{4}{96} = \\frac{1}{24}\n\\]\n\nCombine the left side:  \n\\[\n\\frac{x - (x-4)}{x(x-4)} = \\frac{4}{x(x-4)} = \\frac{1}{24}\n\\]  \n\\[\n4 \\cdot 24 = x(x-4)\n\\]  \n\\[\n96 = x^2 - 4x\n\\]  \n\\[\nx^2 - 4x - 96 = 0\n\\]\n\nSolve:  \n\\[\nx = \\frac{4 \\pm \\sqrt{16 + 384}}{2} = \\frac{4 \\pm \\sqrt{400}}{2} = \\frac{4 \\pm 20}{2}\n\\]  \nPositive solution:  \n\\[\nx = \\frac{24}{2} = 12\n\\]\n\nSo original number = 12.  \nNumber who attended = \\( 12 - 4 = 8 \\).\n\nAnswer: A"
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'C': 3}\nWeighted Votes: {'C': 5.91}\nFinal Answer: C\n\n--- Path Summaries ---\nPath 1: pred=C weight=1.89 steps=2 penalties=[]\nPath 2: pred=C weight=2.13 steps=5 penalties=[]\nPath 3: pred=C weight=1.89 steps=2 penalties=[]\n\n--- Selected Evidence Path ---\nWe start by finding the perimeter of the rectangle, since the same wire is being reshaped.\n\nRectangle length = 27 cm  \nRectangle breadth = 17 cm  \nPerimeter = 2 × (length + breadth) = 2 × (27 + 17) = 2 × 44 = 88 cm.\n\nThis 88 cm is the total length of the wire, which is then bent into a square.\n\nA square has 4 equal sides.  \nSide length of square = Perimeter ÷ 4 = 88 ÷ 4 = 22 cm.\n\nThus, each side of the square is 22 cm.\n\nAnswer: C"
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'E': 3}\nWeighted Votes: {'E': 6.39}\nFinal Answer: E\n\n--- Path Summaries ---\nPath 1: pred=E weight=2.13 steps=5 penalties=[]\nPath 2: pred=E weight=2.13 steps=6 penalties=[]\nPath 3: pred=E weight=2.13 steps=6 penalties=[]\n\n--- Selected Evidence Path ---\nLet the amount each nephew gets be \\( x \\) rupees.  \nThen each daughter gets \\( 4x \\), and each son gets \\( 5x \\).\n\nThe total number of people:  \n- 5 sons → total for sons = \\( 5 \\times 5x = 25x \\)  \n- 4 daughters → total for daughters = \\( 4 \\times 4x = 16x \\)  \n- 2 nephews → total for nephews = \\( 2 \\times x = 2x \\)\n\nSum:  \n\\( 25x + 16x + 2x = 43x \\)\n\nGiven total amount = 8600, so  \n\\( 43x = 8600 \\)  \n\\( x = \\frac{8600}{43} = 200 \\)\n\nEach daughter receives \\( 4x = 4 \\times 200 = 800 \\).\n\nAnswer: E"
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'D': 3}\nWeighted Votes: {'D': 6.27}\nFinal Answer: D\n\n--- Path Summaries ---\nPath 1: pred=D weight=2.13 steps=5 penalties=[]\nPath 2: pred=D weight=2.13 steps=5 penalties=[]\nPath 3: pred=D weight=2.01 steps=3 penalties=[]\n\n--- Selected Evidence Path ---\nLet’s break this down.\n\nMeenu says:  \n\"I weigh 29 kgs plus half of my weight.\"\n\nLet her actual weight be \\( W \\).  \nThen the statement becomes:\n\n\\[\nW = 29 + \\frac{1}{2}W\n\\]\n\nSubtract \\(\\frac{1}{2}W\\) from both sides:\n\n\\[\nW - \\frac{1}{2}W = 29\n\\]\n\\[\n\\frac{1}{2}W = 29\n\\]\n\nMultiply both sides by 2:\n\n\\[\nW = 58\n\\]\n\nSo Meenu weighs 58 kg.\n\nAnswer: D"
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Self-Consistency (3/5 paths) ===\nRaw Votes: {'E': 3}\nWeighted Votes: {'E': 6.1499999999999995}\nFinal Answer: E\n\n--- Path Summaries ---\nPath 1: pred=E weight=2.13 steps=4 penalties=[]\nPath 2: pred=E weight=2.01 steps=3 penalties=[]\nPath 3: pred=E weight=2.01 steps=3 penalties=[]\n\n--- Selected Evidence Path ---\nLet’s think it through step by step.\n\nRoy has 5 tablets. He takes one tablet every 15 minutes.  \nIf he takes the first tablet at time 0, then:\n\n- 1st tablet: 0 minutes  \n- 2nd tablet: 15 minutes  \n- 3rd tablet: 30 minutes  \n- 4th tablet: 45 minutes  \n- 5th tablet: 60 minutes  \n\nSo, the time from the first tablet to the last tablet is 60 minutes.\n\nAnswer: E"
+    }
+  ]
+}
