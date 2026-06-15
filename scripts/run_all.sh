@@ -7,15 +7,15 @@
 set -e
 
 # 从环境变量读取 API Key；推送代码前请勿硬编码密钥
-API_KEY="${DMX_API_KEY:-}"
+API_KEY="${OPENAI_API_KEY:-}"
 if [ -z "$API_KEY" ]; then
-    echo "Error: DMX_API_KEY environment variable is not set."
+    echo "Error: OPENAI_API_KEY environment variable is not set."
     echo "Please set it before running this script, e.g.:"
-    echo '  export DMX_API_KEY="your-api-key"'
+    echo '  export OPENAI_API_KEY="your-api-key"'
     exit 1
 fi
-BASE_URL="https://www.dmxapi.cn/v1"
-MODEL="deepseek-v4-flash"
+BASE_URL="https://api.deepseek.com/v1"
+MODEL="deepseek-chat"
 N_SAMPLES="${1:-100}"
 
 echo "========================================"

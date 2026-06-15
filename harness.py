@@ -19,7 +19,11 @@ from typing import Any, Dict, List, Optional
 from tqdm import tqdm
 
 from eval.metrics import compute_metrics
-from models import OpenAIModel, DebertaStepVerifier
+from models import OpenAIModel
+try:
+    from models import DebertaStepVerifier
+except ImportError:
+    DebertaStepVerifier = None
 from retrieval import SimpleKeywordRetriever
 from strategies import (
     BaseCOTStrategy,
@@ -193,7 +197,7 @@ def main():
     parser = argparse.ArgumentParser(description="COT Experiment Harness")
     parser.add_argument("--strategy", type=str, default="base_cot", help="Strategy name")
     parser.add_argument("--dataset", type=str, default="aqua", help="Dataset/task name")
-    parser.add_argument("--model", type=str, default="deepseek-v4-flash", help="Model name")
+    parser.add_argument("--model", type=str, default="deepseek-chat", help="Model name")
     parser.add_argument("--split", type=str, default="test", help="Dataset split")
     parser.add_argument("--n_samples", type=int, default=None, help="Number of samples to run")
     parser.add_argument("--temperature", type=float, default=0.7, help="Sampling temperature")
@@ -203,8 +207,8 @@ def main():
     parser.add_argument(
         "--base_url",
         type=str,
-        default="https://www.dmxapi.cn/v1",
-        help="Base URL for the API endpoint (default: DMXAPI)",
+        default="https://api.deepseek.com/v1",
+        help="Base URL for the API endpoint (default: DeepSeek Official)",
     )
     # Strategy-specific parameters
     parser.add_argument("--n_paths", type=int, default=5, help="Number of reasoning paths per prompt (for self_consistency / step_verifier / prefix_consistency)")

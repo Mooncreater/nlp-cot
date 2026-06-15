@@ -232,7 +232,7 @@ class SelfConsistencyStrategy(BaseStrategy):
         path_weights: List[float] = []
         path_quality_details: List[Dict[str, Any]] = []
 
-        # Sequential calls are more compatible with DMXAPI-like endpoints than n > 1.
+        # Sequential calls are more compatible with rate-limited endpoints than n > 1.
         for i in range(n):
             print(f"    [Self-Consistency] Generating path {i + 1}/{n}...", end=" ")
             batch = self.model.generate(

@@ -18,7 +18,7 @@
 - [x] 定制 init.sh — 环境验证脚本
 - [x] 创建项目代码目录结构（data/, prompts/, strategies/, tasks/, models/, eval/, experiments/runs/）
 - [x] 编写 harness.py 主入口框架（五子系统：Instructions/Tools/Environment/State/Feedback）
-- [x] 封装 LLM 模型接口（models/base.py + models/openai_api.py，默认兼容 DMXAPI OpenAI-compatible 接口）
+- [x] 封装 LLM 模型接口（models/base.py + models/openai_api.py，默认兼容 DeepSeek 官方 OpenAI-compatible 接口）
 - [x] 实现 AQuA 数据集加载（tasks/aqua_task.py）
 - [x] 实现基础 COT 策略（strategies/base_cot.py + prompts/base_cot.txt）
 - [x] 实现 Self-Consistency 策略（strategies/self_consistency.py）
@@ -62,7 +62,7 @@
 - **Harness框架**：采用 walkinglabs 五子系统模型（Instructions/Tools/Environment/State/Feedback）
 - **实验管理**：统一入口 harness.py，配置驱动，结果自动记录到 experiments/runs/
 - **评估方法**：Controlled variable exclusion test（固定模型，每次只变一个策略），并结合 Harness 子系统覆盖矩阵解释策略差异
-- **模型调用方式**：OpenAI-compatible API（默认模型 deepseek-v4-flash，默认 base_url 为 DMXAPI `https://www.dmxapi.cn/v1`）
+- **模型调用方式**：OpenAI-compatible API（默认模型 deepseek-chat，默认 base_url 为 DeepSeek 官方 `https://api.deepseek.com/v1`）
 
 ## Files Modified This Session
 

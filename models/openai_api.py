@@ -2,11 +2,9 @@
 OpenAI-compatible API wrapper for the COT project.
 
 Supports any OpenAI-compatible endpoint, including:
-- DMXAPI (https://www.dmxapi.cn/v1)
+- DeepSeek Official API (https://api.deepseek.com/v1)
 - Official OpenAI API
 - Other third-party compatible services
-
-Reference: 模型调用参考.py (DMXAPI interface)
 """
 import os
 from typing import List, Dict, Any, Optional
@@ -21,7 +19,7 @@ class OpenAIModel(BaseModel):
 
     def __init__(
         self,
-        model_name: str = "deepseek-v4-flash",
+        model_name: str = "deepseek-chat",
         api_key: Optional[str] = None,
         base_url: Optional[str] = None,
         **kwargs
@@ -75,5 +73,5 @@ class OpenAIModel(BaseModel):
 
     def get_model_info(self) -> Dict[str, Any]:
         info = super().get_model_info()
-        info["provider"] = "dmxapi_openai_compatible"
+        info["provider"] = "deepseek_openai_compatible"
         return info

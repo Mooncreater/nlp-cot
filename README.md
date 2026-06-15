@@ -6,7 +6,7 @@
 
 ## 📋 项目简介
 
-本项目基于 OpenAI-compatible API（DMXAPI / deepseek-v4-flash），在 AQuA（Algebraic Word Problems）数据集上实现并对比 7 种 CoT 推理策略：
+本项目基于 OpenAI-compatible API（DeepSeek 官方 / deepseek-chat），在 AQuA（Algebraic Word Problems）数据集上实现并对比 7 种 CoT 推理策略：
 
 1. **Base COT** — 基础思维链推理
 2. **Self-Consistency** — 多路径采样 + 路径质量加权投票
@@ -115,13 +115,13 @@ bash scripts/init.sh
 
 ```bash
 # Linux / macOS / Git Bash
-export DMX_API_KEY="your-api-key-here"
+export OPENAI_API_KEY="your-api-key-here"
 
 # Windows CMD
-set DMX_API_KEY=your-api-key-here
+set OPENAI_API_KEY=your-api-key-here
 
 # Windows PowerShell
-$env:DMX_API_KEY="your-api-key-here"
+$env:OPENAI_API_KEY="your-api-key-here"
 ```
 
 ---
@@ -179,9 +179,9 @@ python harness.py \
   --strategy base_cot \
   --dataset aqua \
   --n_samples 100 \
-  --model deepseek-v4-flash \
-  --api_key "$DMX_API_KEY" \
-  --base_url "https://www.dmxapi.cn/v1" \
+  --model deepseek-chat \
+  --api_key "$OPENAI_API_KEY" \
+  --base_url "https://api.deepseek.com/v1" \
   --temperature 0.7 \
   --max_tokens 1024 \
   --output_dir experiments/runs
@@ -319,7 +319,7 @@ python harness_report.py
 
 ## ⚠️ 已知问题与注意事项
 
-1. **API 限流**：DMXAPI 不支持 `n > 1` 的批量生成，`self_consistency`、`prefix_consistency` 和 `step_verifier` 已改为循环调用 `n=1`
+1. **API 限流**：当前端点不支持 `n > 1` 的批量生成，`self_consistency`、`prefix_consistency` 和 `step_verifier` 已改为循环调用 `n=1`
 2. **step_verifier LLM 模式极慢**：50 样本约需 3 小时（206.6s/题），建议使用 `--local_verifier` 本地模式（52.3s/题，快 4 倍）
 3. **DeBERTa verifier 分数偏低**：当前分数范围 0.0~2.0（vs 理想 0~10），原因在于训练数据（紧凑数学符号）与 LLM 输出（英文叙述）的风格不匹配。相对排序仍然有效——分数高的路径在风格上更接近训练数据
 4. **prefix_consistency 速度**：50 样本实测约 53.7 分钟（64.4s/题，3 路径 × 3 再生），墙钟时间高于增强版 Self-Consistency，但输出 token 更低
