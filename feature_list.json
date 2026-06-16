@@ -54,7 +54,7 @@
       "description": "结合外部知识库，利用检索增强技术赋能COT推理",
       "dependencies": ["feat-004"],
       "status": "completed",
-      "evidence": "strategies/rag_cot.py + retrieval/ + data/knowledge_base.json + prompts/rag_cot.txt + verify_feat007.py 干跑验证通过；50样本准确率78.0%，100样本（deepseek-chat）准确率78.0%，平均输出token 175.7"
+      "evidence": "strategies/rag_cot.py + retrieval/ + data/knowledge_base.json + prompts/rag_cot.txt + verify_feat007.py 干跑验证通过；50样本准确率78.0%（受GBK编码bug影响），修复后100样本（deepseek-chat）准确率92.0%，平均输出token 197.9"
     },
     {
       "id": "feat-008",
@@ -86,7 +86,7 @@
       "description": "基于 Prefix Consistency（PC-WMV）的可靠性加权投票策略：截断 CoT 前缀并再生，用答案复现率作为权重进行加权多数投票，达到标准 Self-Consistency 准确率的同时显著降低 token 消耗",
       "dependencies": ["feat-005"],
       "status": "completed",
-      "evidence": "strategies/prefix_consistency.py 实现截断-再生-加权投票全流程；支持 linear/quadratic/cubic/unanimous 权重函数；verify_feat011.py 干跑验证通过；50样本测试达到47/50=94%准确率，平均输出token 160.9"
+      "evidence": "strategies/prefix_consistency.py 实现截断-再生-加权投票全流程；支持 linear/quadratic/cubic/unanimous 权重函数；verify_feat011.py 干跑验证通过；50样本准确率94.0%（47/50），100样本（deepseek-chat）准确率93.0%，平均输出token 159.9，所有策略中token效率最高"
     }
   ]
 }

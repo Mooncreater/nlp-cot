@@ -37,8 +37,9 @@
 - [x] 100 样本真实 API 实验（deepseek-chat，AQuA test 前 100 条）
   - [x] base_cot：91/100 = 91.0%，avg_out_tokens=187.6
   - [x] self_consistency：94/100 = 94.0%，avg_out_tokens=238.6
-  - [x] rag_cot：78/100 = 78.0%，avg_out_tokens=175.7
+  - [x] rag_cot：92/100 = 92.0%，avg_out_tokens=197.9（修复 GBK 编码 bug 后重测）
   - [x] multi_agent_debate：91/100 = 91.0%，avg_out_tokens=370.8
+  - [x] prefix_consistency：93/100 = 93.0%，avg_out_tokens=159.9
   - [x] step_verifier（deepseek-v4-flash）：94/100 = 94.0%，avg_out_tokens=563.7
 
 ### What's In Progress
@@ -48,9 +49,9 @@
 ### What's Next
 
 1. 补全剩余策略的 100 样本基准测试：
-   - prefix_consistency：`python harness.py --strategy prefix_consistency --dataset aqua --n_samples 100 --n_paths 3`
    - few_shot_cot：`python harness.py --strategy few_shot_cot --dataset aqua --n_samples 100 --n_shots 5`
    - step_verifier（deepseek-chat）：`python harness.py --strategy step_verifier --dataset aqua --n_samples 100 --n_paths 3`
+   - step_verifier（本地 DeBERTa，100 样本）
 2. 对实验结果运行对比分析：`python eval/analyze.py --runs_dir experiments/runs --latest 5`
 3. 根据实验结果撰写报告：比较各 CoT 策略准确率、推理步数、token消耗与 Harness 子系统覆盖关系
 

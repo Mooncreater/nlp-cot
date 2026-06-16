@@ -232,7 +232,7 @@ python harness_report.py
 - **原理**：对每条 CoT 推理链在中间截断（如 50%），用前缀重新生成后续内容。正确推理链的原始答案在再生中复现率更高，用这个复现率作为权重进行加权多数投票
 - **参数**：`--n_paths N`（初始路径数，默认 5），`--truncation_ratio R`（截断比例，默认 0.5），`--regen_count K`（每前缀再生次数，默认 3），`--weight_fn F`（权重函数：`linear`/`quadratic`/`cubic`/`unanimous`，默认 `linear`）
 - **Harness 覆盖**：Instructions + Environment + State + Feedback（4/5）
-- **特点**：无需 logprob 或自评 prompt，用轻量级的再生一致性作为可靠性信号。50 样本准确率达到 **94%**（100 样本待测），与增强版 Self-Consistency 和 Multi-Agent Debate 并列最高；平均输出 token 仅 **160.9**，低于 base_cot 与 self_consistency，但因前缀再生需要更多 API 调用，墙钟时间约 64.4s/题
+- **特点**：无需 logprob 或自评 prompt，用轻量级的再生一致性作为可靠性信号。100 样本准确率达到 **93.0%**，平均输出 token 仅 **159.9**，是所有高准确率策略中输出 token 最低的；但因前缀再生需要更多 API 调用，墙钟时间约 64.4s/题
 
 ### 4. Step-Aware Verifier
 
@@ -257,14 +257,14 @@ python harness_report.py
 - **原理**：在推理前从知识库检索相关数学知识，注入 Prompt 中辅助推理
 - **参数**：`--top_k K`（检索文档数，默认 3）
 - **Harness 覆盖**：Instructions + Tools + Environment + State（4/5）
-- **特点**：当知识库质量高时加速推理，但低质量检索会引入干扰（retrieval noise）
+- **特点**：当知识库质量高时加速推理。此前 50 样本和早期 100 样本出现 78% 的异常低准确率，经排查是 Windows GBK 编码错误导致模型输出含 `²`、`π` 等字符时 `print()` 崩溃、样本被记为空答案；修复后 100 样本准确率达到 **92.0%**
 
 ### 6. Multi-Agent Debate
 
 - **原理**：多个 LLM Agent 分别扮演不同角色（严谨分析者 / 创意解题者 / 怀疑批评者），进行多轮讨论与互评，最终投票决定答案
 - **参数**：`--n_agents N`（Agent 数，默认 3），`--n_rounds R`（辩论轮数，默认 2）
 - **Harness 覆盖**：Instructions + Environment + State + Feedback（4/5）
-- **特点**：准确率最高，能通过多视角互评纠正单模型盲区，但 Token 消耗最大
+- **特点**：能通过多视角互评纠正单模型盲区，但 Token 消耗最大。100 样本准确率 91.0%，低于 50 样本时的 94.0%，大样本下稳定性有所下降
 
 ---
 
@@ -284,19 +284,19 @@ python harness_report.py
 
 ---
 
-## 📈 100 样本实验结果（AQuA test 前 100 条，deepseek-chat）
+## 📈 100 样本实验结果（AQuA test 前 100 条）
 
-| 策略 | 准确率 | 平均输出 Token | 综合性价比 |
-|---|---|---|---|
-| **self_consistency** | **94.0%** ⭐ | 238.6 | ⭐⭐⭐⭐⭐ **高准确率 + 低 token 消耗** |
-| **step_verifier (LLM)** | **94.0%** ⭐ | 563.7 | ⭐⭐⭐ **准确率高但 token 消耗大** |
-| base_cot | 91.0% | 187.6 | ⭐⭐⭐⭐⭐ **最佳基础性价比** |
-| multi_agent_debate | 91.0% | 370.8 | ⭐⭐⭐ 多 Agent 互评，成本较高 |
-| rag_cot | **78.0%** ▼ | 175.7 | ⭐⭐ 检索噪声损害性能 |
-| prefix_consistency | — | — | ⭐⭐⭐⭐ 50 样本达 94%，100 样本待测 |
-| few_shot_cot | — | — | ⭐⭐⭐ 待基准测试 |
+| 策略 | 准确率 | 平均输出 Token | 平均输入 Token | 平均推理步数 | 综合性价比 |
+|---|---|---|---|---|---|
+| **self_consistency** | **94.0%** ⭐ | 238.6 | 130.0 | 8.0 | ⭐⭐⭐⭐⭐ **高准确率 + 低 token 消耗** |
+| **step_verifier (LLM)** | **94.0%** ⭐ | 563.7 | — | 21.6 | ⭐⭐⭐ **准确率高但 token 消耗大** |
+| **prefix_consistency** | **93.0%** ⭐ | **159.9** | 130.0 | 6.7 | ⭐⭐⭐⭐⭐ **最高准确率中输出 token 最低** |
+| **rag_cot** | **92.0%** | 197.9 | 238.6 | 6.0 | ⭐⭐⭐⭐ 修复编码问题后表现正常 |
+| base_cot | 91.0% | 187.6 | 130.0 | 5.8 | ⭐⭐⭐⭐⭐ **最佳基础性价比** |
+| multi_agent_debate | 91.0% | 370.8 | — | 8.3 | ⭐⭐⭐ 多 Agent 互评，成本较高 |
+| few_shot_cot | — | — | — | — | ⭐⭐⭐ 待基准测试 |
 
-> 注：step_verifier 100 样本由 deepseek-v4-flash 运行；其余均为 deepseek-chat。
+> 注：step_verifier 100 样本由 deepseek-v4-flash 运行；其余均为 deepseek-chat。multi_agent_debate 与 step_verifier 的输入 token 因多轮交互统计方式不同，当前记录为 0。
 
 ## 📈 50 样本实验结果（AQuA test 前 50 条）
 
@@ -309,7 +309,9 @@ python harness_report.py
 | base_cot | 92.0% | 5.2s | 174.4 | ⭐⭐⭐⭐⭐ **最佳基础性价比** |
 | step_verifier (LLM) | 92.0% | **206.6s** | 387.9 | ⭐ 极慢，收益有限 |
 | few_shot_cot | — | — | — | ⭐⭐⭐ 待基准测试 |
-| rag_cot | **78.0%** ▼ | 4.2s | 151.3 | ⭐⭐ 检索噪声损害性能 |
+| rag_cot | **78.0%** ▼* | 4.2s | 151.3 | ⭐⭐ 检索噪声损害性能 |
+
+\* RAG 50 样本的 78% 与早期 100 样本的 78% 均受 Windows GBK 编码 bug 影响（`²`、`π` 等字符导致 `print()` 崩溃、样本被记为空答案）。修复后 100 样本重测准确率为 **92.0%**。
 
 > 详细分析见 [`experiments/report_100_sample_20260615.md`](experiments/report_100_sample_20260615.md)  
 > 历史 50 样本分析见 [`experiments/report_50_sample_20260611.md`](experiments/report_50_sample_20260611.md)

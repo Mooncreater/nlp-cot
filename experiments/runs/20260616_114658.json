@@ -1,0 +1,1351 @@
+{
+  "run_id": "20260616_114658",
+  "timestamp": "2026-06-16T14:55:05.714207",
+  "config": {
+    "strategy": "prefix_consistency",
+    "task": "aqua",
+    "model": "deepseek-chat",
+    "dataset_split": "test",
+    "n_samples": 100,
+    "temperature": 0.7,
+    "max_tokens": 1024
+  },
+  "strategy_info": {
+    "name": "prefix_consistency",
+    "config": {},
+    "harness_subsystems": {
+      "instructions": true,
+      "tools": false,
+      "environment": true,
+      "state": true,
+      "feedback": true
+    }
+  },
+  "task_info": {
+    "name": "aqua",
+    "config": {},
+    "dataset": "AQuA",
+    "data_dir": "data/AQuA"
+  },
+  "model_info": {
+    "model_name": "deepseek-chat",
+    "config": {},
+    "provider": "deepseek_openai_compatible"
+  },
+  "metrics": {
+    "accuracy": 0.93,
+    "correct": 93,
+    "total": 100,
+    "avg_reasoning_steps": 6.67,
+    "avg_input_tokens": 129.96,
+    "avg_output_tokens": 159.88,
+    "total_input_tokens": 12996,
+    "total_output_tokens": 15988,
+    "detailed": [
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 174,
+        "output_tokens": 180
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 156,
+        "output_tokens": 177
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 102,
+        "output_tokens": 158
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 140,
+        "output_tokens": 156
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 102,
+        "output_tokens": 180
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 166,
+        "output_tokens": 170
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 109,
+        "output_tokens": 156
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 133,
+        "output_tokens": 161
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 133,
+        "output_tokens": 161
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 3,
+        "input_tokens": 117,
+        "output_tokens": 60
+      },
+      {
+        "prediction": "C",
+        "correct": "B",
+        "is_correct": false,
+        "reasoning_steps": 5,
+        "input_tokens": 158,
+        "output_tokens": 160
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 132,
+        "output_tokens": 148
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 120,
+        "output_tokens": 162
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 4,
+        "input_tokens": 81,
+        "output_tokens": 109
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 109,
+        "output_tokens": 152
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 100,
+        "output_tokens": 160
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 148,
+        "output_tokens": 162
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 4,
+        "input_tokens": 153,
+        "output_tokens": 149
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 3,
+        "input_tokens": 189,
+        "output_tokens": 182
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 96,
+        "output_tokens": 166
+      },
+      {
+        "prediction": "E",
+        "correct": "C",
+        "is_correct": false,
+        "reasoning_steps": 5,
+        "input_tokens": 122,
+        "output_tokens": 156
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 15,
+        "input_tokens": 154,
+        "output_tokens": 158
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 134,
+        "output_tokens": 157
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 134,
+        "output_tokens": 156
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 138,
+        "output_tokens": 148
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 12,
+        "input_tokens": 110,
+        "output_tokens": 177
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 108,
+        "output_tokens": 153
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 136,
+        "output_tokens": 177
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 122,
+        "output_tokens": 176
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 106,
+        "output_tokens": 150
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 132,
+        "output_tokens": 170
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 140,
+        "output_tokens": 157
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 4,
+        "input_tokens": 132,
+        "output_tokens": 154
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 149,
+        "output_tokens": 181
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 124,
+        "output_tokens": 158
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 122,
+        "output_tokens": 152
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 125,
+        "output_tokens": 168
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 121,
+        "output_tokens": 148
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 12,
+        "input_tokens": 126,
+        "output_tokens": 164
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 114,
+        "output_tokens": 157
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 121,
+        "output_tokens": 185
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 4,
+        "input_tokens": 160,
+        "output_tokens": 160
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 90,
+        "output_tokens": 149
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 11,
+        "input_tokens": 121,
+        "output_tokens": 176
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 136,
+        "output_tokens": 170
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 117,
+        "output_tokens": 118
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 138,
+        "output_tokens": 154
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 138,
+        "output_tokens": 144
+      },
+      {
+        "prediction": "C",
+        "correct": "D",
+        "is_correct": false,
+        "reasoning_steps": 7,
+        "input_tokens": 102,
+        "output_tokens": 164
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 104,
+        "output_tokens": 158
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 114,
+        "output_tokens": 162
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 109,
+        "output_tokens": 157
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 112,
+        "output_tokens": 94
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 104,
+        "output_tokens": 156
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 149,
+        "output_tokens": 150
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 122,
+        "output_tokens": 153
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 129,
+        "output_tokens": 170
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 126,
+        "output_tokens": 150
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 140,
+        "output_tokens": 161
+      },
+      {
+        "prediction": "E",
+        "correct": "C",
+        "is_correct": false,
+        "reasoning_steps": 1,
+        "input_tokens": 114,
+        "output_tokens": 164
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 136,
+        "output_tokens": 161
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 130,
+        "output_tokens": 198
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 118,
+        "output_tokens": 144
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 124,
+        "output_tokens": 166
+      },
+      {
+        "prediction": "B",
+        "correct": "D",
+        "is_correct": false,
+        "reasoning_steps": 12,
+        "input_tokens": 182,
+        "output_tokens": 153
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 12,
+        "input_tokens": 118,
+        "output_tokens": 164
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 161,
+        "output_tokens": 158
+      },
+      {
+        "prediction": "A",
+        "correct": "B",
+        "is_correct": false,
+        "reasoning_steps": 4,
+        "input_tokens": 130,
+        "output_tokens": 164
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 133,
+        "output_tokens": 193
+      },
+      {
+        "prediction": "B",
+        "correct": "C",
+        "is_correct": false,
+        "reasoning_steps": 7,
+        "input_tokens": 126,
+        "output_tokens": 156
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 133,
+        "output_tokens": 154
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 152,
+        "output_tokens": 169
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 10,
+        "input_tokens": 98,
+        "output_tokens": 161
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 113,
+        "output_tokens": 158
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 130,
+        "output_tokens": 156
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 118,
+        "output_tokens": 178
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 192,
+        "output_tokens": 164
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 168,
+        "output_tokens": 152
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 138,
+        "output_tokens": 157
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 153,
+        "output_tokens": 144
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 148,
+        "output_tokens": 177
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 128,
+        "output_tokens": 173
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 117,
+        "output_tokens": 172
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 3,
+        "input_tokens": 146,
+        "output_tokens": 166
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 106,
+        "output_tokens": 148
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 121,
+        "output_tokens": 204
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 3,
+        "input_tokens": 126,
+        "output_tokens": 161
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 7,
+        "input_tokens": 106,
+        "output_tokens": 177
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 134,
+        "output_tokens": 176
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 121,
+        "output_tokens": 161
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 126,
+        "output_tokens": 148
+      },
+      {
+        "prediction": "B",
+        "correct": "B",
+        "is_correct": true,
+        "reasoning_steps": 5,
+        "input_tokens": 158,
+        "output_tokens": 177
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 165,
+        "output_tokens": 161
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 114,
+        "output_tokens": 145
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 145,
+        "output_tokens": 170
+      },
+      {
+        "prediction": "A",
+        "correct": "A",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 140,
+        "output_tokens": 150
+      },
+      {
+        "prediction": "C",
+        "correct": "C",
+        "is_correct": true,
+        "reasoning_steps": 6,
+        "input_tokens": 114,
+        "output_tokens": 158
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 137,
+        "output_tokens": 176
+      },
+      {
+        "prediction": "D",
+        "correct": "D",
+        "is_correct": true,
+        "reasoning_steps": 8,
+        "input_tokens": 141,
+        "output_tokens": 157
+      },
+      {
+        "prediction": "E",
+        "correct": "E",
+        "is_correct": true,
+        "reasoning_steps": 9,
+        "input_tokens": 137,
+        "output_tokens": 160
+      }
+    ],
+    "elapsed_time": 11287.082854509354,
+    "throughput": 0.008859685118732741
+  },
+  "results": [
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let the height of the tower be \\( h \\).  \nLet the initial distance from the car to the base of the tower be \\( d_1 \\) when the angle is 45°, and \\( d_2 \\) when the angle is 60°.\n\nFrom the angle of ele...\nRegen 2: Let the height of the tower be \\( h \\).  \nLet the initial distance from the car to the base of the tower be \\( d_1 \\) when the angle is 45°, and \\( d_2 \\) when the angle is 60°.\n\nFrom the angle of ele..."
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'E': 0.0}\nFinal Answer: E\n\n--- Initial paths ---\nPath 1: pred=E consistency=0.00\nPath 2: pred=E consistency=0.00\nPath 3: pred=E consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let the original price be \\( p \\).\n\nA 22% discount means the customer pays \\( 0.78p \\).  \nThen a $20-off coupon is applied, so the final price is:  \n\\[\n0.78p - 20\n\\]\n\nWe are told this final price is $...\nRegen 2: We are told the final price is $1.90 more than half the original price, so:\n\n\\[\n0.78p - 20 = \\frac{p}{2} + 1.90\n\\]\n\nNow solve for \\( p \\):\n\n\\[\n0.78p - 20 = 0.5p + 1.90\n\\]\n\\[\n0.78p - 0.5p = 1.90 + 20\n\\..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: It looks like your reasoning was cut off, but you've gotten off to a great start.\n\nHere's the completed thought:\n\nThe least common multiple (LCM) of 9 and 12 is **36**.  \nTherefore, any number that is...\nRegen 2: It looks like your message got cut off, but I can see you're on the right track.\n\nYou correctly found that the least common multiple (LCM) of 9 and 12 is **36**.  \n\nSo any number that is divisible by ..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 3.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=1.00\nPath 2: pred=B consistency=1.00\nPath 3: pred=B consistency=1.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We want the probability that neither Stock A nor Stock B increases.  \nThis is:  \nP(neither) = 1 - P(A or B)\n\nWe know:  \nP(A) = 0.56  \nP(B) = 0.74  \n\nThe greatest possible value for P(neither) happens ...\nRegen 2: We want the probability that neither Stock A nor Stock B increases.  \nThis is:  \nP(neither) = 1 - P(A or B)\n\nWe know:  \nP(A) = 0.56  \nP(B) = 0.74  \n\nThe greatest possible value for P(neither) happens ..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let the cost price be \\( C \\).  \nA profit of 20% means the selling price is \\( C + 0.2C = 1.2C \\).  \nWe are told the selling price is ₹600.  \n\nSo,  \n\\[\n1.2C = 600\n\\]  \n\\[\nC = \\frac{600}{1.2} = 500\n\\] ...\nRegen 2: We are given:\n\n- Cost price = \\( C \\)  \n- Profit = 20%, so selling price = \\( 1.2C \\)  \n- The selling price is given as 360.\n\nThus:\n\n\\[\n1.2C = 360\n\\]\n\nSolving for \\( C \\):\n\n\\[\nC = \\frac{360}{1.2} = 30..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are told:\n\n- Initially, all marbles are white. Let the total number be \\( Q \\).\n- First, 20 marbles are removed, painted black, and returned.  \n  → Now: 20 black, \\( Q - 20 \\) white.\n- Next, 20 mar...\nRegen 2: We’re told that after the first step, we have:\n\n- 20 black marbles  \n- \\( Q - 20 \\) white marbles  \n- Total marbles = \\( Q \\)\n\nThen, a second draw of 20 marbles is made, and exactly 1 of them is black..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We need to interpret the problem:  \n**\"Find the total no. of distinct bike no.'s that can be formed using 2 letters followed by 2 no.'s. How many letters need to be distinct?\"**\n\nThe phrase \"How many ...\nRegen 2: We need to interpret the problem:  \n\"Find the total no. of distinct bike no.'s that can be formed using 2 letters followed by 2 no.'s. How many letters need to be distinct?\"  \n\nThe phrasing \"How many ..."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: You're on the right track!\n\nLet's continue:\n\nYou've calculated:\n- Total distance = 1000 miles  \n- First quarter distance = 250 miles  \n- Time to cover first quarter at 100 mph = 250 ÷ 100 = **2.5 hour...\nRegen 2: You're off to a great start! Let's continue step-by-step.\n\nYou've correctly found:\n\n- Total distance = \\( 100 \\times 10 = 1000 \\) miles  \n- First quarter of the distance = \\( 1000 / 4 = 250 \\) miles  ..."
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'E': 0.0}\nFinal Answer: E\n\n--- Initial paths ---\nPath 1: pred=E consistency=0.00\nPath 2: pred=E consistency=0.00\nPath 3: pred=E consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are told there are 200 students.  \nAt least 45% attended prom → at least 90 students attended prom.  \nAt least 35% took part in debating → at least 70 students took part in debating.\n\nWe want the m...\nRegen 2: We are told there are 200 students.  \nAt least 45% attended prom → at least 90 students attended prom.  \nAt least 35% took part in debating → at least 70 students took part in debating.\n\nWe want the m..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: $25.00...\nRegen 2: $25.00..."
+    },
+    {
+      "prediction": "C",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We have:\n\n- Total units per year: \\( 420 \\times 12 = 5,040 \\)  \n- Production cost per unit: \\( \\$110 \\)  \n- Total yearly production cost: \\( 5,040 \\times 110 = 554,400 \\)  \n- Desired yearly profit: at...\nRegen 2: We have:\n\n- Yearly production: \\( 420 \\times 12 = 5,040 \\) units  \n- Production cost per unit: \\( \\$110 \\)  \n- Total yearly cost: \\( 5,040 \\times 110 = \\$554,400 \\)  \n- Desired yearly profit: at least..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let’s carefully go step by step.\n\n**Step 1: Total staplers**  \nLet \\( N \\) be the total number produced.\n\n**Step 2: Defective staplers**  \n10% are defective:  \n\\[\n\\text{Defective} = 0.1N\n\\]  \n**Step 3...\nRegen 2: Let’s go step-by-step.\n\nWe have:\n\n- Total staplers produced: \\( N \\)\n- Defective: \\( 0.1N \\)\n- Non-defective: \\( 0.9N \\)\n\nNow, of the non-defective ones, 2% were rejected by mistake.  \nThat means:\n\n\\[..."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are given:\n\n- Machine A: 1 yo-yo every 6 minutes → rate = \\(\\frac{1}{6}\\) yo-yo per minute  \n- Machine B: 1 yo-yo every 9 minutes → rate = \\(\\frac{1}{9}\\) yo-yo per minute  \n\nTo find how often both...\nRegen 2: We are told:\n\n- Machine A produces 1 yo-yo every 6 minutes → rate = \\( \\frac{1}{6} \\) yo-yo per minute.\n- Machine B produces 1 yo-yo every 9 minutes → rate = \\( \\frac{1}{9} \\) yo-yo per minute.\n\nThe *..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are adding +45 and -30.  \nThis is the same as 45 - **30**.\n\nSo,  \n\\[\n45 - 30 = 15\n\\]...\nRegen 2: We are adding +45 and -30.  \nThis is the same as 45 - **30**, which equals **15**...."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 1.3333333333333333}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=1.00\nPath 3: pred=C consistency=0.33\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are rearranging all 7 distinct letters of the word \"PROBLEC\". Since all letters are distinct, the number of different arrangements (permutations) of 7 distinct letters is:\n\n\\[\n7! = 7 \\times 6 \\time...\nRegen 2: We are rearranging all 7 distinct letters of the word \"PROBLEC\". Since all letters are different, the number of distinct arrangements is simply:\n\n\\[\n7! = 7 \\times 6 \\times 5 \\times 4 \\times 3 \\times 2..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 2.6666666666666665}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=1.00\nPath 2: pred=A consistency=0.67\nPath 3: pred=A consistency=1.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: For independent events, the definition is:\n\n\\[\nP(A \\mid B) = P(A)\n\\]\n\nThis is because, by definition, two events \\(A\\) and \\(B\\) are independent if the occurrence of \\(B\\) does not affect the probabil...\nRegen 2: Since \\( A \\) and \\( B \\) are independent events, the definition of independence tells us:\n\n\\[\nP(A \\mid B) = P(A)\n\\]\n\nThis holds as long as \\( P(B) > 0 \\). Intuitively, knowing that \\( B \\) occurred g..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We need to carefully interpret the problem. It says:\n\n- You walk 20 steps downward and then stop.\n- Total time to reach bottom = 10 minutes.\n- While you walk, you cover 20 steps by your own movement, ...\nRegen 2: We need to interpret the problem carefully. It says:\n\n- You walk 20 steps downward and then stop.\n- Total time to reach bottom = 10 minutes.\n- While walking, you cover 20 steps by your own movement, b..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: For the first 10 months of this year, the average was 20 per month.  \nTotal sold in those 10 months = 20 × **10 = 200 ovens**....\nRegen 2: We know the average for last year (12 months) was 42 per month.  \nTotal sold last year = 42 × 12 = 504 ovens.\n\nFor the first 10 months of this year, the average was 20 per month.  \nTotal sold in those..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are told:  \n- Average of highest and lowest scores = x, so (H + L)/2 = x → H + L = 2x.  \n- Average of all z students = y, so total sum of all scores = zy.  \n- We need the average of the class exclu...\nRegen 2: We are told:  \n- Average of highest and lowest scores = x, so \\((H + L)/2 = x \\rightarrow H + L = 2x\\).  \n- Average of all \\(z\\) students = y, so total sum of all scores = \\(zy\\).  \n- We need the aver..."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are solving:  \n\\[\n\\frac{5 + ? \\times 19 - 15 - 7}{13 \\times 13 - 156} = 6\n\\]\n\nFirst, simplify the denominator:  \n\\(13 \\times 13 = 169\\), then \\(169 - 156 = 13\\).\n\nSo the equation becomes:  \n\\[\n\\fra...\nRegen 2: We are solving:  \n\n\\[\n\\frac{5 + ? \\times 19 - 15 - 7}{13 \\times 13 - 156} = 6\n\\]\n\nFirst, simplify the denominator:  \n\\(13 \\times 13 = 169\\), then \\(169 - 156 = 13\\).\n\nSo the equation becomes:  \n\n\\[\n\\f..."
+    },
+    {
+      "prediction": "E",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'E': 0.0}\nFinal Answer: E\n\n--- Initial paths ---\nPath 1: pred=E consistency=0.00\nPath 2: pred= consistency=0.00\nPath 3: pred=E consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let’s carefully go through this again, step-by-step.\n\nWe are told:\n\n- Selling price per bag = $100  \n- Profit = 25% **of the selling price**  \n- Total profit = $3,000  \n\n**Step 1 – Profit per bag**  \n...\nRegen 2: The calculation you performed is correct under the standard interpretation:  \n- Selling price = $100  \n- Profit = 25% of selling price = $25 per bag  \n- Total profit = $3,000  \n- Number of bags = $3,0..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.3333333333333333}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.33\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We have:\n\n\\[\n\\frac{h}{7} + \\frac{h}{9} = 35\n\\]\n\nThe common denominator is 63:\n\n\\[\n\\frac{9h}{63} + \\frac{7h}{63} = 35\n\\]\n\n\\[\n\\frac{16h}{63} = 35\n\\]\n\nMultiply both sides by 63:\n\n\\[\n16h = 35 \\times 63\n\\]...\nRegen 2: We have:\n\n\\[\n\\frac{h}{7} + \\frac{h}{9} = 35\n\\]\n\nThe common denominator is 63:\n\n\\[\n\\frac{9h}{63} + \\frac{7h}{63} = 35\n\\]\n\n\\[\n\\frac{16h}{63} = 35\n\\]\n\nMultiply both sides by 63:\n\n\\[\n16h = 35 \\times 63\n\\]..."
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'E': 0.0}\nFinal Answer: E\n\n--- Initial paths ---\nPath 1: pred=E consistency=0.00\nPath 2: pred=E consistency=0.00\nPath 3: pred=E consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let’s carefully go through the problem step by step.\n\nWe start with a **50% strong milk tea** — meaning the mixture is **50% tea**, **50% milk**.\n\n---\n\n### Step 1: First replacement\nWe **remove 15% of...\nRegen 2: We start with 50% strong milk tea — that means 50% tea, 50% milk.\n\n**Step 1:** Replace 15% of the mixture with milk twice.  \nWhen we remove 15% of the mixture, we remove both tea and milk in proportio..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: You're absolutely correct. The smallest possible total number of students is the LCM of 16, 10, and 8, which is **80**.\n\nHowever, the total number of students could be any **multiple of 80** (e.g., 16...\nRegen 2: You're absolutely correct so far.  \n\nThe LCM of 16, 10, and 8 is indeed 80.  \nThis means the total number of students must be a multiple of 80 to have whole numbers of students in each subject.  \n\nIf ..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Next, convert 21 minutes to hours because speed is in miles per hour:\n\n\\[\n21 \\text{ minutes} = \\frac{21}{60} \\text{ hours} = 0.35 \\text{ hours}\n\\]...\nRegen 2: You're absolutely right so far.\n\n**Step 1: Find Bill's speed on a windy day**  \nNormal speed = 15 mph  \nReduction = 4 mph  \nWindy day speed = \\( 15 - 4 = 11 \\) mph  \n\n**Step 2: Convert 21 minutes to h..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We know:  \n\nProfit = 40% of cost  \nProfit = $20  \n\nLet cost = \\( C \\).  \n\nThen:  \n\\[\n0.40 \\times C = 20\n\\]  \n\nTo find \\( C \\):  \n\\[\nC = \\frac{20}{0.40}\n\\]  \n\\[\nC = 50\n\\]  \n\nSo the cost is **$50**.  \n\n...\nRegen 2: We know the profit is 40% of the cost, and that profit equals $20.  \n\nLet cost = \\( C \\).  \nThen \\( 0.40 \\times C = 20 \\).  \n\nTo find \\( C \\):  \n\\[\nC = \\frac{20}{0.40} = 50\n\\]\n\nSo the cost is **$50**...."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are given:  \n- Principal (P) = Rs. 500  \n- Rate (R) = 6% per annum  \n- Time (T) = 4 years  \n- Interest type = Simple Interest  \n\n**Step 1: Calculate Simple Interest**  \nSimple Interest (SI) = (P × ...\nRegen 2: Let’s continue with the calculation.\n\n**Step 1: Calculate Simple Interest**  \n\n\\[\nSI = \\frac{P \\times R \\times T}{100}\n\\]  \n\nSubstitute the values:  \n\n\\[\nSI = \\frac{500 \\times 6 \\times 4}{100}\n\\]  \n\n\\..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 1.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=1.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We need to check each pair to see if it meets the conditions:\n\n- First number \\( x \\) is between 0 and 100 inclusive.  \n- Second number \\( y \\) is less than or equal to the square root of \\( x \\). Tha...\nRegen 2: We need to check each pair to see if it meets the conditions:\n\n- First number \\( x \\) is between 0 and 100 inclusive.  \n- Second number \\( y \\) is less than or equal to the square root of \\( x \\). Tha..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.3333333333333333}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.33\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let the speed in the forward journey be \\( v \\) km/h.  \nDistance = speed × time.  \nSo, distance = \\( v \\times 6 \\).  \n\nOn the return journey, speed = \\( v + 12 \\), time = 4 hours.  \nDistance = \\( (v+1...\nRegen 2: Let the speed in the forward journey be \\( v \\) km/h.  \n\nDistance = speed × time.  \nSo, distance = \\( v \\times 6 \\).  \n\nOn the return journey, speed = \\( v + 12 \\), time = 4 hours.  \nDistance = \\( (v ..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: That means your brother is 1 year younger than you.  \n\nSo, if you are now \\( x \\) years old, your brother is \\( x - 1 \\) years old....\nRegen 2: That means your brother is 1 year younger than you.  \n\nSo, no matter how old you are, your brother will always be 1 year younger.  \n\nFor example:  \n- When you are 10, your brother will be 9.  \n- When ..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let the wholesale cost be \\( W \\).  \nThe original retail price is 60% more than \\( W \\), so:  \n\n\\[\n\\text{Retail price} = W + 0.6W = 1.6W\n\\]  \n\nIt was sold for 20% less than the retail price, so:  \n\n\\[...\nRegen 2: Let the wholesale cost be \\( W \\).  \nThe original retail price is 60% more than \\( W \\), so:  \n\\[\n\\text{Retail price} = W + 0.6W = 1.6W\n\\]  \nIt was sold for 20% less than the retail price, so the sale..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We know that on the map,  \n\\[\n\\frac{1}{4} \\text{ inch} = 10 \\text{ miles}.\n\\]\n\nFirst, find how many miles 1 inch represents:  \n\nIf \\(\\frac{1}{4}\\) inch = 10 miles,  \nthen 1 inch = \\(10 \\times 4 = 40\\)...\nRegen 2: We know that on the map, \\(\\frac{1}{4}\\) inch = 10 miles.  \nFirst, find how many miles 1 inch represents:  \n\nIf \\(\\frac{1}{4}\\) inch = 10 miles, then  \n1 inch = \\(10 \\times 4 = 40\\) miles.  \n\n\\[\n\\boxe..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.6666666666666666}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred= consistency=0.00\nPath 2: pred= consistency=0.00\nPath 3: pred=B consistency=0.67\n\n--- Regeneration examples (Path 1) ---\nRegen 1: The problem states that when the rectangle is folded in half along one set of sides, the perimeter of each half is 48 cm.  \nWhen folded in half along the other set of sides, the perimeter of each half...\nRegen 2: Let’s re-read carefully: the problem says the rectangle is folded into **two equal halves**, and the perimeter of **one of the halves** is given.  \n\nIf you fold along the length (the longer side?), yo..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We need to find the total number of ways to travel from M to Q.  \nThe trips are in stages:  \n\n- M to N: 3 choices  \n- N to O: 4 choices  \n- O to P: 1 choice  \n- P to Q: 2 choices  \n\nSince the travel i...\nRegen 2: It seems your problem statement got cut off after \"P to\".  \n\nBased on what you've provided, if the path is:  \n\n- **M → N**: 3 ways  \n- **N → O**: 4 ways  \n- **O → P**: 1 way  \n- **P → Q**: let's say t..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are told that the diameter of the sphere equals the space diagonal of the rectangular solid.\n\nThe space diagonal \\(d\\) of a rectangular solid with side lengths \\(a, b, c\\) is given by:\n\n\\[\nd = \\sqr...\nRegen 2: We are told the sphere’s diameter equals the space diagonal of the rectangular solid.  \n\nThe space diagonal \\(d\\) of a rectangular solid with sides \\(a, b, c\\) is:\n\n\\[\nd = \\sqrt{a^2 + b^2 + c^2}\n\\]\n\nG..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 2.6666666666666665}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=1.00\nPath 2: pred=A consistency=0.67\nPath 3: pred=A consistency=1.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let’s continue from step 4:\n\n- From (5, -3), let’s assume the next instruction is to travel **north** (since it’s a common pattern after east in such puzzles), but since the instruction wasn’t provide...\nRegen 2: Let’s continue tracing A’s path.\n\n**Step 1:** Starts at home → **(0, 0)**  \n**Step 2:** Travels 3 km south → **(0, -3)**  \n**Step 3:** Travels 5 km east → **(5, -3)**  \n\nWhat comes next? If you provid..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are given:\n\n- Marked price = \\( M \\)  \n- Cost price = \\( C \\)\n\n**First scenario:**  \nDiscount = 5%, so selling price = \\( 0.95M \\)  \nProfit = \\( 0.95M - C \\)\n\n**Second scenario:**  \nDiscount = 7%, ...\nRegen 2: We are told:\n\n- Marked price = \\( M \\)  \n- Cost price = \\( C \\)  \n\n**First scenario:**  \nDiscount = 5%, so selling price = \\( 0.95M \\)  \nProfit = \\( 0.95M - C \\)  \n\n**Second scenario:**  \nDiscount = 7..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We have the equation:\n\n\\[\n\\frac{7}{8}x - \\frac{7}{18}x = 770\n\\]\n\nFirst, find a common denominator for \\(\\frac{7}{8}\\) and \\(\\frac{7}{18}\\). The least common multiple of 8 and 18 is 72.\n\nConvert each f...\nRegen 2: We have the equation:\n\n\\[\n\\frac{7}{8}x - \\frac{7}{18}x = 770\n\\]\n\nFind a common denominator. The least common multiple of 8 and 18 is 72.\n\n\\[\n\\frac{7}{8}x = \\frac{7 \\cdot 9}{72}x = \\frac{63}{72}x\n\\]\n\\[..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are told:\n\nMonthly salary \\( S = 500 + 0.05 \\times (\\text{monthly sales}) \\).\n\nWe want \\( S = 1500 \\).\n\nSo:\n\n\\[\n500 + 0.05 \\times \\text{sales} = 1500\n\\]\n\nSubtract 500 from both sides:\n\n\\[\n0.05 \\tim...\nRegen 2: We are told:\n\nMonthly salary \\( S = 500 + 0.05 \\times (\\text{monthly sales}) \\).\n\nWe want \\( S = 1500 \\).\n\nSo:\n\n\\[\n500 + 0.05 \\times \\text{sales} = 1500\n\\]\n\nSubtract 500 from both sides:\n\n\\[\n0.05 \\tim..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We have the total time:\n\n\\[\n\\frac{d}{200} + \\frac{d}{400} + \\frac{d}{600} + \\frac{d}{800}\n\\]\n\nFirst, find a common denominator. The least common multiple of 200, 400, 600, and 800 is 2400.\n\nRewrite ea...\nRegen 2: We have a square, so let each side be of length \\(d\\) km.  \nThe plane flies each side at different speeds:  \n- Side 1: 200 km/h → time = \\( \\frac{d}{200} \\)  \n- Side 2: 400 km/h → time = \\( \\frac{d}{4..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are given:\n\n- \\( b \\) = number of brown sharpeners  \n- \\( w \\) = number of white sharpeners  \n- \\( p \\) = price per brown sharpener in rupees  \n- \\( p + 1 \\) = price per white sharpener  \n\nWe know:...\nRegen 2: We have:\n\n\\[\n(18 - b)(p+1) + b p = 100\n\\]  \n\nExpanding:  \n\\[\n18(p+1) - b(p+1) + bp = 100\n\\]  \n\n\\[\n18p + 18 - bp - b + bp = 100\n\\]  \n\nThe \\(-bp\\) and \\(+bp\\) cancel:  \n\\[\n18p + 18 - b = 100\n\\]  \n\nSo:  ..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let the pool’s total volume be 1 unit.  \nHose A’s rate = \\( \\frac{1}{8} \\) pool per hour.\n\nIn the first 2 hours, hose A fills:  \n\\[\n2 \\times \\frac{1}{8} = \\frac{2}{8} = \\frac{1}{4}\n\\]  \nRemaining pool...\nRegen 2: Let the remaining time be \\( t \\) hours, during which both hoses A and B are open.  \nHose A’s rate is \\( \\frac{1}{8} \\) pool per hour, and hose B’s rate is \\( \\frac{1}{12} \\) pool per hour.  \nTogether..."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: First, find the amount of reduction:  \n120 - 96 = 24  \n\nNext, find what percent 24 is of the original amount (120):  \n\n\\[\n\\frac{24}{120} \\times 100\\% = 20\\%\n\\]\n\nSo the reduction is **20%**....\nRegen 2: First, find the amount of reduction:  \n120 - 96 = 24  \n\nNext, find what percent 24 is of the original amount (120):  \n\n\\[\n\\frac{24}{120} \\times 100\\% = 20\\%\n\\]\n\nSo, the percent reduction is **20%**...."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let the 5-digit number be \\( x \\).  \n\nPutting a 1 after it gives \\( 10x + 1 \\).  \nPutting a 1 before it gives \\( 100000 + x \\).  \n\nThe problem says:  \n\\[\n10x + 1 = 3(100000 + x)\n\\]\n\nNow solve:\n\n\\[\n10x...\nRegen 2: We have the equation from the problem:\n\n\\[\n10x + 1 = 3(100000 + x)\n\\]\n\nFirst, expand the right-hand side:\n\n\\[\n10x + 1 = 300000 + 3x\n\\]\n\nSubtract \\(3x\\) from both sides:\n\n\\[\n7x + 1 = 300000\n\\]\n\nSubtrac..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let \\( S \\) be the percentage of students on the swim team.\n\nWe are told:\n\n- \\( 24\\% \\) of all students are in both chess and swim.\n- \\( 20\\% \\) of swim team members are **not** in chess club.\n\nSo \\( ...\nRegen 2: Let the total number of students be 100% for convenience.\n\nWe know:\n- 24% are in both chess club and swim team.\n- 20% of swim team members are **not** in chess club.  \nThat means 80% of swim team memb..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let's calculate it step-by-step.\n\n**Step 1: Population after 1 year**  \n\\[\n78,000 \\times 1.05 = 81,900\n\\]\n\n**Step 2: Population after 2 years**  \n\\[\n81,900 \\times 1.05 = 85,995\n\\]\n\n**Using the compoun...\nRegen 2: After one year, the population becomes:  \n\n\\[\n78,000 \\times 1.05 = 81,900\n\\]..."
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'E': 0.0}\nFinal Answer: E\n\n--- Initial paths ---\nPath 1: pred=E consistency=0.00\nPath 2: pred=E consistency=0.00\nPath 3: pred=E consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: You are correct.\n\nWhen two objects move directly toward each other, the rate at which the distance between them decreases is the sum of their individual speeds. In this case:\n\n\\[\n12 \\, \\text{mph} + 13...\nRegen 2: You are correct.\n\nSince the two objects are moving directly toward each other, their relative speed is the sum of their individual speeds:\n\n\\[\n12 \\text{ mph} + 13 \\text{ mph} = 25 \\text{ mph}\n\\]\n\nThis..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let’s continue the calculation.\n\nYou have:\n\n- Base salary = 1500 rupees  \n- Desired total income = 6000 rupees  \n- Needed commission = 6000 − 1500 = **4500 rupees**\n\nThe commission is 15% of monthly s...\nRegen 2: Let’s check your calculation step-by-step.\n\n**Step 1: Find the additional amount needed from commission.**  \nDesired total income = 6000 rupees  \nBase salary = 1500 rupees  \nAdditional amount needed =..."
+    },
+    {
+      "prediction": "C",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We know the man borrows Rs. 360 and repays in 12 installments of Rs. 31.50 each.\n\nFirst, find the total repayment amount:  \nTotal repayment = 12 × 31.50 = Rs. 378.\n\nSo total interest paid = 378 – 360 ...\nRegen 2: We know the man borrows Rs. 360 and repays in 12 installments of Rs. 31.50 each.\n\nFirst, find the total repayment amount:  \nTotal repayment = 12 × 31.50 = Rs. 378.\n\nSo total interest paid = 378 – 360 ..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let the original price be 100.  \nAfter a 30% reduction, the price becomes:  \n100 - 30 = 70.\n\nWe want to increase this 70 back to 100.  \nThe increase needed is:  \n100 - 70 = 30.\n\nNow, the percentage in...\nRegen 2: The increase needed is:\n\n100 − 70 = 30.\n\nTo find the percentage increase relative to the reduced price of 70:\n\n\\[\n\\frac{30}{70} \\times 100\\% \\approx 42.857\\%.\n\\]\n\nSo the price must be increased by app..."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let’s continue from where you left off.\n\n**Step 2 (continued):**  \n- 1 rupee coin = 100 paise, so value = \\( 100n \\) paise.\n\n**Step 3: Write the total value equation in paise.**  \n\\[\n25n + 50n + 100n ...\nRegen 2: Let’s continue step by step.\n\n**Step 2 (continued):**  \n- 1 rupee coin = 100 paise, so value = \\(100n\\) paise\n\n**Step 3: Total value equation in paise.**  \n\\[\n25n + 50n + 100n = 70,000\n\\]\n\n**Step 4: S..."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let the man's monthly income be Rs. \\( x \\).  \nHe saves \\( 12 \\frac{1}{2}\\% \\) of his income, which is  \n\\[\n12.5\\% = \\frac{25}{2}\\% = \\frac{1}{8}\n\\]  \nof his income.  \n\nSo, savings = \\( \\frac{1}{8}x \\...\nRegen 2: Let the man's monthly income be Rs. \\( x \\).  \n\nHe saves \\( 12 \\frac{1}{2}\\% \\) of his income, which is \\( 12.5\\% = \\frac{25}{2}\\% = \\frac{1}{8} \\) of his income.  \n\nSo, savings = \\( \\frac{1}{8}x \\). ..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: So, one tempo holds:\n\n98 boxes × 60 toys per box = 5,880 toys....\nRegen 2: So, one tempo holds:\n\n98 boxes × 60 toys per box = 5,880 toys...."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We need to find the number of ways to choose 2 oranges from 10.  \nThis is a combination problem because the order in which the oranges are chosen does not matter.\n\nThe formula for combinations is:\n\n\\[...\nRegen 2: We need to find the number of ways to choose 2 oranges from 10.  \nThis is a combination problem because the order in which the oranges are chosen does not matter.\n\nThe formula for combinations is:\n\n\\[..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: You're absolutely right — and that's a great observation. Let's continue from there.\n\n---\n\n**Step 1 (continued):**  \nMr. Brown works for 8 days at a rate of \\(\\frac{1}{6}\\) house per day:  \n\\[\n\\text{W...\nRegen 2: You're absolutely right to break it down carefully. Let's continue step by step.\n\n---\n\n**Step 1: Work done by Mr. Brown in 8 days**\n\nMr. Brown's rate: \\( \\frac{1}{6} \\) house per day.  \nIn 8 days:  \n\\..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We need to find when both trains leave the station at the same time again.  \nThis is a least common multiple (LCM) problem.\n\nTrain A leaves every 16 minutes.  \nTrain B leaves every **?** minutes.\n\nIt ...\nRegen 2: This is a least common multiple (LCM) problem.\n\nTrain A leaves every **16 minutes**.  \nTrain B leaves every **? minutes**.\n\nIt looks like the problem was cut off — you haven't provided the interval fo..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.3333333333333333}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.33\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We have a hollow cube with:\n\n- Outer side length = **5 cm**\n- Thickness = **1 cm**\n\n**Step 1: Find inner side length**  \nSince the wall thickness is 1 cm on each side, the inner hollow cube has side l...\nRegen 2: We have a hollow cube with:\n\n- Outer side length = 5 cm  \n- Thickness = 1 cm  \n\nSince the thickness is uniform, the inner hollow part is also a cube.  \nThe inner side length is:\n\n\\[\n5 - 2 \\times 1 = 3..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let’s go step-by-step carefully.\n\n1. Assume there are 100 chocolates.  \n2. 10% are cocoa flavored → 10 cocoa, so the rest (90) are vanilla.  \n3. 90% of the **rest** (the vanilla ones) are squashed.  \n...\nRegen 2: Let’s go step-by-step carefully.\n\n1. Assume there are 100 chocolates.  \n2. 10% are cocoa flavored → 10 cocoa, so the rest (90) are vanilla.  \n3. “90% of the **rest** (the vanilla ones) are squashed.” ..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let’s break it down carefully.\n\n- Each full day (before the final day): the frog goes **up 3 meters** during the day and **slips down 2 meters** at night.  \n- Net gain per full day = **1 meter**.\n- On...\nRegen 2: Let’s break this down step by step.\n\nThe frog climbs **3 meters** during the day and slips back **2 meters** at night, for a net gain of **1 meter per full day-night cycle**, **except** the day it rea..."
+    },
+    {
+      "prediction": "E",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'E': 0.0, 'B': 0.0}\nFinal Answer: E\n\n--- Initial paths ---\nPath 1: pred=E consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=E consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We need to be careful: the condition that the sum divided by 10 is a perfect square gave:\n\n\\[\n\\frac{n+4}{2} = k^2\n\\]\n\nSo \\(n+4 = 2k^2\\).  \nIf \\(n\\) is odd, then \\(n+4\\) is also odd (odd + even = odd),...\nRegen 2: We are looking for 5 consecutive two-digit odd numbers whose sum, when divided by 10, is a perfect square.\n\nStep 1: Represent the numbers.  \nLet the smallest odd number be \\( n \\). Since they are cons..."
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'E': 0.0}\nFinal Answer: E\n\n--- Initial paths ---\nPath 1: pred=E consistency=0.00\nPath 2: pred=E consistency=0.00\nPath 3: pred=E consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let's carefully go step by step.\n\nWe have:\n\n- Football: \\( 8\\% \\) of total \\( x \\), so \\( 0.08x \\)  \n- Cricket: \\( \\frac{4}{5} \\) of total \\( x \\), so \\( 0.8x \\)  \n- Basketball: \\( 10\\% \\) of total \\(...\nRegen 2: Let's carefully go step-by-step.\n\nWe are told:\n\n- Football: \\(8\\%\\) of \\(x\\)  \n- Cricket: \\(\\frac{4}{5}\\) of \\(x = 80\\%\\) of \\(x\\)  \n- Basketball: \\(10\\%\\) of \\(x\\)  \n\nIf we simply add these, we get:\n..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let the ages be:  \n\n- \\( Q = q \\)  \n- \\( R = r \\)  \n- \\( T = t \\)  \n\nWe are told:  \n**\"Q is as much younger than R as he is older than T.\"**  \nThis means:  \n\\[\nr - q = q - t\n\\]  \n\nSo:  \n\\[\nr - q = q -...\nRegen 2: We are given:\n\n- Ages: \\( Q = q \\), \\( R = r \\), \\( T = t \\)  \n- Statement: \"Q is as much younger than R as he is older than T\"  \n  This translates to:  \n  \\[\n  r - q = q - t\n  \\]  \n  Which simplifies..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: You're on the right track! Let's continue from where you left off.\n\nYou correctly calculated:\n\n- Total money: $8.50  \n- Initial charge: $3.50  \n- Remaining for additional distance: $8.50 - $3.50 = $5....\nRegen 2: First, subtract the initial charge from the total money:\n\n$8.50 - $3.50 = $5.00\n\nThis $5.00 is for additional quarter-mile segments, each costing $0.10.\n\nNumber of additional quarter-miles = $5.00 / $..."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let the number of matches played before the finals be \\( n \\).  \nHis total runs before the finals = \\( 51n \\).  \n\nIn the finals, he scores 78, so total runs become \\( 51n + 78 \\).  \nTotal matches beco...\nRegen 2: Let's continue from where you left off.\n\nYou have:\n\n- Matches before finals: \\( n \\)  \n- Total runs before finals: \\( 51n \\)  \n- In finals, he scores 78  \n- Total runs after finals: \\( 51n + 78 \\)  \n-..."
+    },
+    {
+      "prediction": "B",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We need the smallest \\( n \\) such that:\n\n\\[\nn + \\binom{n}{2} \\geq 10\n\\]\n\nFirst, compute \\(\\binom{n}{2} = \\frac{n(n-1)}{2}\\).\n\nSo the condition is:\n\n\\[\nn + \\frac{n(n-1)}{2} \\geq 10\n\\]\n\nMultiply through...\nRegen 2: We need the smallest \\( n \\) such that:\n\n\\[\nn + \\binom{n}{2} \\geq 10\n\\]\n\nFirst, recall:\n\n\\[\n\\binom{n}{2} = \\frac{n(n-1)}{2}\n\\]\n\nSo the total number of codes is:\n\n\\[\nn + \\frac{n(n-1)}{2} = \\frac{2n + n..."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are solving:\n\n\\[\n4b^2 + b - 150 = 0\n\\]\n\nUsing the quadratic formula:\n\n\\[\nb = \\frac{-1 \\pm \\sqrt{1^2 - 4 \\cdot 4 \\cdot (-150)}}{2 \\cdot 4}\n\\]\n\nFirst, calculate the discriminant:\n\n\\[\n1 - (4 \\cdot 4 \\...\nRegen 2: We are solving the quadratic equation:\n\n\\[\n4b^2 + b - 150 = 0\n\\]\n\nUsing the quadratic formula:\n\n\\[\nb = \\frac{-1 \\pm \\sqrt{1^2 - 4 \\cdot 4 \\cdot (-150)}}{2 \\cdot 4}\n\\]\n\nFirst, calculate the discriminan..."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.6666666666666666}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.67\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We want to get at least 100% of the minimum daily requirement for both vitamins.\n\n- Each gram provides 9% of vitamin E.  \n  To get 100% of vitamin E, we need \\( \\frac{100}{9} \\approx 11.11 \\) grams.\n\n...\nRegen 2: We want to get at least 100% of the minimum daily requirement for both vitamins.\n\n- Each gram provides 9% of vitamin E.  \n  To get 100% of vitamin E, we need \\( \\frac{100}{9} \\approx 11.11 \\) grams.\n\n..."
+    },
+    {
+      "prediction": "A",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0, 'C': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We need to find the **minimum number of helpers** who can produce **at least** 20 large cakes and 700 small cakes, each working **3 hours**.\n\n---\n\n### Step 1: Output per helper in 3 hours\n- Large cake...\nRegen 2: We need to find the minimum number of helpers required to produce both 20 large cakes and 700 small cakes, given that each helper works 3 hours and can only produce one type of cake at a time (but can..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are given:\n\n- \\( RS = 5 \\)  \n- \\( RT = 17 \\)  \n- \\( ST = 22 \\)  \n- \\( U \\) is the midpoint of \\( ST \\).\n\nWe need to check the arrangement.\n\n---\n\n### Step 1: Check if \\( R, S, T \\) can be in that or...\nRegen 2: We are given points R, S, T, U on a line with:\n\n- \\( RS = 5 \\)\n- \\( RT = 17 \\)\n- \\( ST = 22 \\)\n- U is the midpoint of ST.\n\nLet's check the arrangement possibilities carefully.\n\n---\n\n**Step 1: Check if..."
+    },
+    {
+      "prediction": "B",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 1.0, 'E': 0.3333333333333333}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=1.00\nPath 2: pred=E consistency=0.33\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are given:\n\n- \\(6P = 2R\\) → \\(R = 3P\\)  \n- \\(3R = 5B\\) → Substitute \\(R = 3P\\):  \n  \\[\n  3(3P) = 5B \\quad\\Rightarrow\\quad 9P = 5B \\quad\\Rightarrow\\quad B = \\frac{9}{5}P\n  \\]\n\nNow for two baguettes:...\nRegen 2: We have:\n\n\\[\n6P = 2R \\quad\\Rightarrow\\quad R = 3P\n\\]\n\\[\n3R = 5B \\quad\\Rightarrow\\quad 3(3P) = 5B \\quad\\Rightarrow\\quad 9P = 5B \\quad\\Rightarrow\\quad B = \\frac{9}{5}P\n\\]\n\nThen two baguettes:\n\n\\[\n2B = 2..."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let the original price be 100.  \n\nAfter a 20% discount, the sale price becomes 80.  \n\nTo get back to the original price of 100 from 80, we need to find the percentage increase:\n\n\\[\n\\text{Increase need...\nRegen 2: Let the original price be 100.  \n\nAfter a 20% discount, the sale price becomes 80.  \n\nTo get back to the original price of 100 from 80, we need to find the percentage increase \\(p\\).\n\nThe increase nee..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let the train fare for one person be \\( t \\) rupees.  \nThen the bus fare for one person is:\n\n\\[\n\\text{Bus fare for one person} = \\frac{2}{3}t\n\\]\n\nNow, total fare for 6 persons by train:\n\n\\[\n6t\n\\]\n\nTot...\nRegen 2: Let the train fare for one person be \\( t \\) rupees.  \nThen the bus fare for one person is given as:  \n\nBus fare for two persons = \\( \\frac{4}{3} t \\)  \nSo bus fare for one person = \\( \\frac{2}{3} t \\..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: The perimeter \\( P \\) of a rectangle can be calculated using the formula:\n\n\\[\nP = 2 \\times (\\text{length}) + 2 \\times (\\text{width})\n\\]\n\nor equivalently:\n\n\\[\nP = 2(l + w)\n\\]\n\nwhere \\( l \\) is the leng...\nRegen 2: The perimeter \\(P\\) of a rectangle can be calculated using the formula:\n\n\\[\nP = 2 \\times (\\text{length} + \\text{width})\n\\]\n\nOr, if you prefer to write it out:\n\n\\[\nP = \\text{length} + \\text{width} + \\t..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We have six distinct books, so the total number of ways to arrange them in a row is simply:\n\n\\[\n6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720\n\\]\n\n\\[\n\\boxed{720}\n\\]...\nRegen 2: We have six distinct books, so the number of ways to arrange them in a row is:\n\n\\[\n6! = 6 \\times 5 \\times 4 \\times 3 \\times 2 \\times 1 = 720\n\\]\n\n\\[\n\\boxed{720}\n\\]..."
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'E': 0.0}\nFinal Answer: E\n\n--- Initial paths ---\nPath 1: pred=E consistency=0.00\nPath 2: pred=E consistency=0.00\nPath 3: pred=E consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We have \\( x \\) pickets, each \\( \\frac{1}{2} \\) inch wide.  \nThe total width of all pickets is:  \n\\[\nx \\cdot \\frac{1}{2} = \\frac{x}{2} \\text{ inches}.\n\\]\n\nBetween each pair of pickets, there is a 6-in...\nRegen 2: We have \\( x \\) pickets, each \\( \\frac{1}{2} \\) inch wide.  \nThe total width of all pickets is:  \n\\[\nx \\cdot \\frac{1}{2} = \\frac{x}{2} \\text{ inches}.\n\\]\n\nBetween each pair of pickets, there is a 6-in..."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are told:  \n- Ship speed = \\( v \\) mph  \n- Plane speed = \\( 10v \\) mph  \n- Head start = 180 miles  \n- Time after plane starts until meeting = \\( t \\) hours  \n\nIn time \\( t \\):  \n- Ship travels \\( v...\nRegen 2: Let the speed of the ship be \\( v \\) miles per hour.  \nThen the speed of the plane is \\( 10v \\) miles per hour.  \n\nThe ship had a head start of 180 miles.  \nLet the time after the plane starts until t..."
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'E': 0.0}\nFinal Answer: E\n\n--- Initial paths ---\nPath 1: pred=E consistency=0.00\nPath 2: pred=E consistency=0.00\nPath 3: pred=E consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We start with 300 tagged deer in the forest from 2001.  \nIn 2002, a random sample of 500 deer is caught, and 20 of them have tags.\n\nThe proportion of tagged deer in the sample is:\n\\[\n\\frac{20}{500} = ...\nRegen 2: We start with 300 tagged deer in the forest from 2001.  \nIn 2002, a random sample of 500 deer is caught, and 20 of them have tags.\n\nThe proportion of tagged deer in the sample is:\n\\[\n\\frac{20}{500} = ..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We can analyze a 10-minute cycle, say from 5:00 to 5:10.\n\n**Train departure times in this cycle:**  \n- Main line: 5:00 (then next at 5:10)  \n- Harbor line: 5:02 (then next at 5:12)\n\n**Arrival interval...\nRegen 2: Let's carefully go through the analysis step by step.\n\nWe have two train lines:\n\n- **Main line**: departs at 5:00, 5:10, 5:20, … (every 10 minutes on the minute).\n- **Harbor line**: departs at 5:02, 5..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: First, the total weight of the 10 vehicles is:  \n10 × 12.2 = 122 tons.\n\nAfter adding the new truck, the group has 11 vehicles, and the average increased by 2.6 tons, so the new average is:\n\n12.2 + 2.6...\nRegen 2: We are given:\n\n- Initial number of vehicles: \\(10\\)\n- Initial average weight: \\(12.2\\) tons  \n- Total initial weight: \\(10 \\times 12.2 = 122\\) tons\n\nAfter adding a new truck:  \n- Number of vehicles be..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let’s continue from where you left off.\n\nWe have:  \n- \\( P_{\\text{future}} = 1.21P \\)  \n\n**Step 2: Relate to population one year ago**  \nThe problem statement (which appears to be cut off) likely says...\nRegen 2: We have:\n\n- \\(P\\) = current population  \n- \\(P_{\\text{last}}\\) = population one year ago  \n- \\(P_{\\text{future}}\\) = population two years from now  \n\n**Step 1:**  \nGiven a 10% annual increase:\n\n\\[\nP_{..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are given:\n\n- Arjun initially has \\( A \\) rupees, Sajal has \\( S \\) rupees.\n\n**First condition:**  \nArjun gives ₹30 to Sajal:  \n\\[\nS + 30 = 2(A - 30)\n\\]  \n\\[\nS + 30 = 2A - 60\n\\]  \n\\[\nS = 2A - 90 \\q...\nRegen 2: We have:\n\n\\[\nS = 2A - 90 \\quad \\text{(Equation 1)}\n\\]\n\n**Second condition:**  \nSajal gives $10 to Arjun.  \nSajal left with: \\( S - 10 \\)  \nArjun now has: \\( A + 10 \\)  \nThis equals twice what Sajal ha..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We know the yard is rectangular, so area = width × length.  \nThe width is given as 100 feet, and the area is 3,000 square feet.  \nLet the length be \\( L \\).\n\nThen:\n\\[\n100 \\times L = 3000\n\\]\n\nSolve for...\nRegen 2: We know the yard is rectangular, so area = width × length.  \nThe width is given as 100 feet, and the area is 3,000 square feet.  \nLet the length be \\( l \\). Then:\n\n\\[\n100 \\times l = 3000\n\\]\n\nTo solve ..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred= consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are given:\n\n- GCF = 11  \n- LCM = 7700  \n- One integer = 350  \n- Other integer = ?\n\n**Step 1: Use the relationship**  \nFor two positive integers \\( a \\) and \\( b \\):  \n\\[\na \\times b = \\text{GCF}(a,b...\nRegen 2: We are given:\n\n- GCF = 11  \n- LCM = 7700  \n- One integer = 350  \n- Other integer = ?\n\n**Step 1: Use the relationship**  \nFor two positive integers \\( a \\) and \\( b \\):  \n\\[\na \\times b = \\text{GCF}(a,b..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are told that a square piece of cloth is trimmed by 4 feet on one edge to form a rectangle, which is then cut diagonally in half to create two triangles.  \nEach triangle has an area of 70 square fe...\nRegen 2: We are told that a square piece of cloth is trimmed by 4 feet on one edge to form a rectangle, which is then cut diagonally in half to create two triangles.  \nEach triangle has an area of 70 square fe..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We set up the proportion:\n\n\\[\n\\frac{\\text{original length}}{\\text{new length}} = \\frac{5}{3}\n\\]\n\nSo:\n\n\\[\n\\frac{30}{\\text{new length}} = \\frac{5}{3}\n\\]\n\nCross-multiply:\n\n\\[\n30 \\times 3 = 5 \\times \\text...\nRegen 2: We are given that the original length is 30 cm and it is reduced in the ratio \\(5 : 3\\).\n\nThis means:\n\n- Original length corresponds to 5 parts\n- New length corresponds to 3 parts\n\nSet up the proporti..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are given that \\(M = abc\\) is a three-digit number, so \\(a \\neq 0\\).  \n\\(N = cba\\).  \nGiven \\(M > N\\) and:\n\n\\[\nM - N + 396c = 990\n\\]\n\n---\n\n### Step 1 – Express \\( M - N \\)\n\n\\[\nM = 100a + 10b + c\n\\]...\nRegen 2: We have:\n\n\\[\nM = 100a + 10b + c, \\quad N = 100c + 10b + a\n\\]\n\\[\nM - N = 99(a - c)\n\\]\n\nEquation given:\n\n\\[\n99(a - c) + 396c = 990\n\\]\n\\[\n99a - 99c + 396c = 990\n\\]\n\\[\n99a + 297c = 990\n\\]\nDivide through b..."
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'E': 0.0, 'A': 0.0}\nFinal Answer: E\n\n--- Initial paths ---\nPath 1: pred=E consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are told that more than 501 students are in the school, with exactly 20% taking physics and exactly 28% taking math.  \nThis means the total number of students must be such that both 20% and 28% are...\nRegen 2: We are told that more than 501 students are in the school, with exactly 20% taking physics and exactly 28% taking math.  \nThis means the total number of students must be such that both 20% and 28% are..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let's continue step by step.\n\nWe know:\n- Raj is **17 years old now**.\n- Five years back, Raj was \\( 17 - 5 = 12 \\) years old.\n- At that time, Raj was **one-third as old as Rahim**.\n\nSo, 5 years ago:\n\\...\nRegen 2: Let's continue step by step.\n\nWe know:\n- Raj is **17 years old now**.\n- Five years back, Raj was \\( 17 - 5 = 12 \\) years old.\n- At that time, Raj was **one-third as old as Rahim**.\n\nSo, 5 years ago:\n\n..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We know the rope is 14 feet long, so the cow can graze in a circle of radius 14 feet.  \nThe area the cow can reach is:\n\n\\[\n\\text{Area} = \\pi r^2 = \\pi \\times 14^2 = \\pi \\times 196\n\\]\n\nUsing \\(\\pi \\app...\nRegen 2: We are told the rope is 14 feet long, so the cow can graze in a circle of radius 14 feet.  \nThe area the cow can reach is:\n\n\\[\n\\text{Area} = \\pi r^2 = \\pi \\times 14^2 = \\pi \\times 196\n\\]\n\nUsing \\(\\pi ..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let’s continue the calculation step by step.\n\nWe have:\n\n\\[\nx = \\frac{27.50}{1.10}\n\\]\n\nFirst, remove the decimal by multiplying numerator and denominator by 100:\n\n\\[\nx = \\frac{2750}{110}\n\\]\n\nNow simpli...\nRegen 2: Let's go step-by-step.\n\nWe are given:\n\n- Selling price (SP) with a 10% profit = Rs 27.50  \n- Let the cost price (CP) = \\( x \\)\n\nA 10% profit means:  \n\\[\nSP = CP + 10\\% \\text{ of } CP\n\\]\nThat is:\n\\[\n27..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We have three distinct children: Susan (S), Tim (T), and Zen (Z).  \nWe want arrangements where Susan is to the left of Tim.\n\n**Step 1: Total arrangements without restriction**  \nTotal permutations of ...\nRegen 2: We have three distinct children: Susan, Tim, and Zen.  \nTotal arrangements without restrictions:  \n\n\\[\n3! = 6\n\\]\n\nThe condition is that Susan must be to the left of Tim.  \nIn any random arrangement of..."
+    },
+    {
+      "prediction": "B",
+      "correct": "B",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'B': 0.0}\nFinal Answer: B\n\n--- Initial paths ---\nPath 1: pred=B consistency=0.00\nPath 2: pred=B consistency=0.00\nPath 3: pred=B consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are told the bill is partly fixed and partly varies with the number of calls.  \nLet the fixed part be \\( F \\) and the variable part per call be \\( V \\).\n\nFrom the first month:  \n\\( F + 540V = 1800 ...\nRegen 2: We are told the bill is partly fixed and partly varies with the number of calls.  \nLet the fixed part be \\( F \\) and the variable part per call be \\( V \\).\n\nFrom the first month:  \n\\( F + 540V = 1800 ..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are given:\n\n- Ball A: **2 rotations in 26 minutes**  \n  → Time per rotation = \\( \\frac{26}{2} = 13 \\) minutes.\n\n- Ball B: **5 rotations in 35 minutes**  \n  → Time per rotation = \\( \\frac{35}{5} = 7...\nRegen 2: We need to find when both balls will be back at the starting point at the same time.  \nThis is a least common multiple (LCM) problem for their lap times.\n\n**Step 1: Find time for one full rotation for..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Both is the smaller of the two sets, which is fiction with 20 books.  \n\nSo the maximum number that could be both hardcover and fiction is **20**.  \n\n\\[\n\\boxed{20}\n\\]...\nRegen 2: The maximum possible overlap between two sets is limited by the smaller set. Here, fiction has 20 books, hardcover has 30. So the most that can be both hardcover and fiction is **20**.\n\n\\[\n\\boxed{20}\n..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are told:\n\n- Weekday (Monday–Saturday): \\( x \\) newspapers each day, cost $1 each, so daily cost = \\( x \\) dollars.\n- There are 6 weekdays, so total weekday cost = \\( 6 \\cdot x = 6x \\) dollars.\n- S...\nRegen 2: We are told:\n\n- Weekday (Monday–Saturday): \\( x \\) newspapers each day, cost $1 each → daily cost = \\( x \\) dollars.  \n- There are 6 weekdays → total weekday cost = \\( 6x \\) dollars.\n\n- Sunday: \\( 2x ..."
+    },
+    {
+      "prediction": "A",
+      "correct": "A",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'A': 0.0}\nFinal Answer: A\n\n--- Initial paths ---\nPath 1: pred=A consistency=0.00\nPath 2: pred=A consistency=0.00\nPath 3: pred=A consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are solving:\n\n\\[\n96 \\left( \\frac{1}{n-4} - \\frac{1}{n} \\right) = 4\n\\]\n\nFirst, simplify the bracket:\n\n\\[\n\\frac{1}{n-4} - \\frac{1}{n} = \\frac{n - (n-4)}{n(n-4)} = \\frac{4}{n(n-4)}\n\\]\n\nSo:\n\n\\[\n96 \\cdo...\nRegen 2: Let the original number of friends be \\( n \\).  \nThen the original contribution per person would be \\( \\frac{96}{n} \\).  \n\nFour friends didn’t come, so the number who attended is \\( n - 4 \\).  \nThey e..."
+    },
+    {
+      "prediction": "C",
+      "correct": "C",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'C': 0.0}\nFinal Answer: C\n\n--- Initial paths ---\nPath 1: pred=C consistency=0.00\nPath 2: pred=C consistency=0.00\nPath 3: pred=C consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We have:\n- Length = 27 cm  \n- Breadth = 17 cm  \n\nFirst, add length and breadth:  \n27 + 17 = 44  \n\nThen multiply by 2:  \nPerimeter = 2 × 44 = 88 cm  \n\n\\[\n\\boxed{88}\n\\]...\nRegen 2: First, find the perimeter of the rectangle.  \nThe formula for the perimeter of a rectangle is:  \nPerimeter = 2 × (length + breadth)  \nHere, length = 27 cm, breadth = 17 cm.  \nSo, perimeter = 2 × (27 +..."
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'E': 0.0}\nFinal Answer: E\n\n--- Initial paths ---\nPath 1: pred=E consistency=0.00\nPath 2: pred=E consistency=0.00\nPath 3: pred=E consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: We are told:\n\n- Each nephew gets \\( x \\) Rs.  \n- Each daughter gets \\( 4x \\) Rs.  \n- Each son gets \\( 5x \\) Rs.  \n\nNumber of people:  \n- Sons: 5  \n- Daughters: 4  \n- Nephews: 2  \n\nTotal amount given: ...\nRegen 2: We are told each nephew gets \\( x \\) Rs.  \nThen each daughter gets \\( 4x \\), each son gets \\( 5x \\).\n\nNumber of sons = 5, daughters = 4, nephews = 2.  \nTotal amount:\n\n\\[\n5(5x) + 4(4x) + 2(x) = 25x + 1..."
+    },
+    {
+      "prediction": "D",
+      "correct": "D",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'D': 0.0}\nFinal Answer: D\n\n--- Initial paths ---\nPath 1: pred=D consistency=0.00\nPath 2: pred=D consistency=0.00\nPath 3: pred=D consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let her actual weight be \\( w \\) kg.\n\nThe statement says:  \n\\[\nw = 29 + \\frac{1}{2}w\n\\]\n\nSubtract \\(\\frac{1}{2}w\\) from both sides:  \n\\[\nw - \\frac{1}{2}w = 29\n\\]  \n\\[\n\\frac{1}{2}w = 29\n\\]\n\nMultiply bo...\nRegen 2: Let her actual weight be \\( w \\) kg.  \n\nThe statement is:  \n\\[\nw = 29 + \\frac{1}{2}w\n\\]  \n\nSubtract \\(\\frac{1}{2}w\\) from both sides:  \n\\[\nw - \\frac{1}{2}w = 29\n\\]  \n\\[\n\\frac{1}{2}w = 29\n\\]  \n\nMultipl..."
+    },
+    {
+      "prediction": "E",
+      "correct": "E",
+      "output": "=== Prefix-Consistency (3 paths, trunc=0.5, regen=3) ===\nWeight function: linear\nWeighted votes: {'E': 0.0}\nFinal Answer: E\n\n--- Initial paths ---\nPath 1: pred=E consistency=0.00\nPath 2: pred=E consistency=0.00\nPath 3: pred=E consistency=0.00\n\n--- Regeneration examples (Path 1) ---\nRegen 1: Let’s go step-by-step.\n\n- Roy has 5 tablets.  \n- He takes one tablet every 15 minutes.  \n- The first tablet is taken at time **0 minutes**.\n\n**Step 1:**  \nAt time 0 minutes → takes tablet #1.\n\n**Step ...\nRegen 2: Let’s go step-by-step.\n\n- Roy has 5 tablets.  \n- He takes one tablet every 15 minutes.  \n- The first tablet is taken at time 0 minutes.\n\n**Step 1: List the times he takes each tablet.**\n\n- 1st tablet ..."
+    }
+  ]
+}
