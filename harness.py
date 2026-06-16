@@ -71,6 +71,15 @@ def load_task(task_name: str, **kwargs):
     return registry[task_name](**kwargs)
 
 
+def _safe_write(msg: str):
+    """Write to stdout safely on Windows with fallback for encoding errors."""
+    try:
+        tqdm.write(msg)
+    except UnicodeEncodeError:
+        # Fallback: encode with replacement for GBK terminals
+        tqdm.write(msg.encode(sys.stdout.encoding or "utf-8", errors="replace").decode(sys.stdout.encoding or "utf-8"))
+
+
 def run_experiment(
     strategy_name: str,
     task_name: str,
@@ -133,7 +142,7 @@ def run_experiment(
             elapsed_so_far = time.time() - start_time
             avg_time = elapsed_so_far / (idx + 1)
             eta = avg_time * (len(examples) - idx - 1)
-            tqdm.write(
+            _safe_write(
                 f"  [{idx+1}/{len(examples)}] "
                 f"Pred={result['prediction']:<2} "
                 f"Gold={example.get('correct', ''):<2} "
@@ -141,7 +150,7 @@ def run_experiment(
                 f"ETA={eta:.0f}s"
             )
         except Exception as e:
-            tqdm.write(f"  [{idx+1}/{len(examples)}] ERROR: {e}")
+            _safe_write(f"  [{idx+1}/{len(examples)}] ERROR: {e}")
             results.append({
                 "prediction": "",
                 "output": f"ERROR: {e}",
